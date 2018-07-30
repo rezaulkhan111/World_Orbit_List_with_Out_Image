@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Track All Satellite</string>
+    <string name="R_launch_date">Launch Date</string>
+    <string name="R_date">Date</string>
+    <string name="R_photo">Photo</string>
+    <string name="R_name">Name</string>
+    <string name="R_satellite_type">Satellite Type</string>
+   </resources>
