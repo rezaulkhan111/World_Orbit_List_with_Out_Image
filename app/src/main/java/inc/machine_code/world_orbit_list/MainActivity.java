@@ -78,29 +78,29 @@ public class MainActivity extends AppCompatActivity implements CountryAdapter.IC
             USA_Sat_Obj,
             URUGUAY_Sat_Obj,
             VENEZUELA_Sat_Obj,
-            VIETNAM_Sat_Obj;
-//            FORMER_CZECHOSLOVAKIA_Sat_Obj,
-//            CHINA_BRAZIL_Sat_Obj,
-//            ARAB_SAT_COMM_ORG_Sat_Obj,
-//            ASIASAT_Sat_Obj,
-//            EUMETSAT_Sat_Obj,
-//            FRANCE_GERMANY_Sat_Obj,
-//            FRANCE_ITALY_Sat_Obj,
-//            GLOBALSTAR_Sat_Obj,
-//            INMARSAT_Sat_Obj,
-//            ITSO_Sat_Obj,
-//            NEW_ICO_Sat_Obj,
-//            EUTELSAT_Sat_Obj,
-//            NORTH_ATLANTIC_TREATY_ORGANIZATION_Sat_Obj,
-//            O3B_NETWORKS_Sat_Obj,
-//            ORBCOMM_Sat_Obj,
-//            RASCO_Sat_Obj,
-//            EUROPEAN_SPACE_AGENCY_Sat_Obj,
-//            SEA_LAUNCH_Sat_Obj,
-//            SINGAPORE_TAIWAN_Sat_Obj,
-//            SOCIETE_EUROPEENNE_DES_SATELLITES_Sat_Obj,
-//            TURKMENISTAN_MONACO,
-//            UNITED_STATES_BRAZIL_Sat_Obj;
+            VIETNAM_Sat_Obj,
+            FORMER_CZECHOSLOVAKIA_Sat_Obj,
+            CHINA_BRAZIL_Sat_Obj,
+            ARAB_SAT_COMM_ORG_Sat_Obj,
+            ASIASAT_Sat_Obj,
+            EUMETSAT_Sat_Obj,
+            FRANCE_GERMANY_Sat_Obj,
+            FRANCE_ITALY_Sat_Obj,
+            GLOBALSTAR_Sat_Obj,
+            INMARSAT_Sat_Obj,
+            ITSO_Sat_Obj,
+            NEW_ICO_Sat_Obj,
+            EUTELSAT_Sat_Obj,
+            NORTH_ATLANTIC_TREATY_ORGANIZATION_Sat_Obj,
+            O3B_NETWORKS_Sat_Obj,
+            ORBCOMM_Sat_Obj,
+            RASCO_Sat_Obj,
+            EUROPEAN_SPACE_AGENCY_Sat_Obj,
+            SEA_LAUNCH_Sat_Obj,
+            SINGAPORE_TAIWAN_Sat_Obj,
+            SOCIETE_EUROPEENNE_DES_SATELLITES_Sat_Obj,
+            TURKMENISTAN_MONACO,
+            UNITED_STATES_BRAZIL_Sat_Obj;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -182,15 +182,15 @@ public class MainActivity extends AppCompatActivity implements CountryAdapter.IC
         countryList.add(new Country(60, "VENEZUELA", "3", R.mipmap.ic_venezuela_foreground));
         countryList.add(new Country(61, "VIETNAM", "3", R.mipmap.ic_vietnam_foreground));
 //        countryList.add(new Country(63, "NATO", "8", R.mipmap.ic_nato_foreground));
-//        countryList.add(new Country(64, "CHINA/BRAZIL", "3", R.mipmap.ic_china_brazil_foreground));
-//        countryList.add(new Country(65, "FRANCE/GERMANY", "2", R.mipmap.ic_france_germany_foreground));
-//        countryList.add(new Country(66, "FRANCE/ITALY", "2", R.mipmap.ic_franc_italian_foreground));
-//        countryList.add(new Country(68, "SINGAPORE/TAIWAN", "2", R.mipmap.ic_singapore_taiwan_foreground));
-//        countryList.add(new Country(69, "TURKMENISTAN/MONACO", "1", R.mipmap.ic_turkmenistan_monaco_foreground));
-//        countryList.add(new Country(70, "UNITED STATES/BRAZIL", "1", R.mipmap.ic_usa_brazil_foreground));
-//        countryList.add(new Country(71, "ARABSAT", "13", R.mipmap.ic_arabsat_foreground));
-//        countryList.add(new Country(72, "ASIASAT", "8", R.mipmap.ic_asiasat_foreground));
-//        countryList.add(new Country(73, "EUMETSAT", "8", R.mipmap.ic_eumetsat_foreground));
+        countryList.add(new Country(64, "CHINA/BRAZIL", "3", R.mipmap.ic_china_brazil_foreground));
+        countryList.add(new Country(65, "FRANCE/GERMANY", "2", R.mipmap.ic_france_germany_foreground));
+        countryList.add(new Country(66, "FRANCE/ITALY", "2", R.mipmap.ic_franc_italy_foreground));
+        countryList.add(new Country(68, "SINGAPORE/TAIWAN", "2", R.mipmap.ic_singapore_taiwan_foreground));
+        countryList.add(new Country(69, "TURKMENISTAN/MONACO", "1", R.mipmap.ic_turkmenistan_monaco_foreground));
+        countryList.add(new Country(70, "UNITED STATES/BRAZIL", "1", R.mipmap.ic_usa_brazil_foreground));
+        countryList.add(new Country(71, "ARABSAT", "13", R.mipmap.ic_arabsat_foreground));
+        countryList.add(new Country(72, "ASIASAT", "8", R.mipmap.ic_asiasat_foreground));
+        countryList.add(new Country(73, "EUMETSAT", "8", R.mipmap.ic_eumetsat_foreground));
 //        countryList.add(new Country(74, "ESA", "82", R.mipmap.ic_esa_foreground));
 //        countryList.add(new Country(75, "EUTELSAT", "51", R.mipmap.ic_eutelsat_foreground));
 //        countryList.add(new Country(76, "GLOBALSTAR", "84", R.mipmap.ic_globalstar_foreground));
@@ -3376,185 +3376,185 @@ public class MainActivity extends AppCompatActivity implements CountryAdapter.IC
         return VIETNAM_Sat_Obj;
     }
 
-//    public List<Satellite> FORMER_CZECHOSLOVAKIA_List() {
-//        FORMER_CZECHOSLOVAKIA_Sat_Obj = new ArrayList<>();
-//        FORMER_CZECHOSLOVAKIA_Sat_Obj.add(new Satellite("21835", "MAGION 3", "", "Dec-18-1991", R.mipmap.ic_magion_2_5_foreground));
-//        FORMER_CZECHOSLOVAKIA_Sat_Obj.add(new Satellite("20281", "MAGION 2", "", "Sep-28-1989", R.mipmap.ic_magion_2_5_foreground));
-//        return FORMER_CZECHOSLOVAKIA_Sat_Obj;
-//    }
-//
-//    public List<Satellite> CHINA_BRAZIL_List() {
-//        CHINA_BRAZIL_Sat_Obj = new ArrayList<>();
-//        CHINA_BRAZIL_Sat_Obj.add(new Satellite("32062", "CBERS 2B", "Earth Observation", "Sep-19-2007", R.mipmap.ic_cbers_1_2_b_foreground));
-//        CHINA_BRAZIL_Sat_Obj.add(new Satellite("28057", "CBERS 2", "Earth Observation", "Oct-21-2003", R.mipmap.ic_cbers_1_2_b_foreground));
-//        CHINA_BRAZIL_Sat_Obj.add(new Satellite("25940", "CBERS 1", "Earth Observation", "Oct-14-1999", R.mipmap.ic_cbers_1_2_b_foreground));
-//        return CHINA_BRAZIL_Sat_Obj;
-//    }
-//
-//    public List<Satellite> FRANCE_GERMANY_List() {
-//        FRANCE_GERMANY_Sat_Obj = new ArrayList<>();
-//        FRANCE_GERMANY_Sat_Obj.add(new Satellite("8132", "SYMPHONIE 2", "Communication", "Aug-27-1975", R.mipmap.ic_symphonie_1_2_foreground));
-//        FRANCE_GERMANY_Sat_Obj.add(new Satellite("7578", "SYMPHONIE 1", "Communication", "Dec-19-1974", R.mipmap.ic_symphonie_1_2_foreground));
-//        return FRANCE_GERMANY_Sat_Obj;
-//    }
-//
-//    public List<Satellite> FRANCE_ITALY_List() {
-//        FRANCE_ITALY_Sat_Obj = new ArrayList<>();
-//        FRANCE_ITALY_Sat_Obj.add(new Satellite("40614", "SICRAL 2", "Military Communication", "Apr-26-2015", R.mipmap.ic_sicral_2_athena_fidus_foreground));
-//        FRANCE_ITALY_Sat_Obj.add(new Satellite("39509", "ATHENA-FIDUS", "Military Communication", "Feb-6-2014", R.mipmap.ic_sicral_2_athena_fidus_foreground));
-//        return FRANCE_ITALY_Sat_Obj;
-//    }
-//
-//    public List<Satellite> SINGAPORE_TAIWAN_List() {
-//        SINGAPORE_TAIWAN_Sat_Obj = new ArrayList<>();
-//        SINGAPORE_TAIWAN_Sat_Obj.add(new Satellite("37606", "ST 2", "Communication", "May-20-2011", R.mipmap.ic_st_2_foreground));
-//        SINGAPORE_TAIWAN_Sat_Obj.add(new Satellite("25460", "ST 1", "Communication", "Aug-25-1998", R.mipmap.ic_st_1_foreground));
-//        return SINGAPORE_TAIWAN_Sat_Obj;
-//    }
-//
-//    public List<Satellite> TURKMENISTAN_MONACO_List() {
-//        TURKMENISTAN_MONACO = new ArrayList<>();
-//        TURKMENISTAN_MONACO.add(new Satellite("40617", "TURKMENALEM52E/MONACOSAT", "Communication", "Apr-27-2015", R.mipmap.ic_turkmenalem52e_monacosat_foreground));
-//        return TURKMENISTAN_MONACO;
-//    }
-//
-//    public List<Satellite> UNITED_STATES_BRAZIL_List() {
-//        UNITED_STATES_BRAZIL_Sat_Obj = new ArrayList<>();
-//        UNITED_STATES_BRAZIL_Sat_Obj.add(new Satellite("28137", "ESTRELA DU SOL-TELSTAR14", "Communication", "Jan-11-2004", R.mipmap.ic_estrela_do_sul_1_foreground));
-//        return UNITED_STATES_BRAZIL_Sat_Obj;
-//    }
-//
-//    public List<Satellite> ARAB_SATELLITE_COMMUNICATIONS_ORGANIZATION_ARABSAT_List() {
-//        ARAB_SAT_COMM_ORG_Sat_Obj = new ArrayList<>();
-//        ARAB_SAT_COMM_ORG_Sat_Obj.add(new Satellite("41029", "BADR 7(ARABSAT-6B)", "", "Nov-10-2015", R.mipmap.ic_arabsat_foreground));
-//        ARAB_SAT_COMM_ORG_Sat_Obj.add(new Satellite("37810", "ARABSAT 5C", "", "Sep-21-2011", R.mipmap.ic_arabsat_foreground));
-//        ARAB_SAT_COMM_ORG_Sat_Obj.add(new Satellite("36745", "ARABSAT 5A", "", "Jun-26-2010", R.mipmap.ic_arabsat_foreground));
-//        ARAB_SAT_COMM_ORG_Sat_Obj.add(new Satellite("36592", "BADR-5(ARABSAT 5B)", "", "Jun-3-2010", R.mipmap.ic_arabsat_foreground));
-//        ARAB_SAT_COMM_ORG_Sat_Obj.add(new Satellite("33154", "BADR 6", "", "Jul-7-2008", R.mipmap.ic_arabsat_foreground));
-//        ARAB_SAT_COMM_ORG_Sat_Obj.add(new Satellite("29526", "ARABSAT 4B", "", "Nov-8-2006", R.mipmap.ic_arabsat_foreground));
-//        ARAB_SAT_COMM_ORG_Sat_Obj.add(new Satellite("25638", "ARABSAT 3A", "", "Feb-26-1999", R.mipmap.ic_arabsat_foreground));
-//        ARAB_SAT_COMM_ORG_Sat_Obj.add(new Satellite("24652", "ARABSAT 2B", "", "Nov-13-1996", R.mipmap.ic_arabsat_foreground));
-//        ARAB_SAT_COMM_ORG_Sat_Obj.add(new Satellite("23948", "ARABSAT 2A", "", "Jul-9-1996", R.mipmap.ic_arabsat_foreground));
-//        ARAB_SAT_COMM_ORG_Sat_Obj.add(new Satellite("15825", "ARABSAT 1B", "", "Jun-17-1985", R.mipmap.ic_arabsat_foreground));
-//        ARAB_SAT_COMM_ORG_Sat_Obj.add(new Satellite("15560", "ARABSAT 1A", "", "Feb-8-1985", R.mipmap.ic_arabsat_foreground));
-//        ARAB_SAT_COMM_ORG_Sat_Obj.add(new Satellite("15383", "ARABSAT 1D(ANIK D2)", "", "Nov-8-1984", R.mipmap.ic_arabsat_foreground));
-//        ARAB_SAT_COMM_ORG_Sat_Obj.add(new Satellite("14234", "ARABSAT 1DR(TELSTAR 3A)", "", "Jul-28-1983", R.mipmap.ic_arabsat_foreground));
-//        return ARAB_SAT_COMM_ORG_Sat_Obj;
-//    }
-//
-//    public List<Satellite> ASIA_SATELLITE_TELECOMMUNICATIONS_COMPANY_ASIASAT_List() {
-//        ASIASAT_Sat_Obj = new ArrayList<>();
-//        ASIASAT_Sat_Obj.add(new Satellite("42942", "ASIASAT 9", "", "Sep-28-2017", R.mipmap.ic_asiasat_foreground));
-//        ASIASAT_Sat_Obj.add(new Satellite("40141", "ASIASAT 6", "", "Sep-7-2014", R.mipmap.ic_asiasat_foreground));
-//        ASIASAT_Sat_Obj.add(new Satellite("40107", "ASIASAT 8", "", "Aug-5-2014", R.mipmap.ic_asiasat_foreground));
-//        ASIASAT_Sat_Obj.add(new Satellite("37933", "ASIASAT 7", "", "Nov-25-2011", R.mipmap.ic_asiasat_foreground));
-//        ASIASAT_Sat_Obj.add(new Satellite("35696", "ASIASAT 5", "", "Aug-11-2009", R.mipmap.ic_asiasat_foreground));
-//        ASIASAT_Sat_Obj.add(new Satellite("27718", "ASIASAT 4", "", "Apr-12-2003", R.mipmap.ic_asiasat_foreground));
-//        ASIASAT_Sat_Obj.add(new Satellite("25657", "ASIASAT 3S", "", "Mar-2-1999", R.mipmap.ic_asiasat_foreground));
-//        ASIASAT_Sat_Obj.add(new Satellite("20558", "ASIASAT 1", "", "Apr-7-1990", R.mipmap.ic_asiasat_foreground));
-//        return ASIASAT_Sat_Obj;
-//    }
-//
-//    public List<Satellite> EUROPEAN_ORGANISATION_FOR_THE_EXPLOITATION_EUMETSAT_List() {
-//        EUMETSAT_Sat_Obj = new ArrayList<>();
-//        EUMETSAT_Sat_Obj.add(new Satellite("40732", "MSG 4", "Meteorology", "Jul-15-2015", R.mipmap.ic_msg_1_to_4_meteosat_8_to_11_foreground));
-//        EUMETSAT_Sat_Obj.add(new Satellite("38771", "METOP-B", "Meteorology", "Sep-17-2012", R.mipmap.ic_metop_a_b_c_foreground));
-//        EUMETSAT_Sat_Obj.add(new Satellite("38552", "METEOSAT 10(MSG 3)", "Meteorology", "Jul-5-2012", R.mipmap.ic_msg_1_to_4_meteosat_8_to_11_foreground));
-//        EUMETSAT_Sat_Obj.add(new Satellite("29499", "METOP-A", "Meteorology", "Oct-19-2006", R.mipmap.ic_metop_a_b_c_foreground));
-//        EUMETSAT_Sat_Obj.add(new Satellite("28912", "METEOSAT 9(MSG 2)", "Meteorology", "Dec-21-2005", R.mipmap.ic_msg_1_to_4_meteosat_8_to_11_foreground));
-//        EUMETSAT_Sat_Obj.add(new Satellite("27509", "METEOSAT 8(MSG 1)", "Meteorology", "Aug-28-2002", R.mipmap.ic_msg_1_to_4_meteosat_8_to_11_foreground));
-//        EUMETSAT_Sat_Obj.add(new Satellite("24932", "METEOSAT 7", "Meteorology", "Sep-2-1997", R.mipmap.ic_meteosat_1_to_6_7_foreground));
-//        EUMETSAT_Sat_Obj.add(new Satellite("22912", "METEOSAT 6", "Meteorology", "Nov-20-1993", R.mipmap.ic_meteosat_1_to_6_7_foreground));
-//        return EUMETSAT_Sat_Obj;
-//    }
-//
-//    public List<Satellite> EUROPEAN_SPACE_AGENCY_ESA_List() {
-//        EUROPEAN_SPACE_AGENCY_Sat_Obj = new ArrayList<>();
-//        EUROPEAN_SPACE_AGENCY_Sat_Obj.add(new Satellite("43437", "SENTINEL 3B", "Earth Observing (Ocean)", "Apr-25-2018", R.mipmap.ic_sentinel_3a_b_c_d_foreground));
-//        EUROPEAN_SPACE_AGENCY_Sat_Obj.add(new Satellite("43196", "GOMX4-B", "Technology", "Feb-2-2018", R.mipmap.ic_gomx_4a_b_foreground));
-//        EUROPEAN_SPACE_AGENCY_Sat_Obj.add(new Satellite("43058", "GALILEO 22 (2C8)", "Navigation", "Dec-12-2017", R.mipmap.ic_galileo_7_to_26_foc_fm3_to_fm22_foreground));
-//        EUROPEAN_SPACE_AGENCY_Sat_Obj.add(new Satellite("43057", "GALILEO 21 (2C7)", "Navigation", "Dec-12-2017", R.mipmap.ic_galileo_7_to_26_foc_fm3_to_fm22_foreground));
-//        EUROPEAN_SPACE_AGENCY_Sat_Obj.add(new Satellite("43056", "GALILEO 20 (2C6)", "Navigation", "Dec-12-2017", R.mipmap.ic_galileo_7_to_26_foc_fm3_to_fm22_foreground));
-//        EUROPEAN_SPACE_AGENCY_Sat_Obj.add(new Satellite("43055", "GALILEO 19 (2C5)", "Navigation", "Dec-12-2017", R.mipmap.ic_galileo_7_to_26_foc_fm3_to_fm22_foreground));
-//        EUROPEAN_SPACE_AGENCY_Sat_Obj.add(new Satellite("42969", "SENTINEL 5P", "Earth Observing", "Oct-13-2017", R.mipmap.ic_sentinel_5p_foreground));
-//        EUROPEAN_SPACE_AGENCY_Sat_Obj.add(new Satellite("42814", "HELLAS-SAT 3", "Communication", "Jun-28-2017", R.mipmap.ic_hellas_sat_3_foreground));
-//        EUROPEAN_SPACE_AGENCY_Sat_Obj.add(new Satellite("42063", "SENTINEL 2B", "Earth Observing(Ocean)", "Mar-7-2017", R.mipmap.ic_sentinel_2a_b_foreground));
-//        EUROPEAN_SPACE_AGENCY_Sat_Obj.add(new Satellite("41862", "GALILEO 18 (26E)", "Navigation", "Nov-17-2016", R.mipmap.ic_galileo_7_to_26_foc_fm3_to_fm22_foreground));
-//        EUROPEAN_SPACE_AGENCY_Sat_Obj.add(new Satellite("41861", "GALILEO 17 (26D)", "Navigation", "Nov-17-2016", R.mipmap.ic_galileo_7_to_26_foc_fm3_to_fm22_foreground));
-//        EUROPEAN_SPACE_AGENCY_Sat_Obj.add(new Satellite("41860", "GALILEO 16 (26C)", "Navigation", "Nov-17-2016", R.mipmap.ic_galileo_7_to_26_foc_fm3_to_fm22_foreground));
-//        EUROPEAN_SPACE_AGENCY_Sat_Obj.add(new Satellite("41859", "GALILEO 15 (267)", "Navigation", "Nov-17-2016", R.mipmap.ic_galileo_7_to_26_foc_fm3_to_fm22_foreground));
-//        EUROPEAN_SPACE_AGENCY_Sat_Obj.add(new Satellite("41550", "GALILEO 13 (26A)", "Navigation", "Nov-17-2016", R.mipmap.ic_galileo_7_to_26_foc_fm3_to_fm22_foreground));
-//        EUROPEAN_SPACE_AGENCY_Sat_Obj.add(new Satellite("41549", "GALILEO 14 (26B)", "Navigation", "May-24-2016", R.mipmap.ic_galileo_7_to_26_foc_fm3_to_fm22_foreground));
-//        EUROPEAN_SPACE_AGENCY_Sat_Obj.add(new Satellite("41456", "SENTINEL 1B", "Earth Observing(Radar)", "Apr-25-2016", R.mipmap.ic_sentinel_1a_b_foreground));
-//        EUROPEAN_SPACE_AGENCY_Sat_Obj.add(new Satellite("41388", "EXOMARS", "Mars Orbiter", "Mar-14-2016", R.mipmap.ic_exomars_foreground));
-//        EUROPEAN_SPACE_AGENCY_Sat_Obj.add(new Satellite("41335", "SENTINEL-3A", "Earth Observing(Ocean)", "Feb-16-2016", R.mipmap.ic_sentinel_3a_b_c_d_foreground));
-//        EUROPEAN_SPACE_AGENCY_Sat_Obj.add(new Satellite("41175", "GALILEO 11 (268)", "Navigation", "Dec-17-2015", R.mipmap.ic_galileo_7_to_26_foc_fm3_to_fm22_foreground));
-//        EUROPEAN_SPACE_AGENCY_Sat_Obj.add(new Satellite("41174", "GALILEO 12 (269)", "Navigation", "Dec-17-2015", R.mipmap.ic_galileo_7_to_26_foc_fm3_to_fm22_foreground));
-//        EUROPEAN_SPACE_AGENCY_Sat_Obj.add(new Satellite("41043", "LISA PATHFINDER", "Technology Experiments", "Dec-3-2015", R.mipmap.ic_lisa_pathfinder_foreground));
-//        EUROPEAN_SPACE_AGENCY_Sat_Obj.add(new Satellite("40890", "GALILEO 10 (206)", "Navigation", "Sep-11-2015", R.mipmap.ic_galileo_7_to_26_foc_fm3_to_fm22_foreground));
-//        EUROPEAN_SPACE_AGENCY_Sat_Obj.add(new Satellite("40889", "GALILEO 9 (205)", "Navigation", "Sep-11-2015", R.mipmap.ic_galileo_7_to_26_foc_fm3_to_fm22_foreground));
-//        EUROPEAN_SPACE_AGENCY_Sat_Obj.add(new Satellite("40697", "SENTINEL 2A", "Earth Observing(Ocean)", "Jun-23-2015", R.mipmap.ic_sentinel_2a_b_foreground));
-//        EUROPEAN_SPACE_AGENCY_Sat_Obj.add(new Satellite("40545", "GSAT0204", "Navigation", "Mar-27-2015", R.mipmap.ic_galileo_7_to_26_foc_fm3_to_fm22_foreground));
-//        EUROPEAN_SPACE_AGENCY_Sat_Obj.add(new Satellite("40544", "GSAT0203", "Navigation", "Mar-27-2015", R.mipmap.ic_galileo_7_to_26_foc_fm3_to_fm22_foreground));
-//        EUROPEAN_SPACE_AGENCY_Sat_Obj.add(new Satellite("40129", "GALILEO 6 (262)", "Navigation", "Aug-22-2014", R.mipmap.ic_galileo_7_to_26_foc_fm3_to_fm22_foreground));
-//        EUROPEAN_SPACE_AGENCY_Sat_Obj.add(new Satellite("40128", "GALILEO 5 (261)", "Navigation", "Aug-22-2014", R.mipmap.ic_galileo_7_to_26_foc_fm3_to_fm22_foreground));
-//        EUROPEAN_SPACE_AGENCY_Sat_Obj.add(new Satellite("39634", "SENTINEL 1A", "Earth Observing(Radar)", "Apr-3-2014", R.mipmap.ic_sentinel_1a_b_foreground));
-//        EUROPEAN_SPACE_AGENCY_Sat_Obj.add(new Satellite("39479", "GAIA", "Astrometry", "Dec-19-2013", R.mipmap.ic_gaia_foreground));
-//        EUROPEAN_SPACE_AGENCY_Sat_Obj.add(new Satellite("39453", "SWARM C", "Earth Science", "Nov-22-2013", R.mipmap.ic_swarm_a_b_c_foreground));
-//        EUROPEAN_SPACE_AGENCY_Sat_Obj.add(new Satellite("39452", "SWARM A", "Earth Science", "Nov-22-2013", R.mipmap.ic_swarm_a_b_c_foreground));
-//        EUROPEAN_SPACE_AGENCY_Sat_Obj.add(new Satellite("39451", "SWARM B", "Earth Science", "Nov-22-2013", R.mipmap.ic_swarm_a_b_c_foreground));
-//        EUROPEAN_SPACE_AGENCY_Sat_Obj.add(new Satellite("39159", "PROBA V", "Technology", "May-7-2013", R.mipmap.ic_proba_v_foreground));
-//        EUROPEAN_SPACE_AGENCY_Sat_Obj.add(new Satellite("38858", "GALILEO-FM4", "Navigation", "Oct-12-2012", R.mipmap.ic_galileo_fm1_fm4_foreground));
-//        EUROPEAN_SPACE_AGENCY_Sat_Obj.add(new Satellite("38857", "GALILEO-FM3", "Navigation", "Oct-12-2012", R.mipmap.ic_galileo_fm1_fm4_foreground));
-//        EUROPEAN_SPACE_AGENCY_Sat_Obj.add(new Satellite("37847", "GALILEO-FM2", "Navigation", "Oct-21-2011", R.mipmap.ic_galileo_fm1_fm4_foreground));
-//        EUROPEAN_SPACE_AGENCY_Sat_Obj.add(new Satellite("37846", "GALILEO-PFM", "Navigation", "Oct-21-2011", R.mipmap.ic_galileo_fm1_fm4_foreground));
-//        EUROPEAN_SPACE_AGENCY_Sat_Obj.add(new Satellite("36508", "CRYOSAT 2", "Radar Altimetry Mission", "Apr-8-2010", R.mipmap.ic_cryosat_1_2_foreground));
-//        EUROPEAN_SPACE_AGENCY_Sat_Obj.add(new Satellite("36037", "PROBA 2", "Technology", "Nov-2-2009", R.mipmap.ic_proba_2_foreground));
-//        EUROPEAN_SPACE_AGENCY_Sat_Obj.add(new Satellite("36036", "SMOS", "Earth Science", "Nov-2-2009", R.mipmap.ic_smos_foreground));
-//        EUROPEAN_SPACE_AGENCY_Sat_Obj.add(new Satellite("34938", "PLANCK", "Cosmic Background", "May-14-2009", R.mipmap.ic_planck_foreground));
-//        EUROPEAN_SPACE_AGENCY_Sat_Obj.add(new Satellite("34937", "HERSCHEL", "Astronomy", "May-14-2009", R.mipmap.ic_herschel_foreground));
-//        EUROPEAN_SPACE_AGENCY_Sat_Obj.add(new Satellite("32781", "GIOVE-B", "Navigation", "Apr-27-2008", R.mipmap.ic_giove_b_foreground));
-//        EUROPEAN_SPACE_AGENCY_Sat_Obj.add(new Satellite("28922", "GIOVE-A", "Navigation", "Dec-28-2005", R.mipmap.ic_giove_a_a2_foreground));
-//        EUROPEAN_SPACE_AGENCY_Sat_Obj.add(new Satellite("28901", "VENUS EXPRESS", "Venus Orbiter", "Nov-9-2005", R.mipmap.ic_venus_express_foreground));
-//        EUROPEAN_SPACE_AGENCY_Sat_Obj.add(new Satellite("28894", "SSETI-EXPRESS", "Technology", "Oct-27-2005", R.mipmap.ic_sseti_express_xo_53_express_oscar53_foreground));
-//        EUROPEAN_SPACE_AGENCY_Sat_Obj.add(new Satellite("28544", "SLOSHSAT", "Tech: Fluids In Weightlessness", "Feb-12-2005", R.mipmap.ic_sloshsat_foreground));
-//        EUROPEAN_SPACE_AGENCY_Sat_Obj.add(new Satellite("28169", "ROSETTA", "Comet Orbiter", "Mar-2-2004", R.mipmap.ic_rosetta_foreground));
-//        EUROPEAN_SPACE_AGENCY_Sat_Obj.add(new Satellite("27816", "MARS EXPRESS", "Mars Orbiter", "Jun-2-2003", R.mipmap.ic_mars_express_beagle_2_foreground));
-//        EUROPEAN_SPACE_AGENCY_Sat_Obj.add(new Satellite("27540", "INTEGRAL", "Astronomy,Gamma", "Oct-17-2002", R.mipmap.ic_integral_foreground));
-//        EUROPEAN_SPACE_AGENCY_Sat_Obj.add(new Satellite("27386", "ENVISAT", "Earth Observation", "Mar-1-2002", R.mipmap.ic_envisat_foreground));
-//        EUROPEAN_SPACE_AGENCY_Sat_Obj.add(new Satellite("26958", "PROBA 1", "Technology", "Oct-22-2001", R.mipmap.ic_proba_1_foreground));
-//        EUROPEAN_SPACE_AGENCY_Sat_Obj.add(new Satellite("26863", "ARTEMIS", "Experimental comm:", "Jul-12-2001", R.mipmap.ic_artemis_foreground));
-//        EUROPEAN_SPACE_AGENCY_Sat_Obj.add(new Satellite("26590", "INTELSAT 12 (PAS 12)", "Communication", "Oct-29-2000", R.mipmap.ic_eutelsat_25b_foreground));
-//        EUROPEAN_SPACE_AGENCY_Sat_Obj.add(new Satellite("26464", "CLUSTER II-FM8", "Magnetospheric Research", "Aug-9-2000", R.mipmap.ic_cluster_ii_fm5_fm8_1_to_8_foreground));
-//        EUROPEAN_SPACE_AGENCY_Sat_Obj.add(new Satellite("26463", "CLUSTER II-FM5", "Magnetospheric Research", "Aug-9-2000", R.mipmap.ic_cluster_ii_fm5_fm8_1_to_8_foreground));
-//        EUROPEAN_SPACE_AGENCY_Sat_Obj.add(new Satellite("26411", "CLUSTER II-FM7", "Magnetospheric Research", "Jul-16-2000", R.mipmap.ic_cluster_ii_fm5_fm8_1_to_8_foreground));
-//        EUROPEAN_SPACE_AGENCY_Sat_Obj.add(new Satellite("26410", "CLUSTER II-FM6", "Magnetospheric Research", "Jul-16-2000", R.mipmap.ic_cluster_ii_fm5_fm8_1_to_8_foreground));
-//        EUROPEAN_SPACE_AGENCY_Sat_Obj.add(new Satellite("25989", "XMM", "Astronomy,X-Ray", "Dec-10-1999", R.mipmap.ic_xmm_newton_foreground));
-//        EUROPEAN_SPACE_AGENCY_Sat_Obj.add(new Satellite("25025", "TEAMSAT", "", "Oct-30-1997", R.mipmap.ic_esa_foreground));
-//        EUROPEAN_SPACE_AGENCY_Sat_Obj.add(new Satellite("25024", "MAQSAT B", "Vehicle evaluation", "Oct-30-1997", R.mipmap.ic_maqsat_b_foreground));
-//        EUROPEAN_SPACE_AGENCY_Sat_Obj.add(new Satellite("25023", "MAQSAT H", "Vehicle evaluation", "Oct-30-1997", R.mipmap.ic_maqsat_h_or__teamsat_foreground));
-//        EUROPEAN_SPACE_AGENCY_Sat_Obj.add(new Satellite("23726", "SOHO", "Solar Observatory", "Dec-2-1995", R.mipmap.ic_soho_foreground));
-//        EUROPEAN_SPACE_AGENCY_Sat_Obj.add(new Satellite("23715", "ISO", "Astronomy,Infra-Red", "Nov-17-1995", R.mipmap.ic_iso_foreground));
-//        EUROPEAN_SPACE_AGENCY_Sat_Obj.add(new Satellite("23560", "ERS 2", "Earth Observing", "Apr-21-1995", R.mipmap.ic_ers_1_2_foreground));
-//        EUROPEAN_SPACE_AGENCY_Sat_Obj.add(new Satellite("21574", "ERS 1", "Earth Observing", "Jul-17, 1991", R.mipmap.ic_ers_1_2_foreground));
-//        EUROPEAN_SPACE_AGENCY_Sat_Obj.add(new Satellite("21140", "METEOSAT 5 (MOP 2)", "Meteorology", "Mar-2-1991", R.mipmap.ic_meteosat_1_to_7_foreground));
-//        EUROPEAN_SPACE_AGENCY_Sat_Obj.add(new Satellite("20169", "HIPPARCOS", "Astrometry", "Aug-8-1989", R.mipmap.ic_hipparcos_foreground));
-//        EUROPEAN_SPACE_AGENCY_Sat_Obj.add(new Satellite("20122", "OLYMPUS 1", "", "Jul-12-1989", R.mipmap.ic_olympus_f1_foreground));
-//        EUROPEAN_SPACE_AGENCY_Sat_Obj.add(new Satellite("19876", "METEOSAT 4 (MOP 1)", "Meteorology", "Mar-6-1989", R.mipmap.ic_meteosat_1_to_7_foreground));
-//        EUROPEAN_SPACE_AGENCY_Sat_Obj.add(new Satellite("19215", "METEOSAT 3", "Meteorology", "Jun-15-1988", R.mipmap.ic_meteosat_1_to_7_foreground));
-//        EUROPEAN_SPACE_AGENCY_Sat_Obj.add(new Satellite("15875", "GIOTTO", "Comet Flyby", "Jul-2-1985", R.mipmap.ic_giotto_foreground));
-//        EUROPEAN_SPACE_AGENCY_Sat_Obj.add(new Satellite("15386", "MARECS B2", "Communication", "Nov-10-1984", R.mipmap.ic_marecs_a_b_b2_foreground));
-//        EUROPEAN_SPACE_AGENCY_Sat_Obj.add(new Satellite("13011", "CAT 4", "Vehicle Evaluation", "Dec-20-1981", R.mipmap.ic_cat_1_2_4_foreground));
-//        EUROPEAN_SPACE_AGENCY_Sat_Obj.add(new Satellite("13010", "MARECS A", "Communication", "Dec-20-1981", R.mipmap.ic_marecs_a_b_b2_foreground));
-//        EUROPEAN_SPACE_AGENCY_Sat_Obj.add(new Satellite("12546", "CAT 3", "Vehicle Evaluation", "Jun-19-1981", R.mipmap.ic_cat_1_2_4_foreground));
-//        EUROPEAN_SPACE_AGENCY_Sat_Obj.add(new Satellite("12544", "METEOSAT 2", "Meteorology", "Jun-19-1981", R.mipmap.ic_meteosat_1_to_7_foreground));
-//        EUROPEAN_SPACE_AGENCY_Sat_Obj.add(new Satellite("10981", "GEOS 2", "Research", "Jul-14-1978", R.mipmap.ic_esa_geos_1_2_foreground));
-//        EUROPEAN_SPACE_AGENCY_Sat_Obj.add(new Satellite("10855", "OTS 2", "Communication", "May-11-1978", R.mipmap.ic_ots_1_2_foreground));
-//        EUROPEAN_SPACE_AGENCY_Sat_Obj.add(new Satellite("10489", "METEOSAT 1", "Meteorology", "Nov-23-1977", R.mipmap.ic_meteosat_1_to_7_foreground));
-//        EUROPEAN_SPACE_AGENCY_Sat_Obj.add(new Satellite("9931", "ESA/GOES", "Research", "Apr-20-1977", R.mipmap.ic_esa_geos_1_2_foreground));
-//        return EUROPEAN_SPACE_AGENCY_Sat_Obj;
-//    }
-//
+    public List<Satellite> FORMER_CZECHOSLOVAKIA_List() {
+        FORMER_CZECHOSLOVAKIA_Sat_Obj = new ArrayList<>();
+        FORMER_CZECHOSLOVAKIA_Sat_Obj.add(new Satellite("21835", "MAGION 3", "", "Dec-18-1991", R.mipmap.ic_czechia_foreground));
+        FORMER_CZECHOSLOVAKIA_Sat_Obj.add(new Satellite("20281", "MAGION 2", "", "Sep-28-1989", R.mipmap.ic_czechia_foreground));
+        return FORMER_CZECHOSLOVAKIA_Sat_Obj;
+    }
+
+    public List<Satellite> CHINA_BRAZIL_List() {
+        CHINA_BRAZIL_Sat_Obj = new ArrayList<>();
+        CHINA_BRAZIL_Sat_Obj.add(new Satellite("32062", "CBERS 2B", "Earth Observation", "Sep-19-2007", R.mipmap.ic_china_brazil_foreground));
+        CHINA_BRAZIL_Sat_Obj.add(new Satellite("28057", "CBERS 2", "Earth Observation", "Oct-21-2003", R.mipmap.ic_china_brazil_foreground));
+        CHINA_BRAZIL_Sat_Obj.add(new Satellite("25940", "CBERS 1", "Earth Observation", "Oct-14-1999", R.mipmap.ic_china_brazil_foreground));
+        return CHINA_BRAZIL_Sat_Obj;
+    }
+
+    public List<Satellite> FRANCE_GERMANY_List() {
+        FRANCE_GERMANY_Sat_Obj = new ArrayList<>();
+        FRANCE_GERMANY_Sat_Obj.add(new Satellite("8132", "SYMPHONIE 2", "Communication", "Aug-27-1975", R.mipmap.ic_france_germany_foreground));
+        FRANCE_GERMANY_Sat_Obj.add(new Satellite("7578", "SYMPHONIE 1", "Communication", "Dec-19-1974", R.mipmap.ic_france_germany_foreground));
+        return FRANCE_GERMANY_Sat_Obj;
+    }
+
+    public List<Satellite> FRANCE_ITALY_List() {
+        FRANCE_ITALY_Sat_Obj = new ArrayList<>();
+        FRANCE_ITALY_Sat_Obj.add(new Satellite("40614", "SICRAL 2", "Military Communication", "Apr-26-2015", R.mipmap.ic_franc_italy_foreground));
+        FRANCE_ITALY_Sat_Obj.add(new Satellite("39509", "ATHENA-FIDUS", "Military Communication", "Feb-6-2014", R.mipmap.ic_franc_italy_foreground));
+        return FRANCE_ITALY_Sat_Obj;
+    }
+
+    public List<Satellite> SINGAPORE_TAIWAN_List() {
+        SINGAPORE_TAIWAN_Sat_Obj = new ArrayList<>();
+        SINGAPORE_TAIWAN_Sat_Obj.add(new Satellite("37606", "ST 2", "Communication", "May-20-2011", R.mipmap.ic_singapore_taiwan_foreground));
+        SINGAPORE_TAIWAN_Sat_Obj.add(new Satellite("25460", "ST 1", "Communication", "Aug-25-1998", R.mipmap.ic_singapore_taiwan_foreground));
+        return SINGAPORE_TAIWAN_Sat_Obj;
+    }
+
+    public List<Satellite> TURKMENISTAN_MONACO_List() {
+        TURKMENISTAN_MONACO = new ArrayList<>();
+        TURKMENISTAN_MONACO.add(new Satellite("40617", "TURKMENALEM52E/MONACOSAT", "Communication", "Apr-27-2015", R.mipmap.ic_turkmenistan_monaco_foreground));
+        return TURKMENISTAN_MONACO;
+    }
+
+    public List<Satellite> UNITED_STATES_BRAZIL_List() {
+        UNITED_STATES_BRAZIL_Sat_Obj = new ArrayList<>();
+        UNITED_STATES_BRAZIL_Sat_Obj.add(new Satellite("28137", "ESTRELA DU SOL-TELSTAR14", "Communication", "Jan-11-2004", R.mipmap.ic_usa_brazil_foreground));
+        return UNITED_STATES_BRAZIL_Sat_Obj;
+    }
+
+    public List<Satellite> ARAB_SATELLITE_COMMUNICATIONS_ORGANIZATION_ARABSAT_List() {
+        ARAB_SAT_COMM_ORG_Sat_Obj = new ArrayList<>();
+        ARAB_SAT_COMM_ORG_Sat_Obj.add(new Satellite("41029", "BADR 7(ARABSAT-6B)", "", "Nov-10-2015", R.mipmap.ic_arabsat_foreground));
+        ARAB_SAT_COMM_ORG_Sat_Obj.add(new Satellite("37810", "ARABSAT 5C", "", "Sep-21-2011", R.mipmap.ic_arabsat_foreground));
+        ARAB_SAT_COMM_ORG_Sat_Obj.add(new Satellite("36745", "ARABSAT 5A", "", "Jun-26-2010", R.mipmap.ic_arabsat_foreground));
+        ARAB_SAT_COMM_ORG_Sat_Obj.add(new Satellite("36592", "BADR-5(ARABSAT 5B)", "", "Jun-3-2010", R.mipmap.ic_arabsat_foreground));
+        ARAB_SAT_COMM_ORG_Sat_Obj.add(new Satellite("33154", "BADR 6", "", "Jul-7-2008", R.mipmap.ic_arabsat_foreground));
+        ARAB_SAT_COMM_ORG_Sat_Obj.add(new Satellite("29526", "ARABSAT 4B", "", "Nov-8-2006", R.mipmap.ic_arabsat_foreground));
+        ARAB_SAT_COMM_ORG_Sat_Obj.add(new Satellite("25638", "ARABSAT 3A", "", "Feb-26-1999", R.mipmap.ic_arabsat_foreground));
+        ARAB_SAT_COMM_ORG_Sat_Obj.add(new Satellite("24652", "ARABSAT 2B", "", "Nov-13-1996", R.mipmap.ic_arabsat_foreground));
+        ARAB_SAT_COMM_ORG_Sat_Obj.add(new Satellite("23948", "ARABSAT 2A", "", "Jul-9-1996", R.mipmap.ic_arabsat_foreground));
+        ARAB_SAT_COMM_ORG_Sat_Obj.add(new Satellite("15825", "ARABSAT 1B", "", "Jun-17-1985", R.mipmap.ic_arabsat_foreground));
+        ARAB_SAT_COMM_ORG_Sat_Obj.add(new Satellite("15560", "ARABSAT 1A", "", "Feb-8-1985", R.mipmap.ic_arabsat_foreground));
+        ARAB_SAT_COMM_ORG_Sat_Obj.add(new Satellite("15383", "ARABSAT 1D(ANIK D2)", "", "Nov-8-1984", R.mipmap.ic_arabsat_foreground));
+        ARAB_SAT_COMM_ORG_Sat_Obj.add(new Satellite("14234", "ARABSAT 1DR(TELSTAR 3A)", "", "Jul-28-1983", R.mipmap.ic_arabsat_foreground));
+        return ARAB_SAT_COMM_ORG_Sat_Obj;
+    }
+
+    public List<Satellite> ASIA_SATELLITE_TELECOMMUNICATIONS_COMPANY_ASIASAT_List() {
+        ASIASAT_Sat_Obj = new ArrayList<>();
+        ASIASAT_Sat_Obj.add(new Satellite("42942", "ASIASAT 9", "", "Sep-28-2017", R.mipmap.ic_asiasat_foreground));
+        ASIASAT_Sat_Obj.add(new Satellite("40141", "ASIASAT 6", "", "Sep-7-2014", R.mipmap.ic_asiasat_foreground));
+        ASIASAT_Sat_Obj.add(new Satellite("40107", "ASIASAT 8", "", "Aug-5-2014", R.mipmap.ic_asiasat_foreground));
+        ASIASAT_Sat_Obj.add(new Satellite("37933", "ASIASAT 7", "", "Nov-25-2011", R.mipmap.ic_asiasat_foreground));
+        ASIASAT_Sat_Obj.add(new Satellite("35696", "ASIASAT 5", "", "Aug-11-2009", R.mipmap.ic_asiasat_foreground));
+        ASIASAT_Sat_Obj.add(new Satellite("27718", "ASIASAT 4", "", "Apr-12-2003", R.mipmap.ic_asiasat_foreground));
+        ASIASAT_Sat_Obj.add(new Satellite("25657", "ASIASAT 3S", "", "Mar-2-1999", R.mipmap.ic_asiasat_foreground));
+        ASIASAT_Sat_Obj.add(new Satellite("20558", "ASIASAT 1", "", "Apr-7-1990", R.mipmap.ic_asiasat_foreground));
+        return ASIASAT_Sat_Obj;
+    }
+
+    public List<Satellite> EUROPEAN_ORGANISATION_FOR_THE_EXPLOITATION_EUMETSAT_List() {
+        EUMETSAT_Sat_Obj = new ArrayList<>();
+        EUMETSAT_Sat_Obj.add(new Satellite("40732", "MSG 4", "Meteorology", "Jul-15-2015", R.mipmap.eumetsat_round));
+        EUMETSAT_Sat_Obj.add(new Satellite("38771", "METOP-B", "Meteorology", "Sep-17-2012", R.mipmap.eumetsat_round));
+        EUMETSAT_Sat_Obj.add(new Satellite("38552", "METEOSAT 10(MSG 3)", "Meteorology", "Jul-5-2012", R.mipmap.eumetsat_round));
+        EUMETSAT_Sat_Obj.add(new Satellite("29499", "METOP-A", "Meteorology", "Oct-19-2006", R.mipmap.eumetsat_round));
+        EUMETSAT_Sat_Obj.add(new Satellite("28912", "METEOSAT 9(MSG 2)", "Meteorology", "Dec-21-2005", R.mipmap.eumetsat_round));
+        EUMETSAT_Sat_Obj.add(new Satellite("27509", "METEOSAT 8(MSG 1)", "Meteorology", "Aug-28-2002", R.mipmap.eumetsat_round));
+        EUMETSAT_Sat_Obj.add(new Satellite("24932", "METEOSAT 7", "Meteorology", "Sep-2-1997", R.mipmap.eumetsat_round));
+        EUMETSAT_Sat_Obj.add(new Satellite("22912", "METEOSAT 6", "Meteorology", "Nov-20-1993", R.mipmap.eumetsat_round));
+        return EUMETSAT_Sat_Obj;
+    }
+
+    public List<Satellite> EUROPEAN_SPACE_AGENCY_ESA_List() {
+        EUROPEAN_SPACE_AGENCY_Sat_Obj = new ArrayList<>();
+        EUROPEAN_SPACE_AGENCY_Sat_Obj.add(new Satellite("43437", "SENTINEL 3B", "Earth Observing (Ocean)", "Apr-25-2018", R.mipmap.ic_esa_foreground));
+        EUROPEAN_SPACE_AGENCY_Sat_Obj.add(new Satellite("43196", "GOMX4-B", "Technology", "Feb-2-2018", R.mipmap.ic_esa_foreground));
+        EUROPEAN_SPACE_AGENCY_Sat_Obj.add(new Satellite("43058", "GALILEO 22 (2C8)", "Navigation", "Dec-12-2017", R.mipmap.ic_esa_foreground));
+        EUROPEAN_SPACE_AGENCY_Sat_Obj.add(new Satellite("43057", "GALILEO 21 (2C7)", "Navigation", "Dec-12-2017", R.mipmap.ic_esa_foreground));
+        EUROPEAN_SPACE_AGENCY_Sat_Obj.add(new Satellite("43056", "GALILEO 20 (2C6)", "Navigation", "Dec-12-2017", R.mipmap.ic_esa_foreground));
+        EUROPEAN_SPACE_AGENCY_Sat_Obj.add(new Satellite("43055", "GALILEO 19 (2C5)", "Navigation", "Dec-12-2017", R.mipmap.ic_esa_foreground));
+        EUROPEAN_SPACE_AGENCY_Sat_Obj.add(new Satellite("42969", "SENTINEL 5P", "Earth Observing", "Oct-13-2017", R.mipmap.ic_esa_foreground));
+        EUROPEAN_SPACE_AGENCY_Sat_Obj.add(new Satellite("42814", "HELLAS-SAT 3", "Communication", "Jun-28-2017", R.mipmap.ic_esa_foreground));
+        EUROPEAN_SPACE_AGENCY_Sat_Obj.add(new Satellite("42063", "SENTINEL 2B", "Earth Observing(Ocean)", "Mar-7-2017", R.mipmap.ic_esa_foreground));
+        EUROPEAN_SPACE_AGENCY_Sat_Obj.add(new Satellite("41862", "GALILEO 18 (26E)", "Navigation", "Nov-17-2016", R.mipmap.ic_esa_foreground));
+        EUROPEAN_SPACE_AGENCY_Sat_Obj.add(new Satellite("41861", "GALILEO 17 (26D)", "Navigation", "Nov-17-2016", R.mipmap.ic_esa_foreground));
+        EUROPEAN_SPACE_AGENCY_Sat_Obj.add(new Satellite("41860", "GALILEO 16 (26C)", "Navigation", "Nov-17-2016", R.mipmap.ic_esa_foreground));
+        EUROPEAN_SPACE_AGENCY_Sat_Obj.add(new Satellite("41859", "GALILEO 15 (267)", "Navigation", "Nov-17-2016", R.mipmap.ic_esa_foreground));
+        EUROPEAN_SPACE_AGENCY_Sat_Obj.add(new Satellite("41550", "GALILEO 13 (26A)", "Navigation", "Nov-17-2016", R.mipmap.ic_esa_foreground));
+        EUROPEAN_SPACE_AGENCY_Sat_Obj.add(new Satellite("41549", "GALILEO 14 (26B)", "Navigation", "May-24-2016", R.mipmap.ic_esa_foreground));
+        EUROPEAN_SPACE_AGENCY_Sat_Obj.add(new Satellite("41456", "SENTINEL 1B", "Earth Observing(Radar)", "Apr-25-2016", R.mipmap.ic_esa_foreground));
+        EUROPEAN_SPACE_AGENCY_Sat_Obj.add(new Satellite("41388", "EXOMARS", "Mars Orbiter", "Mar-14-2016", R.mipmap.ic_esa_foreground));
+        EUROPEAN_SPACE_AGENCY_Sat_Obj.add(new Satellite("41335", "SENTINEL-3A", "Earth Observing(Ocean)", "Feb-16-2016", R.mipmap.ic_esa_foreground));
+        EUROPEAN_SPACE_AGENCY_Sat_Obj.add(new Satellite("41175", "GALILEO 11 (268)", "Navigation", "Dec-17-2015", R.mipmap.ic_esa_foreground));
+        EUROPEAN_SPACE_AGENCY_Sat_Obj.add(new Satellite("41174", "GALILEO 12 (269)", "Navigation", "Dec-17-2015", R.mipmap.ic_esa_foreground));
+        EUROPEAN_SPACE_AGENCY_Sat_Obj.add(new Satellite("41043", "LISA PATHFINDER", "Technology Experiments", "Dec-3-2015", R.mipmap.ic_esa_foreground));
+        EUROPEAN_SPACE_AGENCY_Sat_Obj.add(new Satellite("40890", "GALILEO 10 (206)", "Navigation", "Sep-11-2015", R.mipmap.ic_esa_foreground));
+        EUROPEAN_SPACE_AGENCY_Sat_Obj.add(new Satellite("40889", "GALILEO 9 (205)", "Navigation", "Sep-11-2015", R.mipmap.ic_esa_foreground));
+        EUROPEAN_SPACE_AGENCY_Sat_Obj.add(new Satellite("40697", "SENTINEL 2A", "Earth Observing(Ocean)", "Jun-23-2015", R.mipmap.ic_esa_foreground));
+        EUROPEAN_SPACE_AGENCY_Sat_Obj.add(new Satellite("40545", "GSAT0204", "Navigation", "Mar-27-2015", R.mipmap.ic_esa_foreground));
+        EUROPEAN_SPACE_AGENCY_Sat_Obj.add(new Satellite("40544", "GSAT0203", "Navigation", "Mar-27-2015", R.mipmap.ic_esa_foreground));
+        EUROPEAN_SPACE_AGENCY_Sat_Obj.add(new Satellite("40129", "GALILEO 6 (262)", "Navigation", "Aug-22-2014", R.mipmap.ic_esa_foreground));
+        EUROPEAN_SPACE_AGENCY_Sat_Obj.add(new Satellite("40128", "GALILEO 5 (261)", "Navigation", "Aug-22-2014", R.mipmap.ic_esa_foreground));
+        EUROPEAN_SPACE_AGENCY_Sat_Obj.add(new Satellite("39634", "SENTINEL 1A", "Earth Observing(Radar)", "Apr-3-2014", R.mipmap.ic_esa_foreground));
+        EUROPEAN_SPACE_AGENCY_Sat_Obj.add(new Satellite("39479", "GAIA", "Astrometry", "Dec-19-2013", R.mipmap.ic_esa_foreground));
+        EUROPEAN_SPACE_AGENCY_Sat_Obj.add(new Satellite("39453", "SWARM C", "Earth Science", "Nov-22-2013", R.mipmap.ic_esa_foreground));
+        EUROPEAN_SPACE_AGENCY_Sat_Obj.add(new Satellite("39452", "SWARM A", "Earth Science", "Nov-22-2013", R.mipmap.ic_esa_foreground));
+        EUROPEAN_SPACE_AGENCY_Sat_Obj.add(new Satellite("39451", "SWARM B", "Earth Science", "Nov-22-2013", R.mipmap.ic_esa_foreground));
+        EUROPEAN_SPACE_AGENCY_Sat_Obj.add(new Satellite("39159", "PROBA V", "Technology", "May-7-2013", R.mipmap.ic_esa_foreground));
+        EUROPEAN_SPACE_AGENCY_Sat_Obj.add(new Satellite("38858", "GALILEO-FM4", "Navigation", "Oct-12-2012", R.mipmap.ic_esa_foreground));
+        EUROPEAN_SPACE_AGENCY_Sat_Obj.add(new Satellite("38857", "GALILEO-FM3", "Navigation", "Oct-12-2012", R.mipmap.ic_esa_foreground));
+        EUROPEAN_SPACE_AGENCY_Sat_Obj.add(new Satellite("37847", "GALILEO-FM2", "Navigation", "Oct-21-2011", R.mipmap.ic_esa_foreground));
+        EUROPEAN_SPACE_AGENCY_Sat_Obj.add(new Satellite("37846", "GALILEO-PFM", "Navigation", "Oct-21-2011", R.mipmap.ic_esa_foreground));
+        EUROPEAN_SPACE_AGENCY_Sat_Obj.add(new Satellite("36508", "CRYOSAT 2", "Radar Altimetry Mission", "Apr-8-2010", R.mipmap.ic_esa_foreground));
+        EUROPEAN_SPACE_AGENCY_Sat_Obj.add(new Satellite("36037", "PROBA 2", "Technology", "Nov-2-2009", R.mipmap.ic_esa_foreground));
+        EUROPEAN_SPACE_AGENCY_Sat_Obj.add(new Satellite("36036", "SMOS", "Earth Science", "Nov-2-2009", R.mipmap.ic_esa_foreground));
+        EUROPEAN_SPACE_AGENCY_Sat_Obj.add(new Satellite("34938", "PLANCK", "Cosmic Background", "May-14-2009", R.mipmap.ic_esa_foreground));
+        EUROPEAN_SPACE_AGENCY_Sat_Obj.add(new Satellite("34937", "HERSCHEL", "Astronomy", "May-14-2009", R.mipmap.ic_esa_foreground));
+        EUROPEAN_SPACE_AGENCY_Sat_Obj.add(new Satellite("32781", "GIOVE-B", "Navigation", "Apr-27-2008", R.mipmap.ic_esa_foreground));
+        EUROPEAN_SPACE_AGENCY_Sat_Obj.add(new Satellite("28922", "GIOVE-A", "Navigation", "Dec-28-2005", R.mipmap.ic_esa_foreground));
+        EUROPEAN_SPACE_AGENCY_Sat_Obj.add(new Satellite("28901", "VENUS EXPRESS", "Venus Orbiter", "Nov-9-2005", R.mipmap.ic_esa_foreground));
+        EUROPEAN_SPACE_AGENCY_Sat_Obj.add(new Satellite("28894", "SSETI-EXPRESS", "Technology", "Oct-27-2005", R.mipmap.ic_esa_foreground));
+        EUROPEAN_SPACE_AGENCY_Sat_Obj.add(new Satellite("28544", "SLOSHSAT", "Tech: Fluids In Weightlessness", "Feb-12-2005", R.mipmap.ic_esa_foreground));
+        EUROPEAN_SPACE_AGENCY_Sat_Obj.add(new Satellite("28169", "ROSETTA", "Comet Orbiter", "Mar-2-2004", R.mipmap.ic_esa_foreground));
+        EUROPEAN_SPACE_AGENCY_Sat_Obj.add(new Satellite("27816", "MARS EXPRESS", "Mars Orbiter", "Jun-2-2003", R.mipmap.ic_esa_foreground));
+        EUROPEAN_SPACE_AGENCY_Sat_Obj.add(new Satellite("27540", "INTEGRAL", "Astronomy,Gamma", "Oct-17-2002", R.mipmap.ic_esa_foreground));
+        EUROPEAN_SPACE_AGENCY_Sat_Obj.add(new Satellite("27386", "ENVISAT", "Earth Observation", "Mar-1-2002", R.mipmap.ic_esa_foreground));
+        EUROPEAN_SPACE_AGENCY_Sat_Obj.add(new Satellite("26958", "PROBA 1", "Technology", "Oct-22-2001", R.mipmap.ic_esa_foreground));
+        EUROPEAN_SPACE_AGENCY_Sat_Obj.add(new Satellite("26863", "ARTEMIS", "Experimental comm:", "Jul-12-2001", R.mipmap.ic_esa_foreground));
+        EUROPEAN_SPACE_AGENCY_Sat_Obj.add(new Satellite("26590", "INTELSAT 12 (PAS 12)", "Communication", "Oct-29-2000", R.mipmap.ic_esa_foreground));
+        EUROPEAN_SPACE_AGENCY_Sat_Obj.add(new Satellite("26464", "CLUSTER II-FM8", "Magnetospheric Research", "Aug-9-2000", R.mipmap.ic_esa_foreground));
+        EUROPEAN_SPACE_AGENCY_Sat_Obj.add(new Satellite("26463", "CLUSTER II-FM5", "Magnetospheric Research", "Aug-9-2000", R.mipmap.ic_esa_foreground));
+        EUROPEAN_SPACE_AGENCY_Sat_Obj.add(new Satellite("26411", "CLUSTER II-FM7", "Magnetospheric Research", "Jul-16-2000", R.mipmap.ic_esa_foreground));
+        EUROPEAN_SPACE_AGENCY_Sat_Obj.add(new Satellite("26410", "CLUSTER II-FM6", "Magnetospheric Research", "Jul-16-2000", R.mipmap.ic_esa_foreground));
+        EUROPEAN_SPACE_AGENCY_Sat_Obj.add(new Satellite("25989", "XMM", "Astronomy,X-Ray", "Dec-10-1999", R.mipmap.ic_esa_foreground));
+        EUROPEAN_SPACE_AGENCY_Sat_Obj.add(new Satellite("25025", "TEAMSAT", "", "Oct-30-1997", R.mipmap.ic_esa_foreground));
+        EUROPEAN_SPACE_AGENCY_Sat_Obj.add(new Satellite("25024", "MAQSAT B", "Vehicle evaluation", "Oct-30-1997", R.mipmap.ic_esa_foreground));
+        EUROPEAN_SPACE_AGENCY_Sat_Obj.add(new Satellite("25023", "MAQSAT H", "Vehicle evaluation", "Oct-30-1997", R.mipmap.ic_esa_foreground));
+        EUROPEAN_SPACE_AGENCY_Sat_Obj.add(new Satellite("23726", "SOHO", "Solar Observatory", "Dec-2-1995", R.mipmap.ic_esa_foreground));
+        EUROPEAN_SPACE_AGENCY_Sat_Obj.add(new Satellite("23715", "ISO", "Astronomy,Infra-Red", "Nov-17-1995", R.mipmap.ic_esa_foreground));
+        EUROPEAN_SPACE_AGENCY_Sat_Obj.add(new Satellite("23560", "ERS 2", "Earth Observing", "Apr-21-1995", R.mipmap.ic_esa_foreground));
+        EUROPEAN_SPACE_AGENCY_Sat_Obj.add(new Satellite("21574", "ERS 1", "Earth Observing", "Jul-17, 1991", R.mipmap.ic_esa_foreground));
+        EUROPEAN_SPACE_AGENCY_Sat_Obj.add(new Satellite("21140", "METEOSAT 5 (MOP 2)", "Meteorology", "Mar-2-1991", R.mipmap.ic_esa_foreground));
+        EUROPEAN_SPACE_AGENCY_Sat_Obj.add(new Satellite("20169", "HIPPARCOS", "Astrometry", "Aug-8-1989", R.mipmap.ic_esa_foreground));
+        EUROPEAN_SPACE_AGENCY_Sat_Obj.add(new Satellite("20122", "OLYMPUS 1", "", "Jul-12-1989", R.mipmap.ic_esa_foreground));
+        EUROPEAN_SPACE_AGENCY_Sat_Obj.add(new Satellite("19876", "METEOSAT 4 (MOP 1)", "Meteorology", "Mar-6-1989", R.mipmap.ic_esa_foreground));
+        EUROPEAN_SPACE_AGENCY_Sat_Obj.add(new Satellite("19215", "METEOSAT 3", "Meteorology", "Jun-15-1988", R.mipmap.ic_esa_foreground));
+        EUROPEAN_SPACE_AGENCY_Sat_Obj.add(new Satellite("15875", "GIOTTO", "Comet Flyby", "Jul-2-1985", R.mipmap.ic_esa_foreground));
+        EUROPEAN_SPACE_AGENCY_Sat_Obj.add(new Satellite("15386", "MARECS B2", "Communication", "Nov-10-1984", R.mipmap.ic_esa_foreground));
+        EUROPEAN_SPACE_AGENCY_Sat_Obj.add(new Satellite("13011", "CAT 4", "Vehicle Evaluation", "Dec-20-1981", R.mipmap.ic_esa_foreground));
+        EUROPEAN_SPACE_AGENCY_Sat_Obj.add(new Satellite("13010", "MARECS A", "Communication", "Dec-20-1981", R.mipmap.ic_esa_foreground));
+        EUROPEAN_SPACE_AGENCY_Sat_Obj.add(new Satellite("12546", "CAT 3", "Vehicle Evaluation", "Jun-19-1981", R.mipmap.ic_esa_foreground));
+        EUROPEAN_SPACE_AGENCY_Sat_Obj.add(new Satellite("12544", "METEOSAT 2", "Meteorology", "Jun-19-1981", R.mipmap.ic_esa_foreground));
+        EUROPEAN_SPACE_AGENCY_Sat_Obj.add(new Satellite("10981", "GEOS 2", "Research", "Jul-14-1978", R.mipmap.ic_esa_foreground));
+        EUROPEAN_SPACE_AGENCY_Sat_Obj.add(new Satellite("10855", "OTS 2", "Communication", "May-11-1978", R.mipmap.ic_esa_foreground));
+        EUROPEAN_SPACE_AGENCY_Sat_Obj.add(new Satellite("10489", "METEOSAT 1", "Meteorology", "Nov-23-1977", R.mipmap.ic_esa_foreground));
+        EUROPEAN_SPACE_AGENCY_Sat_Obj.add(new Satellite("9931", "ESA/GOES", "Research", "Apr-20-1977", R.mipmap.ic_esa_foreground));
+        return EUROPEAN_SPACE_AGENCY_Sat_Obj;
+    }
+
 //    public List<Satellite> EUROPEAN_TELECOMMUNICATIONS_SATELLITE_ORGANIZATION_EUTELSAT_List() {
 //        EUTELSAT_Sat_Obj = new ArrayList<>();
 //        EUTELSAT_Sat_Obj.add(new Satellite("42741", "EUTELSAT 172B", "Communication", "Jun-1-2017", R.mipmap.ic_nimiq_4_foreground));
@@ -3910,67 +3910,67 @@ public class MainActivity extends AppCompatActivity implements CountryAdapter.IC
 //        SEA_LAUNCH_Sat_Obj.add(new Satellite("25661","SEA LAUNCH DEMO","","Mar-28-1999",R.mipmap.ic_sea_launch_foreground));
 //        return SEA_LAUNCH_Sat_Obj;
 //    }
-//    //ssss//
-//    public List<Satellite> SOCIETE_EUROPEENNE_DES_SATELLITES_SES_List() {
-//        SOCIETE_EUROPEENNE_DES_SATELLITES_Sat_Obj=new ArrayList<>();
-//        SOCIETE_EUROPEENNE_DES_SATELLITES_Sat_Obj.add(new Satellite("43488","SES-12","","Jun-4-2018",R.mipmap.ic_ses_foreground));
-//        SOCIETE_EUROPEENNE_DES_SATELLITES_Sat_Obj.add(new Satellite("43178","SES-16/GOVSAT-1","","Jan-31-2018",R.mipmap.ic_ses_foreground));
-//        SOCIETE_EUROPEENNE_DES_SATELLITES_Sat_Obj.add(new Satellite("43175","SES 14","","Jan-25-2018",R.mipmap.ic_ses_foreground));
-//        SOCIETE_EUROPEENNE_DES_SATELLITES_Sat_Obj.add(new Satellite("42967","ECHOSTAR 105/SES 11","","Oct-11-2017",R.mipmap.ic_ses_foreground));
-//        SOCIETE_EUROPEENNE_DES_SATELLITES_Sat_Obj.add(new Satellite("42709","SES-15","","May-18-2017",R.mipmap.ic_ses_foreground));
-//        SOCIETE_EUROPEENNE_DES_SATELLITES_Sat_Obj.add(new Satellite("42432","SES-10","","Mar-30-2017",R.mipmap.ic_ses_foreground));
-//        SOCIETE_EUROPEENNE_DES_SATELLITES_Sat_Obj.add(new Satellite("40364","ASTRA 2G","","Dec-27-2014",R.mipmap.ic_ses_foreground));
-//        SOCIETE_EUROPEENNE_DES_SATELLITES_Sat_Obj.add(new Satellite("39617","ASTRA 5B","","Mar-22-2014",R.mipmap.ic_ses_foreground));
-//        SOCIETE_EUROPEENNE_DES_SATELLITES_Sat_Obj.add(new Satellite("39285","ASTRA 2E","","Sep-29-2013",R.mipmap.ic_ses_foreground));
-//        SOCIETE_EUROPEENNE_DES_SATELLITES_Sat_Obj.add(new Satellite("39172","SES-6","","Jun-3-2013",R.mipmap.ic_ses_foreground));
-//        SOCIETE_EUROPEENNE_DES_SATELLITES_Sat_Obj.add(new Satellite("38778","ASTRA 2F","","Sep-28-2012",R.mipmap.ic_ses_foreground));
-//        SOCIETE_EUROPEENNE_DES_SATELLITES_Sat_Obj.add(new Satellite("38652","SES 5","","Jul-9-2012",R.mipmap.ic_ses_foreground));
-//        SOCIETE_EUROPEENNE_DES_SATELLITES_Sat_Obj.add(new Satellite("38087","SES 4","","Feb-14-2012",R.mipmap.ic_ses_foreground));
-//        SOCIETE_EUROPEENNE_DES_SATELLITES_Sat_Obj.add(new Satellite("37809","SES 2","","Sep-21-2011",R.mipmap.ic_ses_foreground));
-//        SOCIETE_EUROPEENNE_DES_SATELLITES_Sat_Obj.add(new Satellite("37775","ASTRA 1N","","Aug-6-2011",R.mipmap.ic_ses_foreground));
-//        SOCIETE_EUROPEENNE_DES_SATELLITES_Sat_Obj.add(new Satellite("36581","ASTRA 3B","","May-21-2010",R.mipmap.ic_ses_foreground));
-//        SOCIETE_EUROPEENNE_DES_SATELLITES_Sat_Obj.add(new Satellite("36516","SES 1","","Apr-24-2010",R.mipmap.ic_ses_foreground));
-//        SOCIETE_EUROPEENNE_DES_SATELLITES_Sat_Obj.add(new Satellite("36032","NSS 12","","Oct-29-2009",R.mipmap.ic_ses_foreground));
-//        SOCIETE_EUROPEENNE_DES_SATELLITES_Sat_Obj.add(new Satellite("34941","SES 7(PROTOSTAR 2)","","May-16-2009",R.mipmap.ic_ses_foreground));
-//        SOCIETE_EUROPEENNE_DES_SATELLITES_Sat_Obj.add(new Satellite("33749","NSS 9","","Feb-12-2009",R.mipmap.ic_ses_foreground));
-//        SOCIETE_EUROPEENNE_DES_SATELLITES_Sat_Obj.add(new Satellite("33436","ASTRA 1M","","Nov-5-2008",R.mipmap.ic_ses_foreground));
-//        SOCIETE_EUROPEENNE_DES_SATELLITES_Sat_Obj.add(new Satellite("33275","AMC-21","","Aug-14-2008",R.mipmap.ic_ses_foreground));
-//        SOCIETE_EUROPEENNE_DES_SATELLITES_Sat_Obj.add(new Satellite("32299","ASTRA 4A(SIRIUS 4)","","Nov-17-2007",R.mipmap.ic_ses_foreground));
-//        SOCIETE_EUROPEENNE_DES_SATELLITES_Sat_Obj.add(new Satellite("31306","ASTRA 1L","","May-4-2007",R.mipmap.ic_ses_foreground));
-//        SOCIETE_EUROPEENNE_DES_SATELLITES_Sat_Obj.add(new Satellite("29644","AMC-18","","Dec-8-2006",R.mipmap.ic_ses_foreground));
-//        SOCIETE_EUROPEENNE_DES_SATELLITES_Sat_Obj.add(new Satellite("29055","ASTRA 1KR","","Apr-20-2006",R.mipmap.ic_ses_foreground));
-//        SOCIETE_EUROPEENNE_DES_SATELLITES_Sat_Obj.add(new Satellite("28526","NSS 10(AMC-12)","","Feb-3-2005",R.mipmap.ic_ses_foreground));
-//        SOCIETE_EUROPEENNE_DES_SATELLITES_Sat_Obj.add(new Satellite("28472","AMC-16","","Dec-17-2004",R.mipmap.ic_ses_foreground));
-//        SOCIETE_EUROPEENNE_DES_SATELLITES_Sat_Obj.add(new Satellite("28446","AMC-15","","Oct-14-2004",R.mipmap.ic_ses_foreground));
-//        SOCIETE_EUROPEENNE_DES_SATELLITES_Sat_Obj.add(new Satellite("28252","AMC-11(GE-11)","","May-19-2004",R.mipmap.ic_ses_foreground));
-//        SOCIETE_EUROPEENNE_DES_SATELLITES_Sat_Obj.add(new Satellite("28154","AMC-10(GE-10)","","Feb-5-2004",R.mipmap.ic_ses_foreground));
-//        SOCIETE_EUROPEENNE_DES_SATELLITES_Sat_Obj.add(new Satellite("27820","AMC-9(GE-12)","","Jun-6-2003",R.mipmap.ic_ses_foreground));
-//        SOCIETE_EUROPEENNE_DES_SATELLITES_Sat_Obj.add(new Satellite("27603","NSS 6","","Dec-17-2002",R.mipmap.ic_ses_foreground));
-//        SOCIETE_EUROPEENNE_DES_SATELLITES_Sat_Obj.add(new Satellite("27414","NSS 7","","Apr-16-2002",R.mipmap.ic_ses_foreground));
-//        SOCIETE_EUROPEENNE_DES_SATELLITES_Sat_Obj.add(new Satellite("27400","ASTRA 3A","","Mar-29-2002",R.mipmap.ic_ses_foreground));
-//        SOCIETE_EUROPEENNE_DES_SATELLITES_Sat_Obj.add(new Satellite("26853","ASTRA 2C","","Jun-16-2001",R.mipmap.ic_ses_foreground));
-//        SOCIETE_EUROPEENNE_DES_SATELLITES_Sat_Obj.add(new Satellite("26639","AMC-8(GE-8)","","Dec-20-2000",R.mipmap.ic_ses_foreground));
-//        SOCIETE_EUROPEENNE_DES_SATELLITES_Sat_Obj.add(new Satellite("26638","ASTRA 2D","","Dec-20-2000",R.mipmap.ic_ses_foreground));
-//        SOCIETE_EUROPEENNE_DES_SATELLITES_Sat_Obj.add(new Satellite("26580","AMC-6(GE-6)","","Oct-21-2000",R.mipmap.ic_ses_foreground));
-//        SOCIETE_EUROPEENNE_DES_SATELLITES_Sat_Obj.add(new Satellite("26554","NSS 11(AAP-1)","","Oct-1-2000",R.mipmap.ic_ses_foreground));
-//        SOCIETE_EUROPEENNE_DES_SATELLITES_Sat_Obj.add(new Satellite("26495","AMC-7(GE-7)","","Sep-14-2000",R.mipmap.ic_ses_foreground));
-//        SOCIETE_EUROPEENNE_DES_SATELLITES_Sat_Obj.add(new Satellite("26494","ASTRA 2B","","Sep-14-2000",R.mipmap.ic_ses_foreground));
-//        SOCIETE_EUROPEENNE_DES_SATELLITES_Sat_Obj.add(new Satellite("25954","AMC-4(GE-4)","","Nov-13-1999",R.mipmap.ic_ses_foreground));
-//        SOCIETE_EUROPEENNE_DES_SATELLITES_Sat_Obj.add(new Satellite("25785","ASTRA 1H","","Jun-18-1999",R.mipmap.ic_ses_foreground));
-//        SOCIETE_EUROPEENNE_DES_SATELLITES_Sat_Obj.add(new Satellite("25516","AMC-5(GE-5)","","Oct-28-1998",R.mipmap.ic_ses_foreground));
-//        SOCIETE_EUROPEENNE_DES_SATELLITES_Sat_Obj.add(new Satellite("25492","SIRIUS 3","","Oct-5-1998",R.mipmap.ic_ses_foreground));
-//        SOCIETE_EUROPEENNE_DES_SATELLITES_Sat_Obj.add(new Satellite("25462","ASTRA 2A","","Aug-30-1998",R.mipmap.ic_ses_foreground));
-//        SOCIETE_EUROPEENNE_DES_SATELLITES_Sat_Obj.add(new Satellite("25239","NSS 806(INTELSAT 806)","","Feb-28-1998",R.mipmap.ic_ses_foreground));
-//        SOCIETE_EUROPEENNE_DES_SATELLITES_Sat_Obj.add(new Satellite("25071","ASTRA 1G","","Dec-2-1997",R.mipmap.ic_ses_foreground));
-//        SOCIETE_EUROPEENNE_DES_SATELLITES_Sat_Obj.add(new Satellite("24936","AMC-3(GE-3)","","Sep-4-1997",R.mipmap.ic_ses_foreground));
-//        SOCIETE_EUROPEENNE_DES_SATELLITES_Sat_Obj.add(new Satellite("24713","AMC-2(GE-2)","","Jan-30-1997",R.mipmap.ic_ses_foreground));
-//        SOCIETE_EUROPEENNE_DES_SATELLITES_Sat_Obj.add(new Satellite("24315","AMC-1(GE-1)","","Sep-8-1996",R.mipmap.ic_ses_foreground));
-//        SOCIETE_EUROPEENNE_DES_SATELLITES_Sat_Obj.add(new Satellite("23842","ASTRA 1F","","Apr-8-1996",R.mipmap.ic_ses_foreground));
-//        SOCIETE_EUROPEENNE_DES_SATELLITES_Sat_Obj.add(new Satellite("23686","ASTRA 1E","","Oct-19-1995",R.mipmap.ic_ses_foreground));
-//        SOCIETE_EUROPEENNE_DES_SATELLITES_Sat_Obj.add(new Satellite("23305","NSS 703(INTELSAT 703)","","Oct-6-1994",R.mipmap.ic_ses_foreground));
-//        SOCIETE_EUROPEENNE_DES_SATELLITES_Sat_Obj.add(new Satellite("22653","ASTRA 1C","","May-12-1993",R.mipmap.ic_ses_foreground));
-//        return SOCIETE_EUROPEENNE_DES_SATELLITES_Sat_Obj;
-//    }
+    //ssss//
+    public List<Satellite> SOCIETE_EUROPEENNE_DES_SATELLITES_SES_List() {
+        SOCIETE_EUROPEENNE_DES_SATELLITES_Sat_Obj=new ArrayList<>();
+        SOCIETE_EUROPEENNE_DES_SATELLITES_Sat_Obj.add(new Satellite("43488","SES-12","","Jun-4-2018",R.mipmap.ic_ses_foreground));
+        SOCIETE_EUROPEENNE_DES_SATELLITES_Sat_Obj.add(new Satellite("43178","SES-16/GOVSAT-1","","Jan-31-2018",R.mipmap.ic_ses_foreground));
+        SOCIETE_EUROPEENNE_DES_SATELLITES_Sat_Obj.add(new Satellite("43175","SES 14","","Jan-25-2018",R.mipmap.ic_ses_foreground));
+        SOCIETE_EUROPEENNE_DES_SATELLITES_Sat_Obj.add(new Satellite("42967","ECHOSTAR 105/SES 11","","Oct-11-2017",R.mipmap.ic_ses_foreground));
+        SOCIETE_EUROPEENNE_DES_SATELLITES_Sat_Obj.add(new Satellite("42709","SES-15","","May-18-2017",R.mipmap.ic_ses_foreground));
+        SOCIETE_EUROPEENNE_DES_SATELLITES_Sat_Obj.add(new Satellite("42432","SES-10","","Mar-30-2017",R.mipmap.ic_ses_foreground));
+        SOCIETE_EUROPEENNE_DES_SATELLITES_Sat_Obj.add(new Satellite("40364","ASTRA 2G","","Dec-27-2014",R.mipmap.ic_ses_foreground));
+        SOCIETE_EUROPEENNE_DES_SATELLITES_Sat_Obj.add(new Satellite("39617","ASTRA 5B","","Mar-22-2014",R.mipmap.ic_ses_foreground));
+        SOCIETE_EUROPEENNE_DES_SATELLITES_Sat_Obj.add(new Satellite("39285","ASTRA 2E","","Sep-29-2013",R.mipmap.ic_ses_foreground));
+        SOCIETE_EUROPEENNE_DES_SATELLITES_Sat_Obj.add(new Satellite("39172","SES-6","","Jun-3-2013",R.mipmap.ic_ses_foreground));
+        SOCIETE_EUROPEENNE_DES_SATELLITES_Sat_Obj.add(new Satellite("38778","ASTRA 2F","","Sep-28-2012",R.mipmap.ic_ses_foreground));
+        SOCIETE_EUROPEENNE_DES_SATELLITES_Sat_Obj.add(new Satellite("38652","SES 5","","Jul-9-2012",R.mipmap.ic_ses_foreground));
+        SOCIETE_EUROPEENNE_DES_SATELLITES_Sat_Obj.add(new Satellite("38087","SES 4","","Feb-14-2012",R.mipmap.ic_ses_foreground));
+        SOCIETE_EUROPEENNE_DES_SATELLITES_Sat_Obj.add(new Satellite("37809","SES 2","","Sep-21-2011",R.mipmap.ic_ses_foreground));
+        SOCIETE_EUROPEENNE_DES_SATELLITES_Sat_Obj.add(new Satellite("37775","ASTRA 1N","","Aug-6-2011",R.mipmap.ic_ses_foreground));
+        SOCIETE_EUROPEENNE_DES_SATELLITES_Sat_Obj.add(new Satellite("36581","ASTRA 3B","","May-21-2010",R.mipmap.ic_ses_foreground));
+        SOCIETE_EUROPEENNE_DES_SATELLITES_Sat_Obj.add(new Satellite("36516","SES 1","","Apr-24-2010",R.mipmap.ic_ses_foreground));
+        SOCIETE_EUROPEENNE_DES_SATELLITES_Sat_Obj.add(new Satellite("36032","NSS 12","","Oct-29-2009",R.mipmap.ic_ses_foreground));
+        SOCIETE_EUROPEENNE_DES_SATELLITES_Sat_Obj.add(new Satellite("34941","SES 7(PROTOSTAR 2)","","May-16-2009",R.mipmap.ic_ses_foreground));
+        SOCIETE_EUROPEENNE_DES_SATELLITES_Sat_Obj.add(new Satellite("33749","NSS 9","","Feb-12-2009",R.mipmap.ic_ses_foreground));
+        SOCIETE_EUROPEENNE_DES_SATELLITES_Sat_Obj.add(new Satellite("33436","ASTRA 1M","","Nov-5-2008",R.mipmap.ic_ses_foreground));
+        SOCIETE_EUROPEENNE_DES_SATELLITES_Sat_Obj.add(new Satellite("33275","AMC-21","","Aug-14-2008",R.mipmap.ic_ses_foreground));
+        SOCIETE_EUROPEENNE_DES_SATELLITES_Sat_Obj.add(new Satellite("32299","ASTRA 4A(SIRIUS 4)","","Nov-17-2007",R.mipmap.ic_ses_foreground));
+        SOCIETE_EUROPEENNE_DES_SATELLITES_Sat_Obj.add(new Satellite("31306","ASTRA 1L","","May-4-2007",R.mipmap.ic_ses_foreground));
+        SOCIETE_EUROPEENNE_DES_SATELLITES_Sat_Obj.add(new Satellite("29644","AMC-18","","Dec-8-2006",R.mipmap.ic_ses_foreground));
+        SOCIETE_EUROPEENNE_DES_SATELLITES_Sat_Obj.add(new Satellite("29055","ASTRA 1KR","","Apr-20-2006",R.mipmap.ic_ses_foreground));
+        SOCIETE_EUROPEENNE_DES_SATELLITES_Sat_Obj.add(new Satellite("28526","NSS 10(AMC-12)","","Feb-3-2005",R.mipmap.ic_ses_foreground));
+        SOCIETE_EUROPEENNE_DES_SATELLITES_Sat_Obj.add(new Satellite("28472","AMC-16","","Dec-17-2004",R.mipmap.ic_ses_foreground));
+        SOCIETE_EUROPEENNE_DES_SATELLITES_Sat_Obj.add(new Satellite("28446","AMC-15","","Oct-14-2004",R.mipmap.ic_ses_foreground));
+        SOCIETE_EUROPEENNE_DES_SATELLITES_Sat_Obj.add(new Satellite("28252","AMC-11(GE-11)","","May-19-2004",R.mipmap.ic_ses_foreground));
+        SOCIETE_EUROPEENNE_DES_SATELLITES_Sat_Obj.add(new Satellite("28154","AMC-10(GE-10)","","Feb-5-2004",R.mipmap.ic_ses_foreground));
+        SOCIETE_EUROPEENNE_DES_SATELLITES_Sat_Obj.add(new Satellite("27820","AMC-9(GE-12)","","Jun-6-2003",R.mipmap.ic_ses_foreground));
+        SOCIETE_EUROPEENNE_DES_SATELLITES_Sat_Obj.add(new Satellite("27603","NSS 6","","Dec-17-2002",R.mipmap.ic_ses_foreground));
+        SOCIETE_EUROPEENNE_DES_SATELLITES_Sat_Obj.add(new Satellite("27414","NSS 7","","Apr-16-2002",R.mipmap.ic_ses_foreground));
+        SOCIETE_EUROPEENNE_DES_SATELLITES_Sat_Obj.add(new Satellite("27400","ASTRA 3A","","Mar-29-2002",R.mipmap.ic_ses_foreground));
+        SOCIETE_EUROPEENNE_DES_SATELLITES_Sat_Obj.add(new Satellite("26853","ASTRA 2C","","Jun-16-2001",R.mipmap.ic_ses_foreground));
+        SOCIETE_EUROPEENNE_DES_SATELLITES_Sat_Obj.add(new Satellite("26639","AMC-8(GE-8)","","Dec-20-2000",R.mipmap.ic_ses_foreground));
+        SOCIETE_EUROPEENNE_DES_SATELLITES_Sat_Obj.add(new Satellite("26638","ASTRA 2D","","Dec-20-2000",R.mipmap.ic_ses_foreground));
+        SOCIETE_EUROPEENNE_DES_SATELLITES_Sat_Obj.add(new Satellite("26580","AMC-6(GE-6)","","Oct-21-2000",R.mipmap.ic_ses_foreground));
+        SOCIETE_EUROPEENNE_DES_SATELLITES_Sat_Obj.add(new Satellite("26554","NSS 11(AAP-1)","","Oct-1-2000",R.mipmap.ic_ses_foreground));
+        SOCIETE_EUROPEENNE_DES_SATELLITES_Sat_Obj.add(new Satellite("26495","AMC-7(GE-7)","","Sep-14-2000",R.mipmap.ic_ses_foreground));
+        SOCIETE_EUROPEENNE_DES_SATELLITES_Sat_Obj.add(new Satellite("26494","ASTRA 2B","","Sep-14-2000",R.mipmap.ic_ses_foreground));
+        SOCIETE_EUROPEENNE_DES_SATELLITES_Sat_Obj.add(new Satellite("25954","AMC-4(GE-4)","","Nov-13-1999",R.mipmap.ic_ses_foreground));
+        SOCIETE_EUROPEENNE_DES_SATELLITES_Sat_Obj.add(new Satellite("25785","ASTRA 1H","","Jun-18-1999",R.mipmap.ic_ses_foreground));
+        SOCIETE_EUROPEENNE_DES_SATELLITES_Sat_Obj.add(new Satellite("25516","AMC-5(GE-5)","","Oct-28-1998",R.mipmap.ic_ses_foreground));
+        SOCIETE_EUROPEENNE_DES_SATELLITES_Sat_Obj.add(new Satellite("25492","SIRIUS 3","","Oct-5-1998",R.mipmap.ic_ses_foreground));
+        SOCIETE_EUROPEENNE_DES_SATELLITES_Sat_Obj.add(new Satellite("25462","ASTRA 2A","","Aug-30-1998",R.mipmap.ic_ses_foreground));
+        SOCIETE_EUROPEENNE_DES_SATELLITES_Sat_Obj.add(new Satellite("25239","NSS 806(INTELSAT 806)","","Feb-28-1998",R.mipmap.ic_ses_foreground));
+        SOCIETE_EUROPEENNE_DES_SATELLITES_Sat_Obj.add(new Satellite("25071","ASTRA 1G","","Dec-2-1997",R.mipmap.ic_ses_foreground));
+        SOCIETE_EUROPEENNE_DES_SATELLITES_Sat_Obj.add(new Satellite("24936","AMC-3(GE-3)","","Sep-4-1997",R.mipmap.ic_ses_foreground));
+        SOCIETE_EUROPEENNE_DES_SATELLITES_Sat_Obj.add(new Satellite("24713","AMC-2(GE-2)","","Jan-30-1997",R.mipmap.ic_ses_foreground));
+        SOCIETE_EUROPEENNE_DES_SATELLITES_Sat_Obj.add(new Satellite("24315","AMC-1(GE-1)","","Sep-8-1996",R.mipmap.ic_ses_foreground));
+        SOCIETE_EUROPEENNE_DES_SATELLITES_Sat_Obj.add(new Satellite("23842","ASTRA 1F","","Apr-8-1996",R.mipmap.ic_ses_foreground));
+        SOCIETE_EUROPEENNE_DES_SATELLITES_Sat_Obj.add(new Satellite("23686","ASTRA 1E","","Oct-19-1995",R.mipmap.ic_ses_foreground));
+        SOCIETE_EUROPEENNE_DES_SATELLITES_Sat_Obj.add(new Satellite("23305","NSS 703(INTELSAT 703)","","Oct-6-1994",R.mipmap.ic_ses_foreground));
+        SOCIETE_EUROPEENNE_DES_SATELLITES_Sat_Obj.add(new Satellite("22653","ASTRA 1C","","May-12-1993",R.mipmap.ic_ses_foreground));
+        return SOCIETE_EUROPEENNE_DES_SATELLITES_Sat_Obj;
+    }
 
     public void inClickEvent(Country country) {
 
@@ -4225,50 +4225,50 @@ public class MainActivity extends AppCompatActivity implements CountryAdapter.IC
                 intent.putExtra("savedUser", (Serializable) BANGLADESH_Satellite_List());
                 startActivity(intent);
                 break;
-//            case "FORMER CZECHOSLOVAKIA":
-//                intent.putExtra("savedUser", (Serializable) FORMER_CZECHOSLOVAKIA_List());
-//                startActivity(intent);
-//                break;
-//            case "CHINA/BRAZIL":
-//                intent.putExtra("savedUser", (Serializable) CHINA_BRAZIL_List());
-//                startActivity(intent);
-//                break;
-//            case "FRANCE/GERMANY":
-//                intent.putExtra("savedUser", (Serializable) FRANCE_GERMANY_List());
-//                startActivity(intent);
-//                break;
-//            case "FRANCE/ITALY":
-//                intent.putExtra("savedUser", (Serializable) FRANCE_ITALY_List());
-//                startActivity(intent);
-//                break;
-//            case "SINGAPORE/TAIWAN":
-//                intent.putExtra("savedUser", (Serializable) SINGAPORE_TAIWAN_List());
-//                startActivity(intent);
-//                break;
-//            case "TURKMENISTAN/MONACO":
-//                intent.putExtra("savedUser", (Serializable) TURKMENISTAN_MONACO_List());
-//                startActivity(intent);
-//                break;
-//            case "UNITED STATES/BRAZIL":
-//                intent.putExtra("savedUser", (Serializable) UNITED_STATES_BRAZIL_List());
-//                startActivity(intent);
-//                break;
+            case "FORMER CZECHOSLOVAKIA":
+                intent.putExtra("savedUser", (Serializable) FORMER_CZECHOSLOVAKIA_List());
+                startActivity(intent);
+                break;
+            case "CHINA/BRAZIL":
+                intent.putExtra("savedUser", (Serializable) CHINA_BRAZIL_List());
+                startActivity(intent);
+                break;
+            case "FRANCE/GERMANY":
+                intent.putExtra("savedUser", (Serializable) FRANCE_GERMANY_List());
+                startActivity(intent);
+                break;
+            case "FRANCE/ITALY":
+                intent.putExtra("savedUser", (Serializable) FRANCE_ITALY_List());
+                startActivity(intent);
+                break;
+            case "SINGAPORE/TAIWAN":
+                intent.putExtra("savedUser", (Serializable) SINGAPORE_TAIWAN_List());
+                startActivity(intent);
+                break;
+            case "TURKMENISTAN/MONACO":
+                intent.putExtra("savedUser", (Serializable) TURKMENISTAN_MONACO_List());
+                startActivity(intent);
+                break;
+            case "UNITED STATES/BRAZIL":
+                intent.putExtra("savedUser", (Serializable) UNITED_STATES_BRAZIL_List());
+                startActivity(intent);
+                break;
 //            case "NATO":
 //                intent.putExtra("savedUser", (Serializable) NORTH_ATLANTIC_TREATY_ORGANIZATION_NATO_List());
 //                startActivity(intent);
 //                break;
-//            case "ARABSAT":
-//                intent.putExtra("savedUser", (Serializable) ARAB_SATELLITE_COMMUNICATIONS_ORGANIZATION_ARABSAT_List());
-//                startActivity(intent);
-//                break;
-//            case "ASIASAT":
-//                intent.putExtra("savedUser", (Serializable) ASIA_SATELLITE_TELECOMMUNICATIONS_COMPANY_ASIASAT_List());
-//                startActivity(intent);
-//                break;
-//            case "EUMETSAT":
-//                intent.putExtra("savedUser", (Serializable) EUROPEAN_ORGANISATION_FOR_THE_EXPLOITATION_EUMETSAT_List());
-//                startActivity(intent);
-//                break;
+            case "ARABSAT":
+                intent.putExtra("savedUser", (Serializable) ARAB_SATELLITE_COMMUNICATIONS_ORGANIZATION_ARABSAT_List());
+                startActivity(intent);
+                break;
+            case "ASIASAT":
+                intent.putExtra("savedUser", (Serializable) ASIA_SATELLITE_TELECOMMUNICATIONS_COMPANY_ASIASAT_List());
+                startActivity(intent);
+                break;
+            case "EUMETSAT":
+                intent.putExtra("savedUser", (Serializable) EUROPEAN_ORGANISATION_FOR_THE_EXPLOITATION_EUMETSAT_List());
+                startActivity(intent);
+                break;
 //            case "GLOBALSTAR":
 //                intent.putExtra("savedUser", (Serializable) GLOBALSTAR_List());
 //                startActivity(intent);

@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="50dp">
+    android:layout_height="60dp"
+    android:background="#3c3f41">
 
     <ImageView
         android:id="@+id/iv_satellite_photo"
-        android:layout_width="90dp"
-        android:layout_height="50dp"
+        android:layout_width="92dp"
+        android:layout_height="match_parent"
         android:contentDescription="@string/R_photo"
         app:srcCompat="@android:drawable/ic_delete" />
 
@@ -20,12 +20,11 @@
         android:layout_alignParentTop="true"
         android:layout_alignStart="@+id/tv_satellite_type"
         android:layout_marginTop="3dp"
-        android:autoText="false"
+        android:maxLength="20"
         android:maxWidth="150dp"
         android:text="@string/R_name"
-        android:maxLength="20"
         android:textAlignment="center"
-        android:textColor="@android:color/background_dark" />
+        android:textColor="#61d05d" />
 
     <TextView
         android:id="@+id/tv_satellite_type"
@@ -37,11 +36,11 @@
         android:layout_marginBottom="3dp"
         android:layout_marginLeft="93dp"
         android:layout_marginStart="93dp"
+        android:maxLength="25"
         android:maxWidth="150dp"
         android:text="@string/R_satellite_type"
-        android:maxLength="25"
         android:textAlignment="center"
-        android:textColor="@android:color/background_dark" />
+        android:textColor="#faf7f7" />
 
     <TextView
         android:id="@+id/tv_launch_date_tag"
@@ -56,7 +55,7 @@
         android:maxWidth="150dp"
         android:text="@string/R_launch_date"
         android:textAlignment="center"
-        android:textColor="@android:color/background_dark" />
+        android:textColor="#d72a92" />
 
     <TextView
         android:id="@+id/tv_launch_date"
@@ -71,6 +70,6 @@
         android:maxWidth="150dp"
         android:text="@string/R_date"
         android:textAlignment="center"
-        android:textColor="@android:color/background_dark" />
+        android:textColor="#f0d044" />
 
 </RelativeLayout>
