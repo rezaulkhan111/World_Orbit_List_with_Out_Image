@@ -17,8 +17,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".SatelliteListActivity" />
-        <activity android:name=".SatelliteWebViewActivity" />
+        <activity android:name=".List.SatelliteListActivity" />
+        <activity android:name=".WebPage.SatelliteWebViewActivity" />
     </application>
 
 </manifest>

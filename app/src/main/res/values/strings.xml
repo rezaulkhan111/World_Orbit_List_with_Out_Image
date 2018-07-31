@@ -5,4 +5,7 @@
     <string name="R_photo">Photo</string>
     <string name="R_name">Name</string>
     <string name="R_satellite_type">Satellite Type</string>
-   </resources>
+    <string name="iv_country_flage">Country_Flag</string>
+    <string name="tv_satellite_number">Satellite Number</string>
+    <string name="tv_country_name">Country Name</string>
+</resources>

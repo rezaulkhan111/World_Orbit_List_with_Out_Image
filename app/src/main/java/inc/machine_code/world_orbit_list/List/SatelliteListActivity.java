@@ -1,4 +1,5 @@
-package inc.machine_code.world_orbit_list;
+package inc.machine_code.world_orbit_list.List;
+
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -11,11 +12,13 @@ import java.util.List;
 
 import inc.machine_code.world_orbit_list.Adapter.SatelliteAdapter;
 import inc.machine_code.world_orbit_list.Country.Satellite;
+import inc.machine_code.world_orbit_list.R;
+import inc.machine_code.world_orbit_list.WebPage.SatelliteWebViewActivity;
 
-public class SatelliteListActivity extends AppCompatActivity implements SatelliteAdapter.InterfaceCallback {
-    List<Satellite> satellieList = new ArrayList<>();
+public class SatelliteListActivity extends AppCompatActivity implements SatelliteAdapter.InterfaceCallback{
 
 
+    List<Satellite> _sat_lite_List_Array = new ArrayList<>();
     private RecyclerView mRecyclerView;
 
     @Override
@@ -27,10 +30,13 @@ public class SatelliteListActivity extends AppCompatActivity implements Satellit
         mRecyclerView.setHasFixedSize(true);
         mRecyclerView.setLayoutManager(new LinearLayoutManager(this));
         Intent intent = getIntent();
-        List<Satellite> satelli = (List<Satellite>) intent.getSerializableExtra("savedUser");
-        satellieList = satelli;
 
-        SatelliteAdapter adapter = new SatelliteAdapter(this, satellieList);
+        List<Satellite> _sat_lite_List_Seri_able = (List<Satellite>) intent.getSerializableExtra("savedUser");
+
+        _sat_lite_List_Array = _sat_lite_List_Seri_able;
+
+
+        SatelliteAdapter adapter = new SatelliteAdapter(this, _sat_lite_List_Array);
         mRecyclerView.setAdapter(adapter);
     }
 

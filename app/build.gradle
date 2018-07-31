@@ -4,7 +4,7 @@ android {
     compileSdkVersion
     defaultConfig {
         applicationId "inc.machine_code.world_orbit_list"
-        minSdkVersion 26
+        minSdkVersion 24
         targetSdkVersion 27
         versionCode 1
         versionName "1.0"
