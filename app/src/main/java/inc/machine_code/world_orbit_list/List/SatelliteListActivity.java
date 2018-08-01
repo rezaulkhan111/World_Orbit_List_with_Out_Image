@@ -15,7 +15,7 @@ import inc.machine_code.world_orbit_list.Country.Satellite;
 import inc.machine_code.world_orbit_list.R;
 import inc.machine_code.world_orbit_list.WebPage.SatelliteWebViewActivity;
 
-public class SatelliteListActivity extends AppCompatActivity implements SatelliteAdapter.InterfaceCallback{
+public class SatelliteListActivity extends AppCompatActivity implements SatelliteAdapter.InterfaceCallback {
 
 
     List<Satellite> _sat_lite_List_Array = new ArrayList<>();
@@ -44,13 +44,189 @@ public class SatelliteListActivity extends AppCompatActivity implements Satellit
     public void inClickEvent(Satellite satellite) {
         Intent intent = new Intent(getApplicationContext(), SatelliteWebViewActivity.class);
 
-        switch (satellite.getName()) {
-            case "ALCOMSAT-1":
-                intent.putExtra("WEB_LINK", "google");
+        switch (satellite.getSatCat_No()) {
+            case "43039":
+                intent.putExtra("WEB_LINK", satellite.getSatCat_No());
                 startActivity(intent);
                 break;
-            case "ALSAT 1N":
-                intent.putExtra("WEB_LINK", "yahoo");
+            case "41789":
+                intent.putExtra("WEB_LINK", satellite.getSatCat_No());
+                startActivity(intent);
+                break;
+            case "41786":
+                intent.putExtra("WEB_LINK", satellite.getSatCat_No());
+                startActivity(intent);
+                break;
+            case "41785":
+                intent.putExtra("WEB_LINK", satellite.getSatCat_No());
+                startActivity(intent);
+                break;
+            case "36798":
+                intent.putExtra("WEB_LINK", satellite.getSatCat_No());
+                startActivity(intent);
+                break;
+            case "27559":
+                intent.putExtra("WEB_LINK", satellite.getSatCat_No());
+                startActivity(intent);
+                break;
+            case "43204":
+                intent.putExtra("WEB_LINK", satellite.getSatCat_No());
+                startActivity(intent);
+                break;
+            case "43195":
+                intent.putExtra("WEB_LINK", satellite.getSatCat_No());
+                startActivity(intent);
+                break;
+            case "42760":
+                intent.putExtra("WEB_LINK", satellite.getSatCat_No());
+                startActivity(intent);
+                break;
+            case "41558":
+                intent.putExtra("WEB_LINK", satellite.getSatCat_No());
+                startActivity(intent);
+                break;
+            case "41557":
+                intent.putExtra("WEB_LINK", satellite.getSatCat_No());
+                startActivity(intent);
+                break;
+            case "40941":
+                intent.putExtra("WEB_LINK", satellite.getSatCat_No());
+                startActivity(intent);
+                break;
+            case "40272":
+                intent.putExtra("WEB_LINK", satellite.getSatCat_No());
+                startActivity(intent);
+                break;
+            case "40014":
+                intent.putExtra("WEB_LINK", satellite.getSatCat_No());
+                startActivity(intent);
+                break;
+            case "39440":
+                intent.putExtra("WEB_LINK", satellite.getSatCat_No());
+                startActivity(intent);
+                break;
+            case "39153":
+                intent.putExtra("WEB_LINK", satellite.getSatCat_No());
+                startActivity(intent);
+                break;
+            case "37673":
+                intent.putExtra("WEB_LINK", satellite.getSatCat_No());
+                startActivity(intent);
+                break;
+            case "29712":
+                intent.putExtra("WEB_LINK", satellite.getSatCat_No());
+                startActivity(intent);
+                break;
+            case "27612":
+                intent.putExtra("WEB_LINK", satellite.getSatCat_No());
+                startActivity(intent);
+                break;
+            case "27606":
+                intent.putExtra("WEB_LINK", satellite.getSatCat_No());
+                startActivity(intent);
+                break;
+            case "26620":
+                intent.putExtra("WEB_LINK", satellite.getSatCat_No());
+                startActivity(intent);
+                break;
+            case "24714":
+                intent.putExtra("WEB_LINK", satellite.getSatCat_No());
+                startActivity(intent);
+                break;
+            case "20442":
+                intent.putExtra("WEB_LINK", satellite.getSatCat_No());
+                startActivity(intent);
+                break;
+            case "15642":
+                intent.putExtra("WEB_LINK", satellite.getSatCat_No());
+                startActivity(intent);
+                break;
+            case "14133":
+                intent.putExtra("WEB_LINK", satellite.getSatCat_No());
+                startActivity(intent);
+                break;
+            case "42786":
+                intent.putExtra("WEB_LINK", satellite.getSatCat_No());
+                startActivity(intent);
+                break;
+            case "42785":
+                intent.putExtra("WEB_LINK", satellite.getSatCat_No());
+                startActivity(intent);
+                break;
+            case "42783":
+                intent.putExtra("WEB_LINK", satellite.getSatCat_No());
+                startActivity(intent);
+                break;
+            case "42731":
+                intent.putExtra("WEB_LINK", satellite.getSatCat_No());
+                startActivity(intent);
+                break;
+            case "42730":
+                intent.putExtra("WEB_LINK", satellite.getSatCat_No());
+                startActivity(intent);
+                break;
+            case "42721":
+                intent.putExtra("WEB_LINK", satellite.getSatCat_No());
+                startActivity(intent);
+                break;
+            case "41794":
+                intent.putExtra("WEB_LINK", satellite.getSatCat_No());
+                startActivity(intent);
+                break;
+            case "40940":
+                intent.putExtra("WEB_LINK", satellite.getSatCat_No());
+                startActivity(intent);
+                break;
+            case "40146":
+                intent.putExtra("WEB_LINK", satellite.getSatCat_No());
+                startActivity(intent);
+                break;
+            case "35756":
+                intent.putExtra("WEB_LINK", satellite.getSatCat_No());
+                startActivity(intent);
+                break;
+            case "32252":
+                intent.putExtra("WEB_LINK", satellite.getSatCat_No());
+                startActivity(intent);
+                break;
+            case "29495":
+                intent.putExtra("WEB_LINK", satellite.getSatCat_No());
+                startActivity(intent);
+                break;
+            case "27831":
+                intent.putExtra("WEB_LINK", satellite.getSatCat_No());
+                startActivity(intent);
+                break;
+            case "27598":
+                intent.putExtra("WEB_LINK", satellite.getSatCat_No());
+                startActivity(intent);
+                break;
+            case "25398":
+                intent.putExtra("WEB_LINK", satellite.getSatCat_No());
+                startActivity(intent);
+                break;
+            case "23227":
+                intent.putExtra("WEB_LINK", satellite.getSatCat_No());
+                startActivity(intent);
+                break;
+            case "22087":
+                intent.putExtra("WEB_LINK", satellite.getSatCat_No());
+                startActivity(intent);
+                break;
+            case "18350":
+                intent.putExtra("WEB_LINK", satellite.getSatCat_No());
+                startActivity(intent);
+                break;
+            case "16275":
+                intent.putExtra("WEB_LINK", satellite.getSatCat_No());
+                startActivity(intent);
+                break;
+            case "15993":
+                intent.putExtra("WEB_LINK", satellite.getSatCat_No());
+                startActivity(intent);
+                break;
+            case "4321":
+                intent.putExtra("WEB_LINK", satellite.getSatCat_No());
                 startActivity(intent);
                 break;
 
