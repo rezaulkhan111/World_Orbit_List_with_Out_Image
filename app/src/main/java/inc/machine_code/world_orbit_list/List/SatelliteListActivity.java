@@ -1,10 +1,15 @@
 package inc.machine_code.world_orbit_list.List;
 
+import android.app.SearchManager;
+import android.content.Context;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.support.v7.widget.SearchView;
+import android.view.Menu;
+import android.view.MenuInflater;
 
 import java.io.Serializable;
 import java.util.ArrayList;
@@ -17,8 +22,8 @@ import inc.machine_code.world_orbit_list.WebPage.SatelliteWebViewActivity;
 
 public class SatelliteListActivity extends AppCompatActivity implements SatelliteAdapter.InterfaceCallback {
 
-
-    List<Satellite> _sat_lite_List_Array = new ArrayList<>();
+    SatelliteAdapter adapter;
+    ArrayList<Satellite> _sat_lite_List_Array = new ArrayList<>();
     private RecyclerView mRecyclerView;
 
     @Override
@@ -31,13 +36,39 @@ public class SatelliteListActivity extends AppCompatActivity implements Satellit
         mRecyclerView.setLayoutManager(new LinearLayoutManager(this));
         Intent intent = getIntent();
 
-        List<Satellite> _sat_lite_List_Seri_able = (List<Satellite>) intent.getSerializableExtra("savedUser");
+        ArrayList<Satellite> _sat_lite_List_Seri_able = (ArrayList<Satellite>) intent.getSerializableExtra("savedUser");
 
         _sat_lite_List_Array = _sat_lite_List_Seri_able;
 
 
-        SatelliteAdapter adapter = new SatelliteAdapter(this, _sat_lite_List_Array);
+        adapter = new SatelliteAdapter(this, _sat_lite_List_Array);
         mRecyclerView.setAdapter(adapter);
+    }
+
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.searching_menu_bar, menu);
+        SearchManager searchManager = (SearchManager) getSystemService(Context.SEARCH_SERVICE);
+        SearchView searchView;
+        searchView = (SearchView) menu.findItem(R.id.menu_search_bar).getActionView();
+        searchView.setSearchableInfo(searchManager.getSearchableInfo(getComponentName()));
+        searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
+
+            @Override
+            public boolean onQueryTextSubmit(String query) {
+                return false;
+            }
+
+            @Override
+            public boolean onQueryTextChange(String query) {
+
+                adapter.getFilter().filter(query);
+                return false;
+            }
+        });
+        return true;
     }
 
     @Override

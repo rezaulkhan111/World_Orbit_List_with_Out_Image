@@ -19,7 +19,9 @@ public class Satellite extends LauncherActivity.ListItem implements Serializable
         this.Date = date;
         this.image = image;
     }
-    public Satellite(){}
+
+    public Satellite() {
+    }
 
     public String getSatCat_No() {
         return SatCat_No;

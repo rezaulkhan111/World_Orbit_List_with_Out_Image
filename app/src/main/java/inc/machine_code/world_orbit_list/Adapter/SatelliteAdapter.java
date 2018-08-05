@@ -5,24 +5,30 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Filter;
+import android.widget.Filterable;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import inc.machine_code.world_orbit_list.Country.Satellite;
 import inc.machine_code.world_orbit_list.R;
+import inc.machine_code.world_orbit_list.SatelliteSearching.SatelliteFilter;
 
-public class SatelliteAdapter extends RecyclerView.Adapter<SatelliteAdapter.ViewHolder> {
+public class SatelliteAdapter extends RecyclerView.Adapter<SatelliteAdapter.ViewHolder> implements Filterable {
 
     private InterfaceCallback callback;
-    Satellite ass;
+    SatelliteFilter satelliteFilter;
+    public ArrayList<Satellite> SatelliteList, satellitefilterList;
 
-    public List<Satellite> SatelliteList;
+    Satellite satelliteObj;
 
-    public SatelliteAdapter(InterfaceCallback callback, List<Satellite> satelliteList) {
+    public SatelliteAdapter(InterfaceCallback callback, ArrayList<Satellite> satelliteList) {
         this.callback = callback;
         this.SatelliteList = satelliteList;
+        this.satellitefilterList = satelliteList;
 
     }
 
@@ -54,7 +60,7 @@ public class SatelliteAdapter extends RecyclerView.Adapter<SatelliteAdapter.View
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                ass=new Satellite();
+                satelliteObj = new Satellite();
                 Satellite satellite = SatelliteList.get(position);
                 callback.inClickEvent(satellite);
 
@@ -68,12 +74,20 @@ public class SatelliteAdapter extends RecyclerView.Adapter<SatelliteAdapter.View
         return SatelliteList.size();
     }
 
+    @Override
+    public Filter getFilter() {
+        if (satelliteFilter == null) {
+            satelliteFilter = new SatelliteFilter(satellitefilterList, this);
+        }
+        return satelliteFilter;
+    }
+
 
     class SatelliteViewHolder extends RecyclerView.ViewHolder {
         ImageView p_satellite_photo;
         TextView p_satellite_name,
-                 p_launch_date,
-                 p_satellite_type;
+                p_launch_date,
+                p_satellite_type;
 
 
         public SatelliteViewHolder(View view) {
@@ -90,8 +104,8 @@ public class SatelliteAdapter extends RecyclerView.Adapter<SatelliteAdapter.View
         ImageView satellite_photo;
 
         TextView satellite_name,
-                 launch_date,
-                 satellite_type;
+                launch_date,
+                satellite_type;
 
         public ViewHolder(View v) {
             super(v);

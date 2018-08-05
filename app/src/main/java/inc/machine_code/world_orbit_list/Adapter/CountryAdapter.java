@@ -5,28 +5,35 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Filter;
+import android.widget.Filterable;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import inc.machine_code.world_orbit_list.Country.Country;
+import inc.machine_code.world_orbit_list.CountrySearching.CountryFilter;
 import inc.machine_code.world_orbit_list.R;
 
-public class CountryAdapter extends RecyclerView.Adapter<CountryAdapter.ViewHolder>{
+public class CountryAdapter extends RecyclerView.Adapter<CountryAdapter.ViewHolder> implements Filterable {
     private ICallback callback;
 
-    public List<Country> countryList;
+    public ArrayList<Country> countryList, countryList_filter;
 
-    public CountryAdapter(ICallback callback, List<Country> countryList) {
+    CountryFilter countryFilter;
+
+    public CountryAdapter(ICallback callback, ArrayList<Country> countryList) {
         this.callback = callback;
         this.countryList = countryList;
+        this.countryList_filter = countryList;
     }
 
 
     public interface ICallback {
-         void inClickEvent(Country country);
+        void inClickEvent(Country country);
 
     }
 
@@ -62,6 +69,14 @@ public class CountryAdapter extends RecyclerView.Adapter<CountryAdapter.ViewHold
     public int getItemCount() {
 
         return countryList.size();
+    }
+
+    @Override
+    public Filter getFilter() {
+        if (countryFilter == null) {
+            countryFilter = new CountryFilter(countryList_filter, this);
+        }
+        return countryFilter;
     }
 
 
