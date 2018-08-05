@@ -3,8 +3,11 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="60dp"
+    android:paddingTop="2dp">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
     android:background="#3c3f41">
-
     <ImageView
         android:id="@+id/iv_satellite_photo"
         android:layout_width="92dp"
@@ -71,5 +74,5 @@
         android:text="@string/R_date"
         android:textAlignment="center"
         android:textColor="#f0d044" />
-
+</RelativeLayout>
 </RelativeLayout>

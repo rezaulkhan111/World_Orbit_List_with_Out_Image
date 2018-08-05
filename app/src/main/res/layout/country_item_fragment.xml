@@ -1,43 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/linearLayout"
     android:layout_width="match_parent"
     android:layout_height="81dp"
-    android:background="#3c3f41"
+    android:background="#f2f4f5"
     android:orientation="horizontal"
-    android:paddingBottom="5dp">
-
-    <ImageView
-        android:id="@+id/iv_country_flag"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:contentDescription="@string/iv_country_flage"
-        android:scaleType="fitXY" />
+    android:paddingBottom="0dp"
+    android:paddingTop="2dp">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="80dp"
-        android:orientation="vertical">
+        android:background="#3c3f41">
 
-        <TextView
-            android:id="@+id/tv_country_name"
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:gravity="center"
-            android:text="@string/tv_country_name"
-            android:textAlignment="center"
-            android:textColor="#61d05d"
-            android:textSize="15sp" />
+        <ImageView
+            android:id="@+id/iv_country_flag"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:contentDescription="@string/iv_country_flage"
+            app:srcCompat="@mipmap/ic_united_states_of_america_foreground" />
 
-        <TextView
-            android:id="@+id/tv_count_satellite_number"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:gravity="center"
-            android:text="@string/tv_satellite_number"
-            android:textAlignment="center"
-            android:textColor="#faf7f7"
-            android:textSize="20sp" />
+            android:layout_height="80dp"
+            android:background="#3c3f41"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_country_name"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:text="@string/tv_country_name"
+                android:textAlignment="center"
+                android:textColor="#61d05d"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv_count_satellite_number"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:text="@string/tv_satellite_number"
+                android:textAlignment="center"
+                android:textColor="#faf7f7"
+                android:textSize="20sp" />
+        </LinearLayout>
     </LinearLayout>
 
 </LinearLayout>

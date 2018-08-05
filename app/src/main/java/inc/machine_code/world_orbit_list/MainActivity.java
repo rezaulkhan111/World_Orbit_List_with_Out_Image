@@ -126,7 +126,6 @@ public class MainActivity extends AppCompatActivity implements CountryAdapter.IC
         mRecyclerView.setAdapter(adapter);
     }
 
-
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater inflater = getMenuInflater();
@@ -413,7 +412,6 @@ public class MainActivity extends AppCompatActivity implements CountryAdapter.IC
         CHILE_Sat_Obj.add(new Satellite("25395", "FASAT B", "EO,Technology", "Jul-10-1998", R.mipmap.ic_chile_foreground));
         return CHILE_Sat_Obj;
     }
-
     ////china///
     public List<Satellite> CHINA_Satellite_List() {
         CHINA_Sat_Obj = new ArrayList<>();
@@ -5369,7 +5367,6 @@ public class MainActivity extends AppCompatActivity implements CountryAdapter.IC
         SEA_LAUNCH_Sat_Obj.add(new Satellite("25661", "SEA LAUNCH DEMO", "", "Mar-28-1999", R.mipmap.ic_sea_launch_foreground));
         return SEA_LAUNCH_Sat_Obj;
     }
-
     //ssss//
     public List<Satellite> SOCIETE_EUROPEENNE_DES_SATELLITES_SES_List() {
         SOCIETE_EUROPEENNE_DES_SATELLITES_Sat_Obj = new ArrayList<>();
