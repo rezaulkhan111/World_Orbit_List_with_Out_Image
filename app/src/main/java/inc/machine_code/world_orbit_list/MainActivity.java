@@ -412,7 +412,7 @@ public class MainActivity extends AppCompatActivity implements CountryAdapter.IC
         CHILE_Sat_Obj.add(new Satellite("25395", "FASAT B", "EO,Technology", "Jul-10-1998", R.mipmap.ic_chile_foreground));
         return CHILE_Sat_Obj;
     }
-    
+
     public List<Satellite> CHINA_Satellite_List() {
         CHINA_Sat_Obj = new ArrayList<>();
         CHINA_Sat_Obj.add(new Satellite("43519", "XJS B", "", "Jun-27-2018", R.mipmap.ic_china_foreground));
@@ -1431,7 +1431,6 @@ public class MainActivity extends AppCompatActivity implements CountryAdapter.IC
         PORTUGAL_Sat_Obj.add(new Satellite("22826", "ITAMSAT", "Radio", "Sep-26-1993", R.mipmap.ic_portugal_foreground));
         return PORTUGAL_Sat_Obj;
     }
-
     ///full ////
     public List<Satellite> RUSSIA_Satellite_List() {
         RUSSIA_Sat_Obj = new ArrayList<>();
