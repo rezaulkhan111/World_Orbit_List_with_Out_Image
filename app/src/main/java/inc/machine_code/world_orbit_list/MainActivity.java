@@ -5364,7 +5364,6 @@ public class MainActivity extends AppCompatActivity implements CountryAdapter.IC
         return SEA_LAUNCH_Sat_Obj;
     }
 
-    //ssss//
     public List<Satellite> SOCIETE_EUROPEENNE_DES_SATELLITES_SES_List() {
         SOCIETE_EUROPEENNE_DES_SATELLITES_Sat_Obj = new ArrayList<>();
         SOCIETE_EUROPEENNE_DES_SATELLITES_Sat_Obj.add(new Satellite("43488", "SES-12", "Communication", "Jun-4-2018", R.mipmap.ic_ses_foreground));
