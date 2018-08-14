@@ -32,7 +32,6 @@ public class SatelliteAdapter extends RecyclerView.Adapter<SatelliteAdapter.View
 
     }
 
-
     public interface InterfaceCallback {
         void inClickEvent(Satellite satellite);
 
@@ -45,12 +44,10 @@ public class SatelliteAdapter extends RecyclerView.Adapter<SatelliteAdapter.View
         }
     }
 
-
     public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         return new ViewHolder(LayoutInflater.from(parent.getContext()).inflate(R.layout.satellite_photo_fragment, parent, false));
 
     }
-
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, final int position) {
@@ -81,7 +78,6 @@ public class SatelliteAdapter extends RecyclerView.Adapter<SatelliteAdapter.View
         }
         return satelliteFilter;
     }
-
 
     class SatelliteViewHolder extends RecyclerView.ViewHolder {
         ImageView p_satellite_photo;

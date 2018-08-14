@@ -45,7 +45,6 @@ public class SatelliteListActivity extends AppCompatActivity implements Satellit
         mRecyclerView.setAdapter(adapter);
     }
 
-
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater inflater = getMenuInflater();
