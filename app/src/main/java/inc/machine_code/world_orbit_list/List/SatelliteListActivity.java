@@ -52,7 +52,7 @@ public class SatelliteListActivity extends AppCompatActivity implements Satellit
         inflater.inflate(R.menu.searching_menu_bar, menu);
         SearchManager searchManager = (SearchManager) getSystemService(Context.SEARCH_SERVICE);
         SearchView searchView;
-        searchView = (SearchView) menu.findItem(R.id.menu_search_bar).getActionView();
+        searchView = (SearchView) menu.findItem(R.id.menu_search_bar_satellite).getActionView();
         searchView.setSearchableInfo(searchManager.getSearchableInfo(getComponentName()));
         searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
 
@@ -63,7 +63,6 @@ public class SatelliteListActivity extends AppCompatActivity implements Satellit
 
             @Override
             public boolean onQueryTextChange(String query) {
-
                 adapter.getFilter().filter(query);
                 return false;
             }

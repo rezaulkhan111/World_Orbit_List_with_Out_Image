@@ -3,13 +3,20 @@ package inc.machine_code.world_orbit_list;
 import android.app.SearchManager;
 import android.content.Context;
 import android.content.Intent;
+import android.net.Uri;
+import android.support.design.widget.BottomSheetDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.SearchView;
+import android.text.method.ScrollingMovementMethod;
 import android.view.Menu;
 import android.view.MenuInflater;
+import android.view.MenuItem;
+import android.view.View;
+import android.widget.ImageView;
+import android.widget.TextView;
 
 import java.io.Serializable;
 import java.util.ArrayList;
@@ -22,9 +29,9 @@ import inc.machine_code.world_orbit_list.List.SatelliteListActivity;
 
 public class MainActivity extends AppCompatActivity implements CountryAdapter.ICallback, Serializable {
 
-
     CountryAdapter adapter;
     ArrayList<Country> countryList = new ArrayList<>();
+
     List<Satellite> ALGERIA_Sat_Obj,
             ARGENTINA_Sat_Obj,
             AUSTRALIA_Sat_Obj,
@@ -128,14 +135,15 @@ public class MainActivity extends AppCompatActivity implements CountryAdapter.IC
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
+
         MenuInflater inflater = getMenuInflater();
-        inflater.inflate(R.menu.searching_menu_bar, menu);
+        inflater.inflate(R.menu.header_menu_item, menu);
+
         SearchManager searchManager = (SearchManager) getSystemService(Context.SEARCH_SERVICE);
-        SearchView searchView;
-        searchView = (SearchView) menu.findItem(R.id.menu_search_bar).getActionView();
+        SearchView searchView = (SearchView) menu.findItem(R.id.menu_search_bar_country).getActionView();
+
         searchView.setSearchableInfo(searchManager.getSearchableInfo(getComponentName()));
         searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
-
             @Override
             public boolean onQueryTextSubmit(String query) {
                 return false;
@@ -143,12 +151,79 @@ public class MainActivity extends AppCompatActivity implements CountryAdapter.IC
 
             @Override
             public boolean onQueryTextChange(String get_customer_text) {
-
                 adapter.getFilter().filter(get_customer_text);
                 return false;
             }
         });
         return true;
+    }
+
+    public boolean onOptionsItemSelected(MenuItem menu_item) {
+        switch (menu_item.getItemId()) {
+            case R.id.menu_about:
+                showBottomSheetDialog();
+                return true;
+            default:
+                return super.onOptionsItemSelected(menu_item);
+        }
+    }
+
+    public void showBottomSheetDialog() {
+        View view = getLayoutInflater().inflate(R.layout.bottom_sheet, null);
+        ImageView _iv_facebook, _iv_twitter, _iv_mail;
+        TextView _tv_bottom_sheet;
+        String text = "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaan\n" +
+                "mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm\n" +
+                "mmmmmmmmmmmmmmmmmmmmmmmmmmmm\n" +
+                "mmmmmmmmmmmmmmmmmmmmmmmmmm\n" +
+                "mmmmmmmmmmmmmmmmmmmmmmmmmmmmm\n" +
+                "mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm\n" +
+                "mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm\n" +
+                "mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm\n" +
+                "mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm\n" +
+                "mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm\n" +
+                "mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm\n" +
+                "mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm\n" +
+                "mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm\n" +
+                "mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm\n" +
+                "mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm\n" +
+                "mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm\n" +
+                "mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm\n" +
+                "mmmmmmmmmmmmmmmmmmm\n" +
+                "mmmmmmmmmmmmmmmmmmmmmm";
+
+        _tv_bottom_sheet = view.findViewById(R.id.tv_more_info);
+        _iv_facebook = view.findViewById(R.id.iv_facebook);
+        _iv_twitter = view.findViewById(R.id.iv_twitter);
+        _iv_mail = view.findViewById(R.id.iv_mail);
+
+        _iv_facebook.setImageResource(R.mipmap.ic_facebook_circle);
+        _iv_twitter.setImageResource(R.mipmap.ic_twitter_circle);
+        _iv_mail.setImageResource(R.mipmap.ic_mail_circle);
+
+        _tv_bottom_sheet.setMovementMethod(ScrollingMovementMethod.getInstance());
+        _tv_bottom_sheet.setVerticalScrollBarEnabled(true);
+        _tv_bottom_sheet.setText(text);
+
+        BottomSheetDialog dialog = new BottomSheetDialog(this);
+        dialog.setContentView(view);
+        dialog.show();
+    }
+
+    public void onClick_Facebook(View v) {
+
+        Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.google.com"));
+        startActivity(intent);
+    }
+
+    public void onClick_Twitter(View a) {
+        Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.yahoo.com"));
+        startActivity(intent);
+    }
+
+    public void onClick_Mail(View b) {
+        Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.gmail.com"));
+        startActivity(intent);
     }
 
     private void initRecyclerViewList() {
@@ -1431,7 +1506,8 @@ public class MainActivity extends AppCompatActivity implements CountryAdapter.IC
         PORTUGAL_Sat_Obj.add(new Satellite("22826", "ITAMSAT", "Radio", "Sep-26-1993", R.mipmap.ic_portugal_foreground));
         return PORTUGAL_Sat_Obj;
     }
-///info Comment///
+
+    ///info Comment///
     public List<Satellite> RUSSIA_Satellite_List() {
         RUSSIA_Sat_Obj = new ArrayList<>();
         RUSSIA_Sat_Obj.add(new Satellite("43537", "PROGRESS MS-09", "", "Jul-9-2018", R.mipmap.ic_russia_foreground));
@@ -5767,4 +5843,5 @@ public class MainActivity extends AppCompatActivity implements CountryAdapter.IC
 
         }
     }
+
 }

@@ -2,14 +2,18 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".List.SatelliteListActivity">
-
+    tools:context=".MainActivity">
     <item
-        android:id="@+id/menu_search_bar_satellite"
+        android:id="@+id/menu_search_bar_country"
         android:icon="@mipmap/ic_search_info_circle"
         android:title="search"
         app:actionViewClass="android.support.v7.widget.SearchView"
         app:showAsAction="always"
         android:actionViewClass="android.widget.SearchView"
+        tools:ignore="AppCompatResource" />
+    <item
+        android:id="@+id/menu_about"
+        android:icon="@mipmap/ic_about_info_circle"
+        android:title="About"
         tools:ignore="AppCompatResource" />
 </menu>
