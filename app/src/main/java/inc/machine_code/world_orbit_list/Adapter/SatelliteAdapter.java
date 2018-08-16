@@ -9,6 +9,7 @@ import android.widget.Filter;
 import android.widget.Filterable;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -21,7 +22,8 @@ public class SatelliteAdapter extends RecyclerView.Adapter<SatelliteAdapter.View
 
     private InterfaceCallback callback;
     SatelliteFilter satelliteFilter;
-    public ArrayList<Satellite> SatelliteList, satellitefilterList;
+    public ArrayList<Satellite> SatelliteList;
+    public ArrayList<Satellite> satellitefilterList;
 
     Satellite satelliteObj;
 
@@ -51,9 +53,11 @@ public class SatelliteAdapter extends RecyclerView.Adapter<SatelliteAdapter.View
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, final int position) {
-
-        holder.onBind(position);
-
+        try {
+            holder.onBind(position);
+        } catch (Exception ex) {
+            ex.printStackTrace();
+        }
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -114,12 +118,16 @@ public class SatelliteAdapter extends RecyclerView.Adapter<SatelliteAdapter.View
 
         public void onBind(int position) {
 
+            try {
+                Satellite satellite = SatelliteList.get(position);
+                satellite_photo.setImageResource(SatelliteList.get(position).getImage());
+                satellite_name.setText(String.valueOf(satellite.getName()));
+                launch_date.setText(String.valueOf(satellite.getDate()));
+                satellite_type.setText(String.valueOf(satellite.getSatellite_Type()));
 
-            Satellite satellite = SatelliteList.get(position);
-            satellite_photo.setImageResource(SatelliteList.get(position).getImage());
-            satellite_name.setText(String.valueOf(satellite.getName()));
-            launch_date.setText(String.valueOf(satellite.getDate()));
-            satellite_type.setText(String.valueOf(satellite.getSatellite_Type()));
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
 
         }
 
