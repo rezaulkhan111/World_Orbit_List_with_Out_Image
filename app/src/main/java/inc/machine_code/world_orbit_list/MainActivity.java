@@ -1,10 +1,9 @@
 package inc.machine_code.world_orbit_list;
 
-import android.app.SearchManager;
-import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
 import android.support.design.widget.BottomSheetDialog;
+import android.support.v4.view.MenuItemCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
@@ -142,12 +141,14 @@ public class MainActivity extends AppCompatActivity implements CountryAdapter.IC
         return true;
     }
     public boolean Search(Menu menu){
-
-        SearchManager searchManager = (SearchManager) getSystemService(Context.SEARCH_SERVICE);
-        SearchView searchView;
-        searchView = (SearchView) menu.findItem(R.id.menu_search_bar_country).getActionView();
-        searchView.setSearchableInfo(searchManager.getSearchableInfo(getComponentName()));
-        searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
+        MenuItem searchViewMenuItem = menu.findItem(R.id.menu_search_bar_country);
+        //SearchManager searchManager = (SearchManager) getSystemService(Context.SEARCH_SERVICE);
+        SearchView _search_view;
+        _search_view = (SearchView) MenuItemCompat.getActionView(searchViewMenuItem);
+        int searchImgId = android.support.v7.appcompat.R.id.search_button;
+        ImageView _image_view =_search_view.findViewById(searchImgId);
+        _image_view.setImageResource(R.drawable.ic_search_item_icon);
+        _search_view.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
             @Override
             public boolean onQueryTextSubmit(String query) {
                 return false;

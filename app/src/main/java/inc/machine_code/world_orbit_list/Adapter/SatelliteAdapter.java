@@ -22,8 +22,7 @@ public class SatelliteAdapter extends RecyclerView.Adapter<SatelliteAdapter.View
 
     private InterfaceCallback callback;
     SatelliteFilter satelliteFilter;
-    public ArrayList<Satellite> SatelliteList;
-    public ArrayList<Satellite> satellitefilterList;
+    public ArrayList<Satellite> SatelliteList,satellitefilterList;
 
     Satellite satelliteObj;
 
