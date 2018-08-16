@@ -64,7 +64,6 @@ public class SatelliteAdapter extends RecyclerView.Adapter<SatelliteAdapter.View
                 satelliteObj = new Satellite();
                 Satellite satellite = SatelliteList.get(position);
                 callback.inClickEvent(satellite);
-
             }
         });
     }

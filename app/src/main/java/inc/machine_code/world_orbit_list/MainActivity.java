@@ -4168,7 +4168,7 @@ public class MainActivity extends AppCompatActivity implements CountryAdapter.IC
 //        USA_Sat_Obj.add(new Satellite("24680", "USA 129", "", "Dec-20-1996", R.mipmap.ic_united_states_of_america_foreground));
 //        USA_Sat_Obj.add(new Satellite("24648", "MGS", "", "Nov-7-1996", R.mipmap.ic_united_states_of_america_foreground));
         USA_Sat_Obj.add(new Satellite("24320", "NAVSTAR 39(USA 128)", "Navigation", "Sep-12-1996", R.mipmap.ic_united_states_of_america_foreground));
-        USA_Sat_Obj.add(new Satellite("24313", "ECHOSTAR 2", "", "Sep-11-1996", R.mipmap.united_states_of_america));
+        USA_Sat_Obj.add(new Satellite("24313", "ECHOSTAR 2", "", "Sep-11-1996", R.mipmap.ic_united_states_of_america_foreground));
         USA_Sat_Obj.add(new Satellite("24285", "FAST", "", "Aug-21-1996", R.mipmap.ic_united_states_of_america_foreground));
         USA_Sat_Obj.add(new Satellite("23967", "UFO 7(USA 127)", "", "Jul-25-1996", R.mipmap.ic_united_states_of_america_foreground));
         USA_Sat_Obj.add(new Satellite("23953", "NAVSTAR 38(USA 126)", "Navigation", "Jul-16-1996", R.mipmap.ic_united_states_of_america_foreground));
