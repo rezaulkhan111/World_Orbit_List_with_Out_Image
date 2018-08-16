@@ -5,15 +5,14 @@
     tools:context=".MainActivity">
     <item
         android:id="@+id/menu_search_bar_country"
-        android:icon="@mipmap/ic_search_info_circle"
+        android:icon="@mipmap/search_icon_item"
         android:title="search"
         app:actionViewClass="android.support.v7.widget.SearchView"
         app:showAsAction="always"
-        android:actionViewClass="android.widget.SearchView"
         tools:ignore="AppCompatResource" />
     <item
         android:id="@+id/menu_about"
-        android:icon="@mipmap/ic_about_info_circle"
+        android:icon="@mipmap/about_icon_item"
         android:title="About"
         tools:ignore="AppCompatResource" />
 </menu>

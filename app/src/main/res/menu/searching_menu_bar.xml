@@ -6,7 +6,7 @@
 
     <item
         android:id="@+id/menu_search_bar_satellite"
-        android:icon="@mipmap/ic_search_info_circle"
+        android:icon="@mipmap/search_icon_item"
         android:title="search"
         app:actionViewClass="android.support.v7.widget.SearchView"
         app:showAsAction="always"

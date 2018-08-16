@@ -138,10 +138,14 @@ public class MainActivity extends AppCompatActivity implements CountryAdapter.IC
 
         MenuInflater inflater = getMenuInflater();
         inflater.inflate(R.menu.header_menu_item, menu);
+        Search(menu);
+        return true;
+    }
+    public boolean Search(Menu menu){
 
         SearchManager searchManager = (SearchManager) getSystemService(Context.SEARCH_SERVICE);
-        SearchView searchView = (SearchView) menu.findItem(R.id.menu_search_bar_country).getActionView();
-
+        SearchView searchView;
+        searchView = (SearchView) menu.findItem(R.id.menu_search_bar_country).getActionView();
         searchView.setSearchableInfo(searchManager.getSearchableInfo(getComponentName()));
         searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
             @Override
