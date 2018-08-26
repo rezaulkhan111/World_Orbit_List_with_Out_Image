@@ -1,6 +1,7 @@
 package inc.machine_code.world_orbit_list;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.net.Uri;
 import android.support.design.widget.BottomSheetDialog;
 import android.support.v4.view.MenuItemCompat;
@@ -209,6 +210,7 @@ public class MainActivity extends AppCompatActivity implements CountryAdapter.IC
         _tv_bottom_sheet.setMovementMethod(ScrollingMovementMethod.getInstance());
         _tv_bottom_sheet.setVerticalScrollBarEnabled(true);
         _tv_bottom_sheet.setText(text);
+        _tv_bottom_sheet.setTextColor(Color.rgb(255,102,140) );
 
         BottomSheetDialog dialog = new BottomSheetDialog(this);
         dialog.setContentView(view);

@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Track All Satellite</string>
+    <string name="app_name">Test</string>
     <string name="R_launch_date">Launch Date</string>
     <string name="R_date">Date</string>
     <string name="R_photo">Photo</string>
@@ -8,4 +8,9 @@
     <string name="iv_country_flage">Country_Flag</string>
     <string name="tv_satellite_number">Satellite Number</string>
     <string name="tv_country_name">Country Name</string>
+    <string name="power_by_text">Power By</string>
+    <string name="machine_code_inc_text">Machine Code.inc</string>
+    <string name="twitter">Twitter</string>
+    <string name="facebook">Facebook</string>
+    <string name="mail">Mail</string>
 </resources>

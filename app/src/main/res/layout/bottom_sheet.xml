@@ -4,6 +4,7 @@
     android:id="@+id/bsb_bottom_sheet_id"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#3c3f41"
     android:paddingBottom="8dp"
     android:paddingTop="8dp"
     app:layout_behavior="android.support.design.widget.BottomSheetBehavior">
@@ -14,7 +15,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:text="Power By"
+        android:text="@string/power_by_text"
         android:textAlignment="center"
         android:textColor="#e860e32c"
         android:textSize="20sp" />
@@ -25,7 +26,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/tv_author_header"
         android:layout_centerHorizontal="true"
-        android:text="Machine Code.inc"
+        android:text="@string/machine_code_inc_text"
         android:textAlignment="center"
         android:textColor="#e860e32c"
         android:textSize="20sp" />
@@ -44,7 +45,8 @@
             android:layout_gravity="start"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
-            android:onClick="onClick_Facebook" />
+            android:onClick="onClick_Facebook"
+            android:contentDescription="@string/facebook" />
 
         <ImageView
             android:id="@+id/iv_twitter"
@@ -53,7 +55,8 @@
             android:layout_gravity="center"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
-            android:onClick="onClick_Twitter" />
+            android:onClick="onClick_Twitter"
+            android:contentDescription="@string/twitter" />
 
         <ImageView
             android:id="@+id/iv_mail"
@@ -62,7 +65,8 @@
             android:layout_gravity="end"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
-            android:onClick="onClick_Mail" />
+            android:onClick="onClick_Mail"
+            android:contentDescription="@string/mail" />
     </FrameLayout>
 
     <RelativeLayout
@@ -83,7 +87,6 @@
                 android:layout_alignParentStart="true"
                 android:gravity="center"
                 android:scrollbars="vertical"
-                android:text="rrrrrr"
                 android:textSize="25sp" />
         </android.support.v4.widget.NestedScrollView>
     </RelativeLayout>
