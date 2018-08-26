@@ -351,7 +351,6 @@ public class MainActivity extends AppCompatActivity implements CountryAdapter.IC
         ARGENTINA_Sat_Obj.add(new Satellite("20442", "OSCAR 19 (LUSAT)", "Amateur Radio Comm:", "Jan-22-1990", R.mipmap.ic_argentina_foreground));
         ARGENTINA_Sat_Obj.add(new Satellite("15642", "NAHUEL I1 (ANIK C1)", "Communication", "Apr-12-1985", R.mipmap.ic_argentina_foreground));
         ARGENTINA_Sat_Obj.add(new Satellite("14133", "NAHUEL I2 (ANIK C2)", "Communication", "Jun-18-1983", R.mipmap.ic_argentina_foreground));
-
         return ARGENTINA_Sat_Obj;
     }
 
