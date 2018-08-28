@@ -206,6 +206,96 @@ public class SatelliteListActivity extends AppCompatActivity implements Satellit
                     break;
             }
         }
+        //*----MALAYSIA----*//
+        else if (_sat_lite_List_Array.size() == 7) {
+            switch (satellite.getSatCat_No()) {
+                case "37673":
+                    intent.putExtra("WEB_LINK", satellite.getSatCat_No());
+                    startActivity(intent);
+                    break;
+            }
+        }
+        //*----RUSSIA----*//
+        else if (_sat_lite_List_Array.size() == 1474) {
+            switch (satellite.getSatCat_No()) {
+                case "37673":
+                    intent.putExtra("WEB_LINK", satellite.getSatCat_No());
+                    startActivity(intent);
+                    break;
+            }
+        }
+        //*----SAUDI----*//
+        else if (_sat_lite_List_Array.size() == 13) {
+            switch (satellite.getSatCat_No()) {
+                case "37673":
+                    intent.putExtra("WEB_LINK", satellite.getSatCat_No());
+                    startActivity(intent);
+                    break;
+            }
+        }
+        //*----SOUTH KOREA----*//
+        else if (_sat_lite_List_Array.size() == 24) {
+            switch (satellite.getSatCat_No()) {
+                case "37673":
+                    intent.putExtra("WEB_LINK", satellite.getSatCat_No());
+                    startActivity(intent);
+                    break;
+            }
+        }
+        //*----SPAIN----*//
+        else if (_sat_lite_List_Array.size() == 24) {
+            switch (satellite.getSatCat_No()) {
+                case "37673":
+                    intent.putExtra("WEB_LINK", satellite.getSatCat_No());
+                    startActivity(intent);
+                    break;
+            }
+        }
+        //*----SWEDEN----*//
+        else if (_sat_lite_List_Array.size() == 12) {
+            switch (satellite.getSatCat_No()) {
+                case "37673":
+                    intent.putExtra("WEB_LINK", satellite.getSatCat_No());
+                    startActivity(intent);
+                    break;
+            }
+        }
+        //*----TAIWAN----*//
+        else if (_sat_lite_List_Array.size() == 10) {
+            switch (satellite.getSatCat_No()) {
+                case "37673":
+                    intent.putExtra("WEB_LINK", satellite.getSatCat_No());
+                    startActivity(intent);
+                    break;
+            }
+        }
+        //*----THAILAND----*//
+        else if (_sat_lite_List_Array.size() == 9) {
+            switch (satellite.getSatCat_No()) {
+                case "37673":
+                    intent.putExtra("WEB_LINK", satellite.getSatCat_No());
+                    startActivity(intent);
+                    break;
+            }
+        }
+        //*----TURKEY----*//
+        else if (_sat_lite_List_Array.size() == 15) {
+            switch (satellite.getSatCat_No()) {
+                case "37673":
+                    intent.putExtra("WEB_LINK", satellite.getSatCat_No());
+                    startActivity(intent);
+                    break;
+            }
+        }
+        //*----MMMMMMMMM----*//
+        else if (_sat_lite_List_Array.size() == 0) {
+            switch (satellite.getSatCat_No()) {
+                case "37673":
+                    intent.putExtra("WEB_LINK", satellite.getSatCat_No());
+                    startActivity(intent);
+                    break;
+            }
+        }
 
 
 //        switch (satellite.getSatCat_No()) {

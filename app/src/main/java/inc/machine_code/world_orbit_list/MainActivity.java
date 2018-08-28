@@ -3075,6 +3075,7 @@ public class MainActivity extends AppCompatActivity implements CountryAdapter.IC
     }
 
     public List<Satellite> SOUTH_KOREA_Satellite_List() {
+        String Name="SOUTH KOREA";
         SOUTH_KOREA_Sat_Obj = new ArrayList<>();
         SOUTH_KOREA_Sat_Obj.add(new Satellite("43138", "STEP CUBE LAB", "Technology", "Jan-12-2018", R.mipmap.ic_south_korea_foreground));
         SOUTH_KOREA_Sat_Obj.add(new Satellite("42984", "KOREASAT-5A", "Communication", "Oct-30-2017", R.mipmap.ic_south_korea_foreground));
@@ -3104,6 +3105,7 @@ public class MainActivity extends AppCompatActivity implements CountryAdapter.IC
     }
 
     public List<Satellite> SPAIN_Satellite_List() {
+        String Name="SPAIN";
         SPAIN_Sat_Obj = new ArrayList<>();
         SPAIN_Sat_Obj.add(new Satellite("43228", "HISPASAT 30W-6", "Communication", "Mar-6-2018", R.mipmap.ic_spain_foreground));
         SPAIN_Sat_Obj.add(new Satellite("43215", "PAZ", "SAR", "Feb-22-2018", R.mipmap.ic_spain_foreground));
@@ -5718,7 +5720,7 @@ public class MainActivity extends AppCompatActivity implements CountryAdapter.IC
                 intent.putExtra("savedUser", (Serializable) TAIWAN_Satellite_List());
                 startActivity(intent);
                 break;
-            case "THAILAND_":
+            case "THAILAND":
                 intent.putExtra("savedUser", (Serializable) THAILAND_Satellite_List());
                 startActivity(intent);
                 break;
