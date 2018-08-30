@@ -2521,7 +2521,79 @@ public class SatelliteListActivity extends AppCompatActivity implements Satellit
         //*----INDONESIA----*//
         else if (NAME_ID.equals("INDONESIA")) {
             switch (satellite.getSatCat_No()) {
-                case "37673":
+                case "41944":
+                    intent.putExtra("WEB_LINK", satellite.getSatCat_No());
+                    startActivity(intent);
+                    break;
+                case "41603":
+                    intent.putExtra("WEB_LINK", satellite.getSatCat_No());
+                    startActivity(intent);
+                    break;
+                case "41591":
+                    intent.putExtra("WEB_LINK", satellite.getSatCat_No());
+                    startActivity(intent);
+                    break;
+                case "40931":
+                    intent.putExtra("WEB_LINK", satellite.getSatCat_No());
+                    startActivity(intent);
+                    break;
+                case "38744":
+                    intent.putExtra("WEB_LINK", satellite.getSatCat_No());
+                    startActivity(intent);
+                    break;
+                case "35812":
+                    intent.putExtra("WEB_LINK", satellite.getSatCat_No());
+                    startActivity(intent);
+                    break;
+                case "29709":
+                    intent.putExtra("WEB_LINK", satellite.getSatCat_No());
+                    startActivity(intent);
+                    break;
+                case "28902":
+                    intent.putExtra("WEB_LINK", satellite.getSatCat_No());
+                    startActivity(intent);
+                    break;
+                case "26089":
+                    intent.putExtra("WEB_LINK", satellite.getSatCat_No());
+                    startActivity(intent);
+                    break;
+                case "25880":
+                    intent.putExtra("WEB_LINK", satellite.getSatCat_No());
+                    startActivity(intent);
+                    break;
+                case "25050":
+                    intent.putExtra("WEB_LINK", satellite.getSatCat_No());
+                    startActivity(intent);
+                    break;
+                case "23864":
+                    intent.putExtra("WEB_LINK", satellite.getSatCat_No());
+                    startActivity(intent);
+                    break;
+                case "21964":
+                    intent.putExtra("WEB_LINK", satellite.getSatCat_No());
+                    startActivity(intent);
+                    break;
+                case "14134":
+                    intent.putExtra("WEB_LINK", satellite.getSatCat_No());
+                    startActivity(intent);
+                    break;
+                case "9862":
+                    intent.putExtra("WEB_LINK", satellite.getSatCat_No());
+                    startActivity(intent);
+                    break;
+                case "9009":
+                    intent.putExtra("WEB_LINK", satellite.getSatCat_No());
+                    startActivity(intent);
+                    break;
+
+
+            }
+        }
+
+        //*----IRAQ----*//
+        else if (NAME_ID.equals("IRAQ")) {
+            switch (satellite.getSatCat_No()) {
+                case "40043":
                     intent.putExtra("WEB_LINK", satellite.getSatCat_No());
                     startActivity(intent);
                     break;
@@ -2530,16 +2602,7 @@ public class SatelliteListActivity extends AppCompatActivity implements Satellit
         //*----IRAN----*//
         else if (NAME_ID.equals("IRAN")) {
             switch (satellite.getSatCat_No()) {
-                case "000":
-                    intent.putExtra("WEB_LINK", satellite.getSatCat_No());
-                    startActivity(intent);
-                    break;
-            }
-        }
-        //*----IRAQ----*//
-        else if (NAME_ID.equals("IRAQ")) {
-            switch (satellite.getSatCat_No()) {
-                case "000":
+                case "28893":
                     intent.putExtra("WEB_LINK", satellite.getSatCat_No());
                     startActivity(intent);
                     break;
@@ -2548,7 +2611,71 @@ public class SatelliteListActivity extends AppCompatActivity implements Satellit
         //*----ISRAEL----*//
         else if (NAME_ID.equals("ISRAEL")) {
             switch (satellite.getSatCat_No()) {
-                case "37673":
+                case "42901":
+                    intent.putExtra("WEB_LINK", satellite.getSatCat_No());
+                    startActivity(intent);
+                    break;
+                case "42000":
+                    intent.putExtra("WEB_LINK", satellite.getSatCat_No());
+                    startActivity(intent);
+                    break;
+                case "41999":
+                    intent.putExtra("WEB_LINK", satellite.getSatCat_No());
+                    startActivity(intent);
+                    break;
+                case "41759":
+                    intent.putExtra("WEB_LINK", satellite.getSatCat_No());
+                    startActivity(intent);
+                    break;
+                case "40021":
+                    intent.putExtra("WEB_LINK", satellite.getSatCat_No());
+                    startActivity(intent);
+                    break;
+                case "39650":
+                    intent.putExtra("WEB_LINK", satellite.getSatCat_No());
+                    startActivity(intent);
+                    break;
+                case "39237":
+                    intent.putExtra("WEB_LINK", satellite.getSatCat_No());
+                    startActivity(intent);
+                    break;
+                case "37950":
+                    intent.putExtra("WEB_LINK", satellite.getSatCat_No());
+                    startActivity(intent);
+                    break;
+                case "36608":
+                    intent.putExtra("WEB_LINK", satellite.getSatCat_No());
+                    startActivity(intent);
+                    break;
+                case "32794":
+                    intent.putExtra("WEB_LINK", satellite.getSatCat_No());
+                    startActivity(intent);
+                    break;
+                case "32476":
+                    intent.putExtra("WEB_LINK", satellite.getSatCat_No());
+                    startActivity(intent);
+                    break;
+                case "31601":
+                    intent.putExtra("WEB_LINK", satellite.getSatCat_No());
+                    startActivity(intent);
+                    break;
+                case "29079":
+                    intent.putExtra("WEB_LINK", satellite.getSatCat_No());
+                    startActivity(intent);
+                    break;
+                case "28132":
+                    intent.putExtra("WEB_LINK", satellite.getSatCat_No());
+                    startActivity(intent);
+                    break;
+                case "27434":
+                    intent.putExtra("WEB_LINK", satellite.getSatCat_No());
+                    startActivity(intent);
+                    break;
+                case "25397":
+                    intent.putExtra("WEB_LINK", satellite.getSatCat_No());
+                    startActivity(intent);
+                    break;
+                case "23723":
                     intent.putExtra("WEB_LINK", satellite.getSatCat_No());
                     startActivity(intent);
                     break;
@@ -2633,7 +2760,31 @@ public class SatelliteListActivity extends AppCompatActivity implements Satellit
         //*----MALAYSIA----*//
         else if (NAME_ID.equals("MALAYSIA")) {
             switch (satellite.getSatCat_No()) {
-                case "37673":
+                case "40147":
+                    intent.putExtra("WEB_LINK", satellite.getSatCat_No());
+                    startActivity(intent);
+                    break;
+                case "35578":
+                    intent.putExtra("WEB_LINK", satellite.getSatCat_No());
+                    startActivity(intent);
+                    break;
+                case "35362":
+                    intent.putExtra("WEB_LINK", satellite.getSatCat_No());
+                    startActivity(intent);
+                    break;
+                case "29648":
+                    intent.putExtra("WEB_LINK", satellite.getSatCat_No());
+                    startActivity(intent);
+                    break;
+                case "26548":
+                    intent.putExtra("WEB_LINK", satellite.getSatCat_No());
+                    startActivity(intent);
+                    break;
+                case "24653":
+                    intent.putExtra("WEB_LINK", satellite.getSatCat_No());
+                    startActivity(intent);
+                    break;
+                case "23765":
                     intent.putExtra("WEB_LINK", satellite.getSatCat_No());
                     startActivity(intent);
                     break;
@@ -2642,7 +2793,51 @@ public class SatelliteListActivity extends AppCompatActivity implements Satellit
         //*----MEXICO----*//
         else if (NAME_ID.equals("MEXICO")) {
             switch (satellite.getSatCat_No()) {
-                case "37673":
+                case "40946":
+                    intent.putExtra("WEB_LINK", satellite.getSatCat_No());
+                    startActivity(intent);
+                    break;
+                case "40664":
+                    intent.putExtra("WEB_LINK", satellite.getSatCat_No());
+                    startActivity(intent);
+                    break;
+                case "39122":
+                    intent.putExtra("WEB_LINK", satellite.getSatCat_No());
+                    startActivity(intent);
+                    break;
+                case "39035":
+                    intent.putExtra("WEB_LINK", satellite.getSatCat_No());
+                    startActivity(intent);
+                    break;
+                case "37826":
+                    intent.putExtra("WEB_LINK", satellite.getSatCat_No());
+                    startActivity(intent);
+                    break;
+                case "29162":
+                    intent.putExtra("WEB_LINK", satellite.getSatCat_No());
+                    startActivity(intent);
+                    break;
+                case "25558":
+                    intent.putExtra("WEB_LINK", satellite.getSatCat_No());
+                    startActivity(intent);
+                    break;
+                case "24305":
+                    intent.putExtra("WEB_LINK", satellite.getSatCat_No());
+                    startActivity(intent);
+                    break;
+                case "23313":
+                    intent.putExtra("WEB_LINK", satellite.getSatCat_No());
+                    startActivity(intent);
+                    break;
+                case "22911":
+                    intent.putExtra("WEB_LINK", satellite.getSatCat_No());
+                    startActivity(intent);
+                    break;
+                case "16274":
+                    intent.putExtra("WEB_LINK", satellite.getSatCat_No());
+                    startActivity(intent);
+                    break;
+                case "15824":
                     intent.putExtra("WEB_LINK", satellite.getSatCat_No());
                     startActivity(intent);
                     break;
@@ -2651,7 +2846,7 @@ public class SatelliteListActivity extends AppCompatActivity implements Satellit
         //*----MOROCCO----*//
         else if (NAME_ID.equals("MOROCCO")) {
             switch (satellite.getSatCat_No()) {
-                case "000":
+                case "43005":
                     intent.putExtra("WEB_LINK", satellite.getSatCat_No());
                     startActivity(intent);
                     break;
@@ -2660,7 +2855,27 @@ public class SatelliteListActivity extends AppCompatActivity implements Satellit
         //*----NETHERLANDS----*//
         else if (NAME_ID.equals("NETHERLANDS")) {
             switch (satellite.getSatCat_No()) {
-                case "000":
+                case "42015":
+                    intent.putExtra("WEB_LINK", satellite.getSatCat_No());
+                    startActivity(intent);
+                    break;
+                case "39428":
+                    intent.putExtra("WEB_LINK", satellite.getSatCat_No());
+                    startActivity(intent);
+                    break;
+                case "32789":
+                    intent.putExtra("WEB_LINK", satellite.getSatCat_No());
+                    startActivity(intent);
+                    break;
+                case "24957":
+                    intent.putExtra("WEB_LINK", satellite.getSatCat_No());
+                    startActivity(intent);
+                    break;
+                case "21989":
+                    intent.putExtra("WEB_LINK", satellite.getSatCat_No());
+                    startActivity(intent);
+                    break;
+                case "19121":
                     intent.putExtra("WEB_LINK", satellite.getSatCat_No());
                     startActivity(intent);
                     break;
@@ -2669,7 +2884,27 @@ public class SatelliteListActivity extends AppCompatActivity implements Satellit
         //*----NIGERIA----*//
         else if (NAME_ID.equals("NIGERIA")) {
             switch (satellite.getSatCat_No()) {
-                case "000":
+                case "42824":
+                    intent.putExtra("WEB_LINK", satellite.getSatCat_No());
+                    startActivity(intent);
+                    break;
+                case "38014":
+                    intent.putExtra("WEB_LINK", satellite.getSatCat_No());
+                    startActivity(intent);
+                    break;
+                case "37790":
+                    intent.putExtra("WEB_LINK", satellite.getSatCat_No());
+                    startActivity(intent);
+                    break;
+                case "37789":
+                    intent.putExtra("WEB_LINK", satellite.getSatCat_No());
+                    startActivity(intent);
+                    break;
+                case "31395":
+                    intent.putExtra("WEB_LINK", satellite.getSatCat_No());
+                    startActivity(intent);
+                    break;
+                case "27941":
                     intent.putExtra("WEB_LINK", satellite.getSatCat_No());
                     startActivity(intent);
                     break;
@@ -2678,7 +2913,11 @@ public class SatelliteListActivity extends AppCompatActivity implements Satellit
         //*----NORTH KOREA----*//
         else if (NAME_ID.equals("NORTH KOREA")) {
             switch (satellite.getSatCat_No()) {
-                case "000":
+                case "41332":
+                    intent.putExtra("WEB_LINK", satellite.getSatCat_No());
+                    startActivity(intent);
+                    break;
+                case "39026":
                     intent.putExtra("WEB_LINK", satellite.getSatCat_No());
                     startActivity(intent);
                     break;
