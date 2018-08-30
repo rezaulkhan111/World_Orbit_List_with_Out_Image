@@ -473,7 +473,7 @@ public class MainActivity extends AppCompatActivity implements CountryAdapter.IC
         CANADA_Sat_Obj.add(new Satellite("21726", "ANIK E1", "Communication", "Sep-26-1991", R.mipmap.ic_canada_foreground));
         CANADA_Sat_Obj.add(new Satellite("21222", "ANIK E2", "Communication", "Apr-4-1991", R.mipmap.ic_canada_foreground));
         CANADA_Sat_Obj.add(new Satellite("13652", "ANIK C3(TELESAT-5)", "Communication", "Nov-11-1982", R.mipmap.ic_canada_foreground));
-        CANADA_Sat_Obj.add(new Satellite("13652", "ANIK D1(TELESAT 6)", "Communication", "Aug-26-1982", R.mipmap.ic_canada_foreground));
+        CANADA_Sat_Obj.add(new Satellite("13431", "ANIK D1(TELESAT 6)", "Communication", "Aug-26-1982", R.mipmap.ic_canada_foreground));
         CANADA_Sat_Obj.add(new Satellite("11153", "ANIK B1(TELESAT-4)", "Communication", "Dec-16-1978", R.mipmap.ic_canada_foreground));
         CANADA_Sat_Obj.add(new Satellite("8585", "CTS", "Comm:,Experimental", "Jan-17-1976", R.mipmap.ic_canada_foreground));
         CANADA_Sat_Obj.add(new Satellite("7790", "ANIK A3(TELESAT-3)", "Communication", "May-7-1975", R.mipmap.ic_canada_foreground));
@@ -5514,338 +5514,422 @@ public class MainActivity extends AppCompatActivity implements CountryAdapter.IC
         switch (country.getCountryName()) {
             case "ALGERIA":
                 intent.putExtra("savedUser", (Serializable) ALGERIA_Satellite_List());
+                intent.putExtra("LIST_NAME_ID","ALGERIA");
                 startActivity(intent);
                 break;
             case "AUSTRALIA":
                 intent.putExtra("savedUser", (Serializable) AUSTRALIA_Satellite_List());
+                intent.putExtra("LIST_NAME_ID","AUSTRALIA");
                 startActivity(intent);
                 break;
             case "ARGENTINA":
                 intent.putExtra("savedUser", (Serializable) ARGENTINA_Satellite_List());
+                intent.putExtra("LIST_NAME_ID","ARGENTINA");
                 startActivity(intent);
                 break;
             case "AZERBAIJAN":
                 intent.putExtra("savedUser", (Serializable) AZERBAIJAN_Satellite_List());
+                intent.putExtra("LIST_NAME_ID","AZERBAIJAN");
                 startActivity(intent);
                 break;
             case "BELARUS":
                 intent.putExtra("savedUser", (Serializable) BELARUS_Satellite_List());
+                intent.putExtra("LIST_NAME_ID","BELARUS");
                 startActivity(intent);
                 break;
             case "BOLIVIA":
                 intent.putExtra("savedUser", (Serializable) BOLIVIA_Satellite_List());
+                intent.putExtra("LIST_NAME_ID","BOLIVIA");
                 startActivity(intent);
                 break;
             case "BRAZIL":
                 intent.putExtra("savedUser", (Serializable) BRAZIL_Satellite_List());
+                intent.putExtra("LIST_NAME_ID","BRAZIL");
                 startActivity(intent);
                 break;
             case "BULGARIA":
                 intent.putExtra("savedUser", (Serializable) BULGARIA_Satellite_List());
+                intent.putExtra("LIST_NAME_ID","BULGARIA");
                 startActivity(intent);
                 break;
             case "CANADA":
                 intent.putExtra("savedUser", (Serializable) CANADA_Satellite_List());
+                intent.putExtra("LIST_NAME_ID","CANADA");
                 startActivity(intent);
                 break;
             case "CHILE":
                 intent.putExtra("savedUser", (Serializable) CHILE_Satellite_List());
+                intent.putExtra("LIST_NAME_ID","CHILE");
                 startActivity(intent);
                 break;
             case "CHINA":
                 intent.putExtra("savedUser", (Serializable) CHINA_Satellite_List());
+                intent.putExtra("LIST_NAME_ID","CHINA");
                 startActivity(intent);
                 break;
             case "CZECH":
                 intent.putExtra("savedUser", (Serializable) CZECH_Satellite_List());
+                intent.putExtra("LIST_NAME_ID","CZECH");
                 startActivity(intent);
                 break;
             case "DENMARK":
                 intent.putExtra("savedUser", (Serializable) DENMARK_Satellite_List());
+                intent.putExtra("LIST_NAME_ID","DENMARK");
                 startActivity(intent);
                 break;
             case "ECUADOR":
                 intent.putExtra("savedUser", (Serializable) ECUADOR_Satellite_List());
+                intent.putExtra("LIST_NAME_ID","ECUADOR");
                 startActivity(intent);
                 break;
             case "EGYPT":
                 intent.putExtra("savedUser", (Serializable) EGYPT_Satellite_List());
+                intent.putExtra("LIST_NAME_ID","EGYPT");
                 startActivity(intent);
                 break;
             case "ESTONIA":
                 intent.putExtra("savedUser", (Serializable) ESTONIA_Satellite_List());
+                intent.putExtra("LIST_NAME_ID","ESTONIA");
                 startActivity(intent);
                 break;
             case "FRANCE":
                 intent.putExtra("savedUser", (Serializable) FRANCE_Satellite_List());
+                intent.putExtra("LIST_NAME_ID","FRANCE");
                 startActivity(intent);
                 break;
             case "GERMANY":
                 intent.putExtra("savedUser", (Serializable) GERMANY_Satellite_List());
+                intent.putExtra("LIST_NAME_ID","GERMANY");
                 startActivity(intent);
                 break;
             case "GREECE":
                 intent.putExtra("savedUser", (Serializable) GREECE_Satellite_List());
+                intent.putExtra("LIST_NAME_ID","GREECE");
                 startActivity(intent);
                 break;
             case "INDIA":
                 intent.putExtra("savedUser", (Serializable) INDIA_Satellite_List());
+                intent.putExtra("LIST_NAME_ID","INDIA");
                 startActivity(intent);
                 break;
             case "INDONESIA":
                 intent.putExtra("savedUser", (Serializable) INDONESIA_Satellite_List());
+                intent.putExtra("LIST_NAME_ID","INDONESIA");
                 startActivity(intent);
                 break;
             case "IRAN":
                 intent.putExtra("savedUser", (Serializable) IRAN_Satellite_List());
+                intent.putExtra("LIST_NAME_ID","IRAN");
                 startActivity(intent);
                 break;
             case "IRAQ":
                 intent.putExtra("savedUser", (Serializable) IRAQ_Satellite_List());
+                intent.putExtra("LIST_NAME_ID","IRAQ");
                 startActivity(intent);
                 break;
             case "ISRAEL":
                 intent.putExtra("savedUser", (Serializable) ISRAEL_Satellite_List());
+                intent.putExtra("LIST_NAME_ID","ISRAEL");
                 startActivity(intent);
                 break;
             case "ITALY":
                 intent.putExtra("savedUser", (Serializable) ITALY_Satellite_List());
+                intent.putExtra("LIST_NAME_ID","ITALY");
                 startActivity(intent);
                 break;
             case "JAPAN":
                 intent.putExtra("savedUser", (Serializable) JAPAN_Satellite_List());
+                intent.putExtra("LIST_NAME_ID","JAPAN");
                 startActivity(intent);
                 break;
             case "KAZAKHSTAN":
                 intent.putExtra("savedUser", (Serializable) KAZAKHSTAN_Satellite_List());
+                intent.putExtra("LIST_NAME_ID","KAZAKHSTAN");
                 startActivity(intent);
                 break;
             case "LAOS":
                 intent.putExtra("savedUser", (Serializable) LAOS_Satellite_List());
+                intent.putExtra("LIST_NAME_ID","LAOS");
                 startActivity(intent);
                 break;
             case "LATVIA":
                 intent.putExtra("savedUser", (Serializable) LATVIA_Satellite_List());
+                intent.putExtra("LIST_NAME_ID","LATVIA");
                 startActivity(intent);
                 break;
             case "LITHUANIA":
                 intent.putExtra("savedUser", (Serializable) LITHUANIA_Satellite_List());
+                intent.putExtra("LIST_NAME_ID","LITHUANIA");
                 startActivity(intent);
                 break;
             case "LUXEMBOURG":
                 intent.putExtra("savedUser", (Serializable) LUXEMBOURG_Satellite_List());
+                intent.putExtra("LIST_NAME_ID","LUXEMBOURG");
                 startActivity(intent);
                 break;
             case "MALAYSIA":
                 intent.putExtra("savedUser", (Serializable) MALAYSIA_Satellite_List());
+                intent.putExtra("LIST_NAME_ID","MALAYSIA");
                 startActivity(intent);
                 break;
             case "MEXICO":
                 intent.putExtra("savedUser", (Serializable) MEXICO_Satellite_List());
+                intent.putExtra("LIST_NAME_ID","MEXICO");
                 startActivity(intent);
                 break;
             case "MOROCCO":
                 intent.putExtra("savedUser", (Serializable) MOROCCO_Satellite_List());
+                intent.putExtra("LIST_NAME_ID","MOROCCO");
                 startActivity(intent);
                 break;
             case "NETHERLANDS":
                 intent.putExtra("savedUser", (Serializable) NETHERLANDS_Satellite_List());
+                intent.putExtra("LIST_NAME_ID","NETHERLANDS");
                 startActivity(intent);
                 break;
             case "NIGERIA":
                 intent.putExtra("savedUser", (Serializable) NIGERIA_Satellite_List());
+                intent.putExtra("LIST_NAME_ID","NIGERIA");
                 startActivity(intent);
                 break;
             case "NORTH KOREA":
                 intent.putExtra("savedUser", (Serializable) NORTH_KOREA_Satellite_List());
+                intent.putExtra("LIST_NAME_ID","NORTH KOREA");
                 startActivity(intent);
                 break;
             case "NORWAY":
                 intent.putExtra("savedUser", (Serializable) NORWAY_Satellite_List());
+                intent.putExtra("LIST_NAME_ID","NORWAY");
                 startActivity(intent);
                 break;
             case "PAKISTAN":
                 intent.putExtra("savedUser", (Serializable) PAKISTAN_Satellite_List());
+                intent.putExtra("LIST_NAME_ID","PAKISTAN");
                 startActivity(intent);
                 break;
             case "PERU":
                 intent.putExtra("savedUser", (Serializable) PERU_Satellite_List());
+                intent.putExtra("LIST_NAME_ID","PERU");
                 startActivity(intent);
                 break;
             case "PHILIPPINES":
                 intent.putExtra("savedUser", (Serializable) PHILIPPINES_Satellite_List());
+                intent.putExtra("LIST_NAME_ID","PHILIPPINES");
                 startActivity(intent);
                 break;
             case "POLAND":
                 intent.putExtra("savedUser", (Serializable) POLAND_Satellite_List());
+                intent.putExtra("LIST_NAME_ID","POLAND");
                 startActivity(intent);
                 break;
             case "PORTUGAL":
                 intent.putExtra("savedUser", (Serializable) PORTUGAL_Satellite_List());
+                intent.putExtra("LIST_NAME_ID","PORTUGAL");
                 startActivity(intent);
                 break;
             case "RUSSIA":
                 intent.putExtra("savedUser", (Serializable) RUSSIA_Satellite_List());
+                intent.putExtra("LIST_NAME_ID","RUSSIA");
                 startActivity(intent);
                 break;
             case "SAUDI ARABIA":
                 intent.putExtra("savedUser", (Serializable) SAUDI_ARABIA_Satellite_List());
+                intent.putExtra("LIST_NAME_ID","SAUDI ARABIA");
                 startActivity(intent);
                 break;
             case "SINGAPORE":
                 intent.putExtra("savedUser", (Serializable) SINGAPORE_Satellite_List());
+                intent.putExtra("LIST_NAME_ID","SINGAPORE");
                 startActivity(intent);
                 break;
             case "SLOVAKIA":
                 intent.putExtra("savedUser", (Serializable) SLOVAKIA_Satellite_List());
+                intent.putExtra("LIST_NAME_ID","SLOVAKIA");
                 startActivity(intent);
                 break;
             case "SOUTH AFRICA":
                 intent.putExtra("savedUser", (Serializable) SOUTH_AFRICA_Satellite_List());
+                intent.putExtra("LIST_NAME_ID","SOUTH AFRICA");
                 startActivity(intent);
                 break;
             case "SOUTH KOREA":
                 intent.putExtra("savedUser", (Serializable) SOUTH_KOREA_Satellite_List());
+                intent.putExtra("LIST_NAME_ID","SOUTH KOREA");
                 startActivity(intent);
                 break;
             case "SPAIN":
                 intent.putExtra("savedUser", (Serializable) SPAIN_Satellite_List());
+                intent.putExtra("LIST_NAME_ID","SPAIN");
                 startActivity(intent);
                 break;
             case "SWEDEN":
                 intent.putExtra("savedUser", (Serializable) SWEDEN_Satellite_List());
+                intent.putExtra("LIST_NAME_ID","SWEDEN");
                 startActivity(intent);
                 break;
             case "TAIWAN":
                 intent.putExtra("savedUser", (Serializable) TAIWAN_Satellite_List());
+                intent.putExtra("LIST_NAME_ID","TAIWAN");
                 startActivity(intent);
                 break;
             case "THAILAND":
                 intent.putExtra("savedUser", (Serializable) THAILAND_Satellite_List());
+                intent.putExtra("LIST_NAME_ID","THAILAND");
                 startActivity(intent);
                 break;
             case "TURKEY":
                 intent.putExtra("savedUser", (Serializable) TURKEY_Satellite_List());
+                intent.putExtra("LIST_NAME_ID","TURKEY");
                 startActivity(intent);
                 break;
             case "UNITED ARAB EMIRATES":
                 intent.putExtra("savedUser", (Serializable) UNITED_ARAB_EMIRATES_Satellite_List());
+                intent.putExtra("LIST_NAME_ID","UNITED ARAB EMIRATES");
                 startActivity(intent);
                 break;
             case "UNITED KINGDOM":
                 intent.putExtra("savedUser", (Serializable) UNITED_KINGDOM_Satellite_List());
+                intent.putExtra("LIST_NAME_ID","UNITED KINGDOM");
                 startActivity(intent);
                 break;
             case "USA":
                 intent.putExtra("savedUser", (Serializable) USA_Satellite_List());
+                intent.putExtra("LIST_NAME_ID","USA");
                 startActivity(intent);
                 break;
             case "URUGUAY":
                 intent.putExtra("savedUser", (Serializable) URUGUAY_Satellite_List());
+                intent.putExtra("LIST_NAME_ID","URUGUAY");
                 startActivity(intent);
                 break;
             case "VENEZUELA":
                 intent.putExtra("savedUser", (Serializable) VENEZUELA_Satellite_List());
+                intent.putExtra("LIST_NAME_ID","VENEZUELA");
                 startActivity(intent);
                 break;
             case "VIETNAM":
                 intent.putExtra("savedUser", (Serializable) VIETNAM_Satellite_List());
+                intent.putExtra("LIST_NAME_ID","VIETNAM");
                 startActivity(intent);
                 break;
             case "KENIA":
                 intent.putExtra("savedUser", (Serializable) KENIA_Satellite_List());
+                intent.putExtra("LIST_NAME_ID","KENIA");
                 startActivity(intent);
                 break;
             case "BANGLADESH":
                 intent.putExtra("savedUser", (Serializable) BANGLADESH_Satellite_List());
+                intent.putExtra("LIST_NAME_ID","BANGLADESH");
                 startActivity(intent);
                 break;
             case "FORMER CZECHOSLOVAKIA":
                 intent.putExtra("savedUser", (Serializable) FORMER_CZECHOSLOVAKIA_List());
+                intent.putExtra("LIST_NAME_ID","FORMER CZECHOSLOVAKIA");
                 startActivity(intent);
                 break;
             case "CHINA/BRAZIL":
                 intent.putExtra("savedUser", (Serializable) CHINA_BRAZIL_List());
+                intent.putExtra("LIST_NAME_ID","CHINA/BRAZIL");
                 startActivity(intent);
                 break;
             case "FRANCE/GERMANY":
                 intent.putExtra("savedUser", (Serializable) FRANCE_GERMANY_List());
+                intent.putExtra("LIST_NAME_ID","FRANCE/GERMANY");
                 startActivity(intent);
                 break;
             case "FRANCE/ITALY":
                 intent.putExtra("savedUser", (Serializable) FRANCE_ITALY_List());
+                intent.putExtra("LIST_NAME_ID","FRANCE/ITALY");
                 startActivity(intent);
                 break;
             case "SINGAPORE/TAIWAN":
                 intent.putExtra("savedUser", (Serializable) SINGAPORE_TAIWAN_List());
+                intent.putExtra("LIST_NAME_ID","SINGAPORE/TAIWAN");
                 startActivity(intent);
                 break;
             case "TURKMENISTAN/MONACO":
                 intent.putExtra("savedUser", (Serializable) TURKMENISTAN_MONACO_List());
+                intent.putExtra("LIST_NAME_ID","TURKMENISTAN/MONACO");
                 startActivity(intent);
                 break;
             case "UNITED STATES/BRAZIL":
                 intent.putExtra("savedUser", (Serializable) UNITED_STATES_BRAZIL_List());
+                intent.putExtra("LIST_NAME_ID","UNITED STATES/BRAZIL");
                 startActivity(intent);
                 break;
             case "NATO":
                 intent.putExtra("savedUser", (Serializable) NORTH_ATLANTIC_TREATY_ORGANIZATION_NATO_List());
+                intent.putExtra("LIST_NAME_ID","NATO");
                 startActivity(intent);
                 break;
             case "ARABSAT":
                 intent.putExtra("savedUser", (Serializable) ARAB_SATELLITE_COMMUNICATIONS_ORGANIZATION_ARABSAT_List());
+                intent.putExtra("LIST_NAME_ID","ARABSAT");
                 startActivity(intent);
                 break;
             case "ASIASAT":
                 intent.putExtra("savedUser", (Serializable) ASIA_SATELLITE_TELECOMMUNICATIONS_COMPANY_ASIASAT_List());
+                intent.putExtra("LIST_NAME_ID","ASIASAT");
                 startActivity(intent);
                 break;
             case "EUMETSAT":
                 intent.putExtra("savedUser", (Serializable) EUROPEAN_ORGANISATION_FOR_THE_EXPLOITATION_EUMETSAT_List());
+                intent.putExtra("LIST_NAME_ID","EUMETSAT");
                 startActivity(intent);
                 break;
             case "GLOBALSTAR":
                 intent.putExtra("savedUser", (Serializable) GLOBALSTAR_List());
+                intent.putExtra("LIST_NAME_ID","GLOBALSTAR");
                 startActivity(intent);
                 break;
             case "INMARSAT":
                 intent.putExtra("savedUser", (Serializable) INTERNATIONAL_MOBILE_SATELLITE_ORGANIZATION_INMARSAT_List());
+                intent.putExtra("LIST_NAME_ID","INMARSAT");
                 startActivity(intent);
                 break;
             case "ITSO":
                 intent.putExtra("savedUser", (Serializable) INTERNATIONAL_TELECOMMUNICATIONS_SATELLITE_ORGANIZATION_ITSO_List());
+                intent.putExtra("LIST_NAME_ID","ITSO");
                 startActivity(intent);
                 break;
             case "O3B NETWORK":
                 intent.putExtra("savedUser", (Serializable) O3B_NETWORKS_List());
+                intent.putExtra("LIST_NAME_ID","O3B NETWORK");
                 startActivity(intent);
                 break;
             case "ORBCOMM":
                 intent.putExtra("savedUser", (Serializable) ORBCOMM_List());
+                intent.putExtra("LIST_NAME_ID","ORBCOMM");
                 startActivity(intent);
                 break;
             case "RASCOOM":
                 intent.putExtra("savedUser", (Serializable) REGIONAL_AFRICAN_SATELLITE_COMMUNICATIONS_ORGANIZATION_RASCOM_List());
+                intent.putExtra("LIST_NAME_ID","RASCOOM");
                 startActivity(intent);
                 break;
             case "SEA LAUNCH":
                 intent.putExtra("savedUser", (Serializable) SEA_LAUNCH_List());
+                intent.putExtra("LIST_NAME_ID","SEA LAUNCH");
                 startActivity(intent);
                 break;
             case "SES":
                 intent.putExtra("savedUser", (Serializable) SOCIETE_EUROPEENNE_DES_SATELLITES_SES_List());
+                intent.putExtra("LIST_NAME_ID","SES");
                 startActivity(intent);
                 break;
             case "NEW ICO":
                 intent.putExtra("savedUser", (Serializable) NEW_ICO_List());
+                intent.putExtra("LIST_NAME_ID","NEW ICO");
                 startActivity(intent);
                 break;
             case "ESA":
                 intent.putExtra("savedUser", (Serializable) EUROPEAN_SPACE_AGENCY_ESA_List());
+                intent.putExtra("LIST_NAME_ID","ESA");
                 startActivity(intent);
                 break;
             case "EUTELSAT":
                 intent.putExtra("savedUser", (Serializable) EUROPEAN_TELECOMMUNICATIONS_SATELLITE_ORGANIZATION_EUTELSAT_List());
+                intent.putExtra("LIST_NAME_ID","EUTELSAT");
                 startActivity(intent);
                 break;
 
