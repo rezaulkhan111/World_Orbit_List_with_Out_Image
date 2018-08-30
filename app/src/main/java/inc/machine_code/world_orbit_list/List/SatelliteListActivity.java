@@ -2491,7 +2491,19 @@ public class SatelliteListActivity extends AppCompatActivity implements Satellit
         //*----GREECE----*//
         else if (NAME_ID.equals("GREECE")) {
             switch (satellite.getSatCat_No()) {
-                case "000":
+                case "42724":
+                    intent.putExtra("WEB_LINK", satellite.getSatCat_No());
+                    startActivity(intent);
+                    break;
+                case "42716":
+                    intent.putExtra("WEB_LINK", satellite.getSatCat_No());
+                    startActivity(intent);
+                    break;
+                case "27811":
+                    intent.putExtra("WEB_LINK", satellite.getSatCat_No());
+                    startActivity(intent);
+                    break;
+                case "22175":
                     intent.putExtra("WEB_LINK", satellite.getSatCat_No());
                     startActivity(intent);
                     break;
@@ -2573,7 +2585,7 @@ public class SatelliteListActivity extends AppCompatActivity implements Satellit
         //*----LAOS----*//
         else if (NAME_ID.equals("LAOS")) {
             switch (satellite.getSatCat_No()) {
-                case "000":
+                case "41034":
                     intent.putExtra("WEB_LINK", satellite.getSatCat_No());
                     startActivity(intent);
                     break;
@@ -2582,7 +2594,7 @@ public class SatelliteListActivity extends AppCompatActivity implements Satellit
         //*----LATVIA----*//
         else if (NAME_ID.equals("LATVIA")) {
             switch (satellite.getSatCat_No()) {
-                case "000":
+                case "42791":
                     intent.putExtra("WEB_LINK", satellite.getSatCat_No());
                     startActivity(intent);
                     break;
@@ -2591,7 +2603,7 @@ public class SatelliteListActivity extends AppCompatActivity implements Satellit
         //*----LITHUANIA----*//
         else if (NAME_ID.equals("LITHUANIA")) {
             switch (satellite.getSatCat_No()) {
-                case "000":
+                case "42768":
                     intent.putExtra("WEB_LINK", satellite.getSatCat_No());
                     startActivity(intent);
                     break;
@@ -2600,7 +2612,19 @@ public class SatelliteListActivity extends AppCompatActivity implements Satellit
         //*----LUXEMBOURG----*//
         else if (NAME_ID.equals("LUXEMBOURG")) {
             switch (satellite.getSatCat_No()) {
-                case "000":
+                case "37840":
+                    intent.putExtra("WEB_LINK", satellite.getSatCat_No());
+                    startActivity(intent);
+                    break;
+                case "23331":
+                    intent.putExtra("WEB_LINK", satellite.getSatCat_No());
+                    startActivity(intent);
+                    break;
+                case "21139":
+                    intent.putExtra("WEB_LINK", satellite.getSatCat_No());
+                    startActivity(intent);
+                    break;
+                case "19688":
                     intent.putExtra("WEB_LINK", satellite.getSatCat_No());
                     startActivity(intent);
                     break;
