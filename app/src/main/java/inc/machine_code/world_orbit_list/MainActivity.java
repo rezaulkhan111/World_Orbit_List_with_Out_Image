@@ -5057,6 +5057,7 @@ public class MainActivity extends AppCompatActivity implements CountryAdapter.IC
         EUROPEAN_SPACE_AGENCY_Sat_Obj.add(new Satellite("27540", "INTEGRAL", "Astronomy,Gamma", "Oct-17-2002", R.mipmap.ic_esa_foreground));
         EUROPEAN_SPACE_AGENCY_Sat_Obj.add(new Satellite("27386", "ENVISAT", "Earth Observation", "Mar-1-2002", R.mipmap.ic_esa_foreground));
         EUROPEAN_SPACE_AGENCY_Sat_Obj.add(new Satellite("26958", "PROBA 1", "Technology", "Oct-22-2001", R.mipmap.ic_esa_foreground));
+        ///////not/////
         EUROPEAN_SPACE_AGENCY_Sat_Obj.add(new Satellite("26863", "ARTEMIS", "Experimental comm:", "Jul-12-2001", R.mipmap.ic_esa_foreground));
         EUROPEAN_SPACE_AGENCY_Sat_Obj.add(new Satellite("26590", "INTELSAT 12 (PAS 12)", "Communication", "Oct-29-2000", R.mipmap.ic_esa_foreground));
         EUROPEAN_SPACE_AGENCY_Sat_Obj.add(new Satellite("26464", "CLUSTER II-FM8", "Magnetospheric Research", "Aug-9-2000", R.mipmap.ic_esa_foreground));
