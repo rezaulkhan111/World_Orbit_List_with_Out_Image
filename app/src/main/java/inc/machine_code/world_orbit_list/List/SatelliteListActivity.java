@@ -80,7 +80,6 @@ public class SatelliteListActivity extends AppCompatActivity implements Satellit
     @Override
     public void inClickEvent(Satellite satellite) {
         Intent intent = new Intent(getApplicationContext(), SatelliteWebViewActivity.class);
-
         //*----ALGERIA----*//
         if (NAME_ID.equals("ALGERIA")) {
             switch (satellite.getSatCat_No()) {
