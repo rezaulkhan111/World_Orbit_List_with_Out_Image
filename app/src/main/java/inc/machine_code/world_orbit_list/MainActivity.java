@@ -3105,7 +3105,6 @@ public class MainActivity extends AppCompatActivity implements CountryAdapter.IC
     }
 
     public List<Satellite> SPAIN_Satellite_List() {
-        String Name="SPAIN";
         SPAIN_Sat_Obj = new ArrayList<>();
         SPAIN_Sat_Obj.add(new Satellite("43228", "HISPASAT 30W-6", "Communication", "Mar-6-2018", R.mipmap.ic_spain_foreground));
         SPAIN_Sat_Obj.add(new Satellite("43215", "PAZ", "SAR", "Feb-22-2018", R.mipmap.ic_spain_foreground));
