@@ -34,7 +34,7 @@ public class SatelliteAdapter extends RecyclerView.Adapter<SatelliteAdapter.View
     }
 
     public interface InterfaceCallback {
-        void inClickEvent(Satellite satellite);
+        void inClickEvent(Satellite satellite,String Sat_Code_No);
 
     }
 
@@ -62,7 +62,8 @@ public class SatelliteAdapter extends RecyclerView.Adapter<SatelliteAdapter.View
             public void onClick(View v) {
                 satelliteObj = new Satellite();
                 Satellite satellite = SatelliteList.get(position);
-                callback.inClickEvent(satellite);
+                String Sat_Code_No=SatelliteList.get(position).getSatCat_No();
+                callback.inClickEvent(satellite,Sat_Code_No);
             }
         });
     }
