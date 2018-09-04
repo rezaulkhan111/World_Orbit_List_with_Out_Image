@@ -80,8 +80,7 @@ public class SatelliteListActivity extends AppCompatActivity implements Satellit
     @Override
     public void inClickEvent(Satellite satellite, String Sat_Code_No) {
         Intent intent = new Intent(getApplicationContext(), SatelliteWebViewActivity.class);
-
-        if (satellite.getSatCat_No() == Sat_Code_No) {
+        if (satellite.getSatCat_No().equals(Sat_Code_No)) {
             intent.putExtra("WEB_LINK", Sat_Code_No);
             startActivity(intent);
         }
