@@ -45,8 +45,8 @@
             android:layout_gravity="start"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
-            android:onClick="onClick_Facebook"
-            android:contentDescription="@string/facebook" />
+            android:contentDescription="@string/facebook"
+            android:onClick="onClick_Facebook" />
 
         <ImageView
             android:id="@+id/iv_twitter"
@@ -55,8 +55,8 @@
             android:layout_gravity="center"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
-            android:onClick="onClick_Twitter"
-            android:contentDescription="@string/twitter" />
+            android:contentDescription="@string/twitter"
+            android:onClick="onClick_Twitter" />
 
         <ImageView
             android:id="@+id/iv_mail"
@@ -65,14 +65,14 @@
             android:layout_gravity="end"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
-            android:onClick="onClick_Mail"
-            android:contentDescription="@string/mail" />
+            android:contentDescription="@string/mail"
+            android:onClick="onClick_Mail" />
     </FrameLayout>
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="368dp"
-        android:layout_marginTop="127dp">
+        android:layout_height="match_parent"
+        android:layout_below="@id/fl_image_layout">
 
         <android.support.v4.widget.NestedScrollView
             android:layout_width="match_parent"

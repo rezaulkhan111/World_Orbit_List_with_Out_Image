@@ -10,8 +10,6 @@ public abstract class CountryViewHolder extends RecyclerView.ViewHolder {
         super(itemView);
     }
 
-    protected abstract void clear();
-
     public void onBind(int position) {
         mCurrentPosition = position;
     }

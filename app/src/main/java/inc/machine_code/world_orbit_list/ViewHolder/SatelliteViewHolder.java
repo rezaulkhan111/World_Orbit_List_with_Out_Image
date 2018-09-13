@@ -7,4 +7,5 @@ public abstract class SatelliteViewHolder extends RecyclerView.ViewHolder {
     public SatelliteViewHolder(View itemView) {
         super(itemView);
     }
+    public void onBind(int position){}
 }

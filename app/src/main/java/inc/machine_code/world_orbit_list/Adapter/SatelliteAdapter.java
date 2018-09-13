@@ -17,12 +17,13 @@ import java.util.List;
 import inc.machine_code.world_orbit_list.Country.Satellite;
 import inc.machine_code.world_orbit_list.R;
 import inc.machine_code.world_orbit_list.SatelliteSearching.SatelliteFilter;
+import inc.machine_code.world_orbit_list.ViewHolder.SatelliteViewHolder;
 
 public class SatelliteAdapter extends RecyclerView.Adapter<SatelliteAdapter.ViewHolder> implements Filterable {
 
     private InterfaceCallback callback;
     SatelliteFilter satelliteFilter;
-    public ArrayList<Satellite> SatelliteList,satellitefilterList;
+    public ArrayList<Satellite> SatelliteList, satellitefilterList;
 
     Satellite satelliteObj;
 
@@ -34,15 +35,8 @@ public class SatelliteAdapter extends RecyclerView.Adapter<SatelliteAdapter.View
     }
 
     public interface InterfaceCallback {
-        void inClickEvent(Satellite satellite,String Sat_Code_No);
+        void inClickEvent(Satellite satellite, String Sat_Code_No);
 
-    }
-
-    public class EmptyHolder extends SatelliteViewHolder {
-
-        public EmptyHolder(View view) {
-            super(view);
-        }
     }
 
     public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
@@ -62,8 +56,8 @@ public class SatelliteAdapter extends RecyclerView.Adapter<SatelliteAdapter.View
             public void onClick(View v) {
                 satelliteObj = new Satellite();
                 Satellite satellite = SatelliteList.get(position);
-                String Sat_Code_No=SatelliteList.get(position).getSatCat_No();
-                callback.inClickEvent(satellite,Sat_Code_No);
+                String Sat_Code_No = SatelliteList.get(position).getSatCat_No();
+                callback.inClickEvent(satellite, Sat_Code_No);
             }
         });
     }
@@ -80,23 +74,6 @@ public class SatelliteAdapter extends RecyclerView.Adapter<SatelliteAdapter.View
             satelliteFilter = new SatelliteFilter(satellitefilterList, this);
         }
         return satelliteFilter;
-    }
-
-    class SatelliteViewHolder extends RecyclerView.ViewHolder {
-        ImageView p_satellite_photo;
-        TextView p_satellite_name,
-                p_launch_date,
-                p_satellite_type;
-
-
-        public SatelliteViewHolder(View view) {
-            super(view);
-
-            p_satellite_photo = view.findViewById(R.id.iv_satellite_photo);
-            p_satellite_name = view.findViewById(R.id.tv_satellite_name);
-            p_launch_date = view.findViewById(R.id.tv_launch_date);
-            p_satellite_type = view.findViewById(R.id.tv_satellite_type);
-        }
     }
 
     public class ViewHolder extends SatelliteViewHolder {

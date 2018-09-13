@@ -17,6 +17,7 @@ import java.util.List;
 import inc.machine_code.world_orbit_list.Country.Country;
 import inc.machine_code.world_orbit_list.CountrySearching.CountryFilter;
 import inc.machine_code.world_orbit_list.R;
+import inc.machine_code.world_orbit_list.ViewHolder.CountryViewHolder;
 
 public class CountryAdapter extends RecyclerView.Adapter<CountryAdapter.ViewHolder> implements Filterable {
     private ICallback callback;
@@ -31,25 +32,15 @@ public class CountryAdapter extends RecyclerView.Adapter<CountryAdapter.ViewHold
         this.countryList_filter = countryList;
     }
 
-
     public interface ICallback {
         void inClickEvent(Country country);
 
     }
 
-    public class EmptyHolder extends CountryViewHolder {
-
-        public EmptyHolder(View view) {
-            super(view);
-        }
-    }
-
-
     public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         return new ViewHolder(LayoutInflater.from(parent.getContext()).inflate(R.layout.country_item_fragment, parent, false));
 
     }
-
 
     public void onBindViewHolder(@NonNull ViewHolder holder, final int position) {
 
@@ -65,7 +56,6 @@ public class CountryAdapter extends RecyclerView.Adapter<CountryAdapter.ViewHold
         });
     }
 
-
     public int getItemCount() {
 
         return countryList.size();
@@ -79,28 +69,11 @@ public class CountryAdapter extends RecyclerView.Adapter<CountryAdapter.ViewHold
         return countryFilter;
     }
 
-
-    class CountryViewHolder extends RecyclerView.ViewHolder {
-        ImageView p_country_flag;
-        TextView p_country_name,
-                p_satellite_count;
-
-
-        public CountryViewHolder(View view) {
-            super(view);
-
-            p_country_flag = view.findViewById(R.id.iv_country_flag);
-            p_country_name = view.findViewById(R.id.tv_country_name);
-            p_satellite_count = view.findViewById(R.id.tv_count_satellite_number);
-        }
-    }
-
     public class ViewHolder extends CountryViewHolder {
 
         TextView tv_countryName,
                 tv_countryCount;
         ImageView imageView;
-        LinearLayout linearLayout;
 
 
         public ViewHolder(View v) {
@@ -108,7 +81,6 @@ public class CountryAdapter extends RecyclerView.Adapter<CountryAdapter.ViewHold
             tv_countryName = v.findViewById(R.id.tv_country_name);
             tv_countryCount = v.findViewById(R.id.tv_count_satellite_number);
             imageView = v.findViewById(R.id.iv_country_flag);
-            //linearLayout.findViewById(R.id.linearLayout);
         }
 
         public void onBind(int position) {
