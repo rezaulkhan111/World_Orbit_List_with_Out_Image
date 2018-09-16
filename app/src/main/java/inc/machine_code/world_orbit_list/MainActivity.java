@@ -4991,14 +4991,14 @@ public class MainActivity extends AppCompatActivity implements CountryAdapter.IC
 
     public List<Satellite> EUROPEAN_ORGANISATION_FOR_THE_EXPLOITATION_EUMETSAT_List() {
         EUMETSAT_Sat_Obj = new ArrayList<>();
-        EUMETSAT_Sat_Obj.add(new Satellite("40732", "MSG 4", "Meteorology", "Jul-15-2015", R.mipmap.eumetsat_round));
-        EUMETSAT_Sat_Obj.add(new Satellite("38771", "METOP-B", "Meteorology", "Sep-17-2012", R.mipmap.eumetsat_round));
-        EUMETSAT_Sat_Obj.add(new Satellite("38552", "METEOSAT 10(MSG 3)", "Meteorology", "Jul-5-2012", R.mipmap.eumetsat_round));
-        EUMETSAT_Sat_Obj.add(new Satellite("29499", "METOP-A", "Meteorology", "Oct-19-2006", R.mipmap.eumetsat_round));
-        EUMETSAT_Sat_Obj.add(new Satellite("28912", "METEOSAT 9(MSG 2)", "Meteorology", "Dec-21-2005", R.mipmap.eumetsat_round));
-        EUMETSAT_Sat_Obj.add(new Satellite("27509", "METEOSAT 8(MSG 1)", "Meteorology", "Aug-28-2002", R.mipmap.eumetsat_round));
-        EUMETSAT_Sat_Obj.add(new Satellite("24932", "METEOSAT 7", "Meteorology", "Sep-2-1997", R.mipmap.eumetsat_round));
-        EUMETSAT_Sat_Obj.add(new Satellite("22912", "METEOSAT 6", "Meteorology", "Nov-20-1993", R.mipmap.eumetsat_round));
+        EUMETSAT_Sat_Obj.add(new Satellite("40732", "MSG 4", "Meteorology", "Jul-15-2015", R.mipmap.ic_eumetsat_foreground));
+        EUMETSAT_Sat_Obj.add(new Satellite("38771", "METOP-B", "Meteorology", "Sep-17-2012", R.mipmap.ic_eumetsat_foreground));
+        EUMETSAT_Sat_Obj.add(new Satellite("38552", "METEOSAT 10(MSG 3)", "Meteorology", "Jul-5-2012", R.mipmap.ic_eumetsat_foreground));
+        EUMETSAT_Sat_Obj.add(new Satellite("29499", "METOP-A", "Meteorology", "Oct-19-2006", R.mipmap.ic_eumetsat_foreground));
+        EUMETSAT_Sat_Obj.add(new Satellite("28912", "METEOSAT 9(MSG 2)", "Meteorology", "Dec-21-2005", R.mipmap.ic_eumetsat_foreground));
+        EUMETSAT_Sat_Obj.add(new Satellite("27509", "METEOSAT 8(MSG 1)", "Meteorology", "Aug-28-2002", R.mipmap.ic_eumetsat_foreground));
+        EUMETSAT_Sat_Obj.add(new Satellite("24932", "METEOSAT 7", "Meteorology", "Sep-2-1997", R.mipmap.ic_eumetsat_foreground));
+        EUMETSAT_Sat_Obj.add(new Satellite("22912", "METEOSAT 6", "Meteorology", "Nov-20-1993", R.mipmap.ic_eumetsat_foreground));
         return EUMETSAT_Sat_Obj;
     }
 
