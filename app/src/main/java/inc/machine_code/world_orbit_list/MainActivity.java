@@ -219,12 +219,12 @@ public class MainActivity extends AppCompatActivity implements CountryAdapter.IC
 
     public void onClick_Facebook(View v) {
 
-        Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.google.com"));
+        Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.facebook.com/machinecode.inc/"));
         startActivity(intent);
     }
 
     public void onClick_Twitter(View a) {
-        Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.yahoo.com"));
+        Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://twitter.com/MachineCode17"));
         startActivity(intent);
     }
 
@@ -1513,7 +1513,7 @@ public class MainActivity extends AppCompatActivity implements CountryAdapter.IC
         return PORTUGAL_Sat_Obj;
     }
 
-    ///info Comment///
+    ///RUSSIA Not Complete///
     public List<Satellite> RUSSIA_Satellite_List() {
         RUSSIA_Sat_Obj = new ArrayList<>();
         RUSSIA_Sat_Obj.add(new Satellite("43537", "PROGRESS MS-09", "", "Jul-9-2018", R.mipmap.ic_russia_foreground));
@@ -3261,7 +3261,7 @@ public class MainActivity extends AppCompatActivity implements CountryAdapter.IC
         return UNITED_KINGDOM_Sat_Obj;
     }
 
-    ////iiii////
+    ////USA Not Complete////
     public List<Satellite> USA_Satellite_List() {
         USA_Sat_Obj = new ArrayList<>();
         USA_Sat_Obj.add(new Satellite("43522", "DRAGON CRS-15", "ISS Resupply", "June 29, 2018", R.mipmap.ic_united_states_of_america_foreground));

@@ -22,8 +22,9 @@ public class SatelliteWebViewActivity extends AppCompatActivity {
 
         _Satellite_Show = findViewById(R.id.wb_satellite_show);
         WebSettings webSettings = _Satellite_Show.getSettings();
+        _Satellite_Show.setWebViewClient(new WebViewClient());
         webSettings.setJavaScriptEnabled(true);
         _Satellite_Show.loadUrl("https://www.n2yo.com/widgets/widget-tracker.php?s=" + SatCodeNumber + "&amp;size=small&amp;all=1&amp;me=10&amp;map=2");
-        _Satellite_Show.setWebViewClient(new WebViewClient());
+
     }
 }
