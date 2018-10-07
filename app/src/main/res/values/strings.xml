@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Test</string>
+    <string name="app_name">World Satellite Tracking</string>
     <string name="R_launch_date">Launch Date</string>
     <string name="R_date">Date</string>
     <string name="R_photo">Photo</string>

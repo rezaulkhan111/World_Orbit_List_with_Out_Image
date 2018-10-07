@@ -19,8 +19,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".List.SatelliteListActivity" />
-        <activity android:name=".WebPage.SatelliteWebViewActivity" />
+        <activity
+            android:name=".List.SatelliteListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".WebPage.SatelliteWebViewActivity"
+            android:screenOrientation="portrait" />
     </application>
 
 </manifest>
