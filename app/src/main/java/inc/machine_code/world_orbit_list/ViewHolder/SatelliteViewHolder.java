@@ -4,7 +4,7 @@ import android.support.v7.widget.RecyclerView;
 import android.view.View;
 
 public abstract class SatelliteViewHolder extends RecyclerView.ViewHolder {
-    public SatelliteViewHolder(View itemView) {
+    protected SatelliteViewHolder(View itemView) {
         super(itemView);
     }
     public void onBind(int position){}

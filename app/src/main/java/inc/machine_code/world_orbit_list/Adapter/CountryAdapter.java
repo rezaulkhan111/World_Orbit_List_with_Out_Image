@@ -8,11 +8,9 @@ import android.view.ViewGroup;
 import android.widget.Filter;
 import android.widget.Filterable;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import java.util.ArrayList;
-import java.util.List;
 
 import inc.machine_code.world_orbit_list.Country.Country;
 import inc.machine_code.world_orbit_list.CountrySearching.CountryFilter;
@@ -20,11 +18,12 @@ import inc.machine_code.world_orbit_list.R;
 import inc.machine_code.world_orbit_list.ViewHolder.CountryViewHolder;
 
 public class CountryAdapter extends RecyclerView.Adapter<CountryAdapter.ViewHolder> implements Filterable {
-    private ICallback callback;
+    private final ICallback callback;
 
-    public ArrayList<Country> countryList, countryList_filter;
+    public ArrayList<Country> countryList;
+    private final ArrayList<Country> countryList_filter;
 
-    CountryFilter countryFilter;
+    private CountryFilter countryFilter;
 
     public CountryAdapter(ICallback callback, ArrayList<Country> countryList) {
         this.callback = callback;
@@ -37,12 +36,13 @@ public class CountryAdapter extends RecyclerView.Adapter<CountryAdapter.ViewHold
 
     }
 
+    @NonNull
     public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         return new ViewHolder(LayoutInflater.from(parent.getContext()).inflate(R.layout.country_item_fragment, parent, false));
 
     }
 
-    public void onBindViewHolder(@NonNull ViewHolder holder, final int position) {
+    public void onBindViewHolder(@NonNull ViewHolder holder,final int position) {
 
         holder.onBind(position);
 
@@ -71,12 +71,12 @@ public class CountryAdapter extends RecyclerView.Adapter<CountryAdapter.ViewHold
 
     public class ViewHolder extends CountryViewHolder {
 
-        TextView tv_countryName,
-                tv_countryCount;
+        final TextView tv_countryName;
+        final TextView tv_countryCount;
         ImageView imageView;
 
 
-        public ViewHolder(View v) {
+        ViewHolder(View v) {
             super(v);
             tv_countryName = v.findViewById(R.id.tv_country_name);
             tv_countryCount = v.findViewById(R.id.tv_count_satellite_number);

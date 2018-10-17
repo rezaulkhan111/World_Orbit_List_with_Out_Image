@@ -6,7 +6,7 @@ import android.view.View;
 public abstract class CountryViewHolder extends RecyclerView.ViewHolder {
     private int mCurrentPosition;
 
-    public CountryViewHolder(View itemView) {
+    protected CountryViewHolder(View itemView) {
         super(itemView);
     }
 

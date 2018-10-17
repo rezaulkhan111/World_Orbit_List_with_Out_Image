@@ -21,23 +21,22 @@ import inc.machine_code.world_orbit_list.WebPage.SatelliteWebViewActivity;
 
 public class SatelliteListActivity extends AppCompatActivity implements SatelliteAdapter.InterfaceCallback {
 
-    SatelliteAdapter adapter;
-    ArrayList<Satellite> _sat_lite_List_Array = new ArrayList<>();
-    private RecyclerView mRecyclerView;
-    String NAME_ID;
+    private SatelliteAdapter adapter;
+    private ArrayList<Satellite> _sat_lite_List_Array = new ArrayList<>();
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_satellite_list);
 
-        mRecyclerView = findViewById(R.id.rv_country_name_flag);
+        RecyclerView mRecyclerView = findViewById(R.id.rv_country_name_flag);
         mRecyclerView.setHasFixedSize(true);
         mRecyclerView.setLayoutManager(new LinearLayoutManager(this));
         Intent intent = getIntent();
 
         ArrayList<Satellite> _sat_lite_List_Seri_able = (ArrayList<Satellite>) intent.getSerializableExtra("savedUser");
-        NAME_ID = intent.getStringExtra("LIST_NAME_ID");
+        String NAME_ID = intent.getStringExtra("LIST_NAME_ID");
         _sat_lite_List_Array = _sat_lite_List_Seri_able;
 
 
@@ -54,7 +53,7 @@ public class SatelliteListActivity extends AppCompatActivity implements Satellit
         return true;
     }
 
-    public boolean Search(Menu menu) {
+    private void Search(Menu menu) {
         MenuItem searchViewMenuItem = menu.findItem(R.id.menu_search_bar_satellite);
         //SearchManager searchManager = (SearchManager) getSystemService(Context.SEARCH_SERVICE);
         SearchView _search_view;
@@ -74,7 +73,6 @@ public class SatelliteListActivity extends AppCompatActivity implements Satellit
                 return false;
             }
         });
-        return true;
     }
 
     @Override

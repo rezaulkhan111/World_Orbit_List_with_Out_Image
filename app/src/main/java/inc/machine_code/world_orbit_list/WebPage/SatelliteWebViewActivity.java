@@ -1,6 +1,7 @@
 package inc.machine_code.world_orbit_list.WebPage;
 
 
+import android.annotation.SuppressLint;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.webkit.WebSettings;
@@ -11,16 +12,16 @@ import inc.machine_code.world_orbit_list.R;
 
 public class SatelliteWebViewActivity extends AppCompatActivity {
 
-    WebView _Satellite_Show;
-
+    @SuppressLint("SetJavaScriptEnabled")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_satellite_web_view);
         Bundle bundle = getIntent().getExtras();
+        assert bundle != null;
         String SatCodeNumber = String.valueOf(bundle.get("WEB_LINK"));
 
-        _Satellite_Show = findViewById(R.id.wb_satellite_show);
+        WebView _Satellite_Show = findViewById(R.id.wb_satellite_show);
         WebSettings webSettings = _Satellite_Show.getSettings();
         _Satellite_Show.setWebViewClient(new WebViewClient());
         webSettings.setJavaScriptEnabled(true);

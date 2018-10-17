@@ -8,7 +8,7 @@ import inc.machine_code.world_orbit_list.Adapter.SatelliteAdapter;
 import inc.machine_code.world_orbit_list.Country.Satellite;
 
 public class SatelliteFilter extends Filter {
-    ArrayList<Satellite> satelliteArrayList;
+    private final ArrayList<Satellite> satelliteArrayList;
     SatelliteAdapter adapter;
 
     public SatelliteFilter(ArrayList<Satellite> satelliteArrayList, SatelliteAdapter adapter) {

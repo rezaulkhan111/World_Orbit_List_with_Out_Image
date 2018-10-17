@@ -8,8 +8,8 @@ import inc.machine_code.world_orbit_list.Adapter.CountryAdapter;
 import inc.machine_code.world_orbit_list.Country.Country;
 
 public class CountryFilter extends Filter {
-    ArrayList<Country> country_Array_List_Filter;
-    CountryAdapter adapter;
+    private final ArrayList<Country> country_Array_List_Filter;
+    private final CountryAdapter adapter;
 
     public CountryFilter(ArrayList<Country> country_Array_List_Filter, CountryAdapter adapter) {
         this.country_Array_List_Filter = country_Array_List_Filter;

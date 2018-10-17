@@ -1,5 +1,6 @@
 package inc.machine_code.world_orbit_list.Adapter;
 
+import android.annotation.SuppressLint;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -9,10 +10,8 @@ import android.widget.Filter;
 import android.widget.Filterable;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import java.util.ArrayList;
-import java.util.List;
 
 import inc.machine_code.world_orbit_list.Country.Satellite;
 import inc.machine_code.world_orbit_list.R;
@@ -21,11 +20,12 @@ import inc.machine_code.world_orbit_list.ViewHolder.SatelliteViewHolder;
 
 public class SatelliteAdapter extends RecyclerView.Adapter<SatelliteAdapter.ViewHolder> implements Filterable {
 
-    private InterfaceCallback callback;
-    SatelliteFilter satelliteFilter;
-    public ArrayList<Satellite> SatelliteList, satellitefilterList;
+    private final InterfaceCallback callback;
+    private SatelliteFilter satelliteFilter;
+    public ArrayList<Satellite> SatelliteList;
+    private ArrayList<Satellite> satellitefilterList;
 
-    Satellite satelliteObj;
+
 
     public SatelliteAdapter(InterfaceCallback callback, ArrayList<Satellite> satelliteList) {
         this.callback = callback;
@@ -39,13 +39,14 @@ public class SatelliteAdapter extends RecyclerView.Adapter<SatelliteAdapter.View
 
     }
 
+    @NonNull
     public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         return new ViewHolder(LayoutInflater.from(parent.getContext()).inflate(R.layout.satellite_photo_fragment, parent, false));
 
     }
 
     @Override
-    public void onBindViewHolder(@NonNull ViewHolder holder, final int position) {
+    public void onBindViewHolder(@NonNull ViewHolder holder, @SuppressLint("RecyclerView") final int position) {
         try {
             holder.onBind(position);
         } catch (Exception ex) {
@@ -54,7 +55,6 @@ public class SatelliteAdapter extends RecyclerView.Adapter<SatelliteAdapter.View
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                satelliteObj = new Satellite();
                 Satellite satellite = SatelliteList.get(position);
                 String Sat_Code_No = SatelliteList.get(position).getSatCat_No();
                 callback.inClickEvent(satellite, Sat_Code_No);
@@ -77,13 +77,13 @@ public class SatelliteAdapter extends RecyclerView.Adapter<SatelliteAdapter.View
     }
 
     public class ViewHolder extends SatelliteViewHolder {
-        ImageView satellite_photo;
+        final ImageView satellite_photo;
 
-        TextView satellite_name,
-                launch_date,
-                satellite_type;
+        final TextView satellite_name;
+        TextView launch_date;
+        TextView satellite_type;
 
-        public ViewHolder(View v) {
+        ViewHolder(View v) {
             super(v);
             satellite_photo = v.findViewById(R.id.iv_satellite_photo);
             satellite_name = v.findViewById(R.id.tv_satellite_name);

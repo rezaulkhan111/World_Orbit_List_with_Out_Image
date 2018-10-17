@@ -29,93 +29,8 @@ import inc.machine_code.world_orbit_list.List.SatelliteListActivity;
 
 public class MainActivity extends AppCompatActivity implements CountryAdapter.ICallback, Serializable {
 
-    CountryAdapter adapter;
-    ArrayList<Country> countryList = new ArrayList<>();
-
-    List<Satellite> ALGERIA_Sat_Obj,
-            ARGENTINA_Sat_Obj,
-            AUSTRALIA_Sat_Obj,
-            AZERBAIJAN_Sat_Obj,
-            BANGLADESH_Sat_Obj,
-            BELARUS_Sat_Obj,
-            BOLIVIA_Sat_Obj,
-            BRAZIL_Sat_Obj,
-            BULGARIA_Sat_Obj,
-            CANADA_Sat_Obj,
-            CHILE_Sat_Obj,
-            CHINA_Sat_Obj,
-            CZECH_Sat_Obj,
-            DENMARK_Sat_Obj,
-            ECUADOR_Sat_Obj,
-            EGYPT_Sat_Obj,
-            ESTONIA_Sat_Obj,
-            FRANCE_Sat_Obj,
-            GERMANY_Sat_Obj,
-            GREECE_Sat_Obj,
-            INDIA_Sat_Obj,
-            INDONESIA_Sat_Obj,
-            IRAN_Sat_Obj,
-            IRAQ_Sat_Obj,
-            ISRAEL_Sat_Obj,
-            ITALY_Sat_Obj,
-            JAPAN_Sat_Obj,
-            KAZAKHSTAN_Sat_Obj,
-            KENIA_Sat_Obj,
-            LAOS_Sat_Obj,
-            LATVIA_Sat_Obj,
-            LITHUANIA_Sat_Obj,
-            LUXEMBOURG_Sat_Obj,
-            MALAYSIA_Sat_Obj,
-            MEXICO_Sat_Obj,
-            MOROCCO_Sat_Obj,
-            NETHERLANDS_Sat_Obj,
-            NIGERIA_Sat_Obj,
-            NORTH_KOREA_Sat_Obj,
-            NORWAY_Sat_Obj,
-            PAKISTAN_Sat_Obj,
-            PERU_Sat_Obj,
-            PHILIPPINES_Sat_Obj,
-            POLAND_Sat_Obj,
-            PORTUGAL_Sat_Obj,
-            RUSSIA_Sat_Obj,
-            SAUDI_ARABIA_Sat_Obj,
-            SINGAPORE_Sat_Obj,
-            SLOVAKIA_Sat_Obj,
-            SOUTH_AFRICA_Sat_Obj,
-            SOUTH_KOREA_Sat_Obj,
-            SPAIN_Sat_Obj,
-            SWEDEN_Sat_Obj,
-            TAIWAN_Sat_Obj,
-            THAILAND_Sat_Obj,
-            TURKEY_Sat_Obj,
-            UNITED_ARAB_EMIRATES_Sat_Obj,
-            UNITED_KINGDOM_Sat_Obj,
-            USA_Sat_Obj,
-            URUGUAY_Sat_Obj,
-            VENEZUELA_Sat_Obj,
-            VIETNAM_Sat_Obj,
-            FORMER_CZECHOSLOVAKIA_Sat_Obj,
-            CHINA_BRAZIL_Sat_Obj,
-            ARAB_SAT_COMM_ORG_Sat_Obj,
-            ASIASAT_Sat_Obj,
-            EUMETSAT_Sat_Obj,
-            FRANCE_GERMANY_Sat_Obj,
-            FRANCE_ITALY_Sat_Obj,
-            GLOBALSTAR_Sat_Obj,
-            INMARSAT_Sat_Obj,
-            ITSO_Sat_Obj,
-            NEW_ICO_Sat_Obj,
-            EUTELSAT_Sat_Obj,
-            NORTH_ATLANTIC_TREATY_ORGANIZATION_Sat_Obj,
-            O3B_NETWORKS_Sat_Obj,
-            ORBCOMM_Sat_Obj,
-            RASCO_Sat_Obj,
-            EUROPEAN_SPACE_AGENCY_Sat_Obj,
-            SEA_LAUNCH_Sat_Obj,
-            SINGAPORE_TAIWAN_Sat_Obj,
-            SOCIETE_EUROPEENNE_DES_SATELLITES_Sat_Obj,
-            TURKMENISTAN_MONACO,
-            UNITED_STATES_BRAZIL_Sat_Obj;
+   private CountryAdapter adapter;
+    private final ArrayList<Country> countryList = new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -142,7 +57,7 @@ public class MainActivity extends AppCompatActivity implements CountryAdapter.IC
         return true;
     }
 
-    public boolean Search(Menu menu) {
+    private void Search(Menu menu) {
         MenuItem searchViewMenuItem = menu.findItem(R.id.menu_search_bar_country);
         //SearchManager searchManager = (SearchManager) getSystemService(Context.SEARCH_SERVICE);
         SearchView _search_view;
@@ -162,7 +77,6 @@ public class MainActivity extends AppCompatActivity implements CountryAdapter.IC
                 return false;
             }
         });
-        return true;
     }
 
     public boolean onOptionsItemSelected(MenuItem menu_item) {
@@ -175,7 +89,7 @@ public class MainActivity extends AppCompatActivity implements CountryAdapter.IC
         }
     }
 
-    public void showBottomSheetDialog() {
+    private void showBottomSheetDialog() {
         View view = getLayoutInflater().inflate(R.layout.bottom_sheet, null);
         ImageView _iv_facebook, _iv_twitter, _iv_mail;
         TextView _tv_bottom_sheet;
@@ -351,8 +265,8 @@ public class MainActivity extends AppCompatActivity implements CountryAdapter.IC
         countryList.add(new Country(67, "NEW ICO", "1", R.mipmap.ic_new_ico_foreground));
     }
 
-    public List<Satellite> ALGERIA_Satellite_List() {
-        ALGERIA_Sat_Obj = new ArrayList<>();
+    private List<Satellite> ALGERIA_Satellite_List() {
+        List<Satellite> ALGERIA_Sat_Obj = new ArrayList<>();
         ALGERIA_Sat_Obj.add(new Satellite("43039", "ALCOMSAT-1", "Communication", "Dec-10-2017", R.mipmap.ic_algeria_foreground));
         ALGERIA_Sat_Obj.add(new Satellite("41789", "ALSAT 1N", "Technology", "Sep-26-2016", R.mipmap.ic_algeria_foreground));
         ALGERIA_Sat_Obj.add(new Satellite("41786", "ALSAT 2B", "Earth Observation", "Sep-26-2016", R.mipmap.ic_algeria_foreground));
@@ -362,8 +276,8 @@ public class MainActivity extends AppCompatActivity implements CountryAdapter.IC
         return ALGERIA_Sat_Obj;
     }
 
-    public List<Satellite> ARGENTINA_Satellite_List() {
-        ARGENTINA_Sat_Obj = new ArrayList<>();
+    private List<Satellite> ARGENTINA_Satellite_List() {
+        List<Satellite> ARGENTINA_Sat_Obj = new ArrayList<>();
         ARGENTINA_Sat_Obj.add(new Satellite("43204", "NUSAT 5", "Earth Observation", "Feb-02-18", R.mipmap.ic_argentina_foreground));
         ARGENTINA_Sat_Obj.add(new Satellite("43195", "NUSAT 4", "Earth Observation", "Feb-02-18", R.mipmap.ic_argentina_foreground));
         ARGENTINA_Sat_Obj.add(new Satellite("42760", "NUSAT 3", "Earth Observation", "Jun-15-2017", R.mipmap.ic_argentina_foreground));
@@ -386,8 +300,8 @@ public class MainActivity extends AppCompatActivity implements CountryAdapter.IC
         return ARGENTINA_Sat_Obj;
     }
 
-    public List<Satellite> AUSTRALIA_Satellite_List() {
-        AUSTRALIA_Sat_Obj = new ArrayList<>();
+    private List<Satellite> AUSTRALIA_Satellite_List() {
+        List<Satellite> AUSTRALIA_Sat_Obj = new ArrayList<>();
         AUSTRALIA_Sat_Obj.add(new Satellite("42786", "DIAMOND BLUE", "Communication", "Jun-23-2017", R.mipmap.ic_australia_foreground));
         AUSTRALIA_Sat_Obj.add(new Satellite("42785", "DIAMOND GREEN", "Communication", "Jun-23-2017", R.mipmap.ic_australia_foreground));
         AUSTRALIA_Sat_Obj.add(new Satellite("42783", "DIAMOND RED", "Communication", "Jun-23-2017", R.mipmap.ic_australia_foreground));
@@ -412,33 +326,33 @@ public class MainActivity extends AppCompatActivity implements CountryAdapter.IC
         return AUSTRALIA_Sat_Obj;
     }
 
-    public List<Satellite> AZERBAIJAN_Satellite_List() {
-        AZERBAIJAN_Sat_Obj = new ArrayList<>();
+    private List<Satellite> AZERBAIJAN_Satellite_List() {
+        List<Satellite> AZERBAIJAN_Sat_Obj = new ArrayList<>();
         AZERBAIJAN_Sat_Obj.add(new Satellite("39079", "AZERSPACE 1", "Communication", "Feb-7-2013", R.mipmap.ic_azerbaijan_foreground));
         return AZERBAIJAN_Sat_Obj;
     }
 
-    public List<Satellite> BANGLADESH_Satellite_List() {
-        BANGLADESH_Sat_Obj = new ArrayList<>();
+    private List<Satellite> BANGLADESH_Satellite_List() {
+        List<Satellite> BANGLADESH_Sat_Obj = new ArrayList<>();
         BANGLADESH_Sat_Obj.add(new Satellite("43463", "BANGABANDHU", "Communication", "May-11-2018", R.mipmap.ic_bangladesh_foreground));
         return BANGLADESH_Sat_Obj;
     }
 
-    public List<Satellite> BELARUS_Satellite_List() {
-        BELARUS_Sat_Obj = new ArrayList<>();
+    private List<Satellite> BELARUS_Satellite_List() {
+        List<Satellite> BELARUS_Sat_Obj = new ArrayList<>();
         BELARUS_Sat_Obj.add(new Satellite("41238", "BELINTERSAT 1", "Communication", "Jan-15-2016", R.mipmap.ic_belarus_foreground));
         BELARUS_Sat_Obj.add(new Satellite("38708", "BKA 2", "Earth Observation", "Jul-22-2012", R.mipmap.ic_belarus_foreground));
         return BELARUS_Sat_Obj;
     }
 
-    public List<Satellite> BOLIVIA_Satellite_List() {
-        BOLIVIA_Sat_Obj = new ArrayList<>();
+    private List<Satellite> BOLIVIA_Satellite_List() {
+        List<Satellite> BOLIVIA_Sat_Obj = new ArrayList<>();
         BOLIVIA_Sat_Obj.add(new Satellite("39481", "TUPAC KATARI", "Communication", "Dec-20-2013", R.mipmap.ic_bolivia_foreground));
         return BOLIVIA_Sat_Obj;
     }
 
-    public List<Satellite> BRAZIL_Satellite_List() {
-        BRAZIL_Sat_Obj = new ArrayList<>();
+    private List<Satellite> BRAZIL_Satellite_List() {
+        List<Satellite> BRAZIL_Sat_Obj = new ArrayList<>();
         BRAZIL_Sat_Obj.add(new Satellite("42692", "SGDC", "Communication", "May-4-2017", R.mipmap.ic_brazil_foreground));
         BRAZIL_Sat_Obj.add(new Satellite("41904", "STAR ONE D1", "Communication", "Dec-21-2016", R.mipmap.ic_brazil_foreground));
         BRAZIL_Sat_Obj.add(new Satellite("40733", "STAR ONE C4", "Communication", "Jul-15-2015", R.mipmap.ic_brazil_foreground));
@@ -459,14 +373,14 @@ public class MainActivity extends AppCompatActivity implements CountryAdapter.IC
         return BRAZIL_Sat_Obj;
     }
 
-    public List<Satellite> BULGARIA_Satellite_List() {
-        BULGARIA_Sat_Obj = new ArrayList<>();
+    private List<Satellite> BULGARIA_Satellite_List() {
+        List<Satellite> BULGARIA_Sat_Obj = new ArrayList<>();
         BULGARIA_Sat_Obj.add(new Satellite("42801", "BULGARIASAT-1", "Communication", "Jun-23-2017", R.mipmap.ic_bulgaria_foreground));
         return BULGARIA_Sat_Obj;
     }
 
-    public List<Satellite> CANADA_Satellite_List() {
-        CANADA_Sat_Obj = new ArrayList<>();
+    private List<Satellite> CANADA_Satellite_List() {
+        List<Satellite> CANADA_Sat_Obj = new ArrayList<>();
         CANADA_Sat_Obj.add(new Satellite("43157", "KEPLER-O(KIPP)", "Technology", "Jan-19-2018", R.mipmap.ic_canada_foreground));
         CANADA_Sat_Obj.add(new Satellite("42734", "EXALTA-1", "", "Nov-20-1998", R.mipmap.ic_canada_foreground));
         CANADA_Sat_Obj.add(new Satellite("41788", "CANX-7", "Technology", "Sep-26-2016", R.mipmap.ic_canada_foreground));
@@ -518,16 +432,16 @@ public class MainActivity extends AppCompatActivity implements CountryAdapter.IC
         return CANADA_Sat_Obj;
     }
 
-    public List<Satellite> CHILE_Satellite_List() {
-        CHILE_Sat_Obj = new ArrayList<>();
+    private List<Satellite> CHILE_Satellite_List() {
+        List<Satellite> CHILE_Sat_Obj = new ArrayList<>();
         CHILE_Sat_Obj.add(new Satellite("42788", "SUCHAI", "Technology,Education", "Jun-23-2017", R.mipmap.ic_chile_foreground));
         CHILE_Sat_Obj.add(new Satellite("38011", "SSOT", "Earth observation", "Dec-17-2011", R.mipmap.ic_chile_foreground));
         CHILE_Sat_Obj.add(new Satellite("25395", "FASAT B", "EO,Technology", "Jul-10-1998", R.mipmap.ic_chile_foreground));
         return CHILE_Sat_Obj;
     }
 
-    public List<Satellite> CHINA_Satellite_List() {
-        CHINA_Sat_Obj = new ArrayList<>();
+    private List<Satellite> CHINA_Satellite_List() {
+        List<Satellite> CHINA_Sat_Obj = new ArrayList<>();
         CHINA_Sat_Obj.add(new Satellite("43519", "XJS B", "", "Jun-27-2018", R.mipmap.ic_china_foreground));
         CHINA_Sat_Obj.add(new Satellite("43518", "XJS A", "", "Jun-27-2018", R.mipmap.ic_china_foreground));
         CHINA_Sat_Obj.add(new Satellite("43491", "FENGYUN 2H", "Meteorology", "Jun-5-2018", R.mipmap.ic_china_foreground));
@@ -842,16 +756,16 @@ public class MainActivity extends AppCompatActivity implements CountryAdapter.IC
         return CHINA_Sat_Obj;
     }
 
-    public List<Satellite> CZECH_Satellite_List() {
-        CZECH_Sat_Obj = new ArrayList<>();
+    private List<Satellite> CZECH_Satellite_List() {
+        List<Satellite> CZECH_Sat_Obj = new ArrayList<>();
         CZECH_Sat_Obj.add(new Satellite("42790", "VZLUSAT 1", "Techs,Thermospheric Research", "Jun-23-2017", R.mipmap.ic_czechia_foreground));
         CZECH_Sat_Obj.add(new Satellite("24292", "MAGION 5", "Science,Magnetosphere", "Aug-29-1996", R.mipmap.ic_czechia_foreground));
         CZECH_Sat_Obj.add(new Satellite("23646", "MAGION 4", "Science,Magnetosphere", "Aug-2-1995", R.mipmap.ic_czechia_foreground));
         return CZECH_Sat_Obj;
     }
 
-    public List<Satellite> DENMARK_Satellite_List() {
-        DENMARK_Sat_Obj = new ArrayList<>();
+    private List<Satellite> DENMARK_Satellite_List() {
+        List<Satellite> DENMARK_Sat_Obj = new ArrayList<>();
         DENMARK_Sat_Obj.add(new Satellite("43197", "GOMX 4A", "Technology", "Feb-2-2018", R.mipmap.ic_denmark_foreground));
         DENMARK_Sat_Obj.add(new Satellite("41460", "AAUSAT-4", "Techs,Traffic monitoring", "Apr-25-2016", R.mipmap.ic_denmark_foreground));
         DENMARK_Sat_Obj.add(new Satellite("40030", "DTUSAT-2", "Technology,Education", "Jun-19-2014", R.mipmap.ic_denmark_foreground));
@@ -864,15 +778,15 @@ public class MainActivity extends AppCompatActivity implements CountryAdapter.IC
         return DENMARK_Sat_Obj;
     }
 
-    public List<Satellite> ECUADOR_Satellite_List() {
-        ECUADOR_Sat_Obj = new ArrayList<>();
+    private List<Satellite> ECUADOR_Satellite_List() {
+        List<Satellite> ECUADOR_Sat_Obj = new ArrayList<>();
         ECUADOR_Sat_Obj.add(new Satellite("39441", "NEE 02 KRYSAOR", "Technology", "Nov-21-2013", R.mipmap.ic_ecuador_foreground));
         ECUADOR_Sat_Obj.add(new Satellite("39151", "NEE 01 PEGASUS", "Technology", "Apr-26-2013", R.mipmap.ic_ecuador_foreground));
         return ECUADOR_Sat_Obj;
     }
 
-    public List<Satellite> EGYPT_Satellite_List() {
-        EGYPT_Sat_Obj = new ArrayList<>();
+    private List<Satellite> EGYPT_Satellite_List() {
+        List<Satellite> EGYPT_Sat_Obj = new ArrayList<>();
         EGYPT_Sat_Obj.add(new Satellite("39678", "EGYPTSAT 2", "Earth Observation", "Apr-16-2014", R.mipmap.ic_egypt_foreground));
         EGYPT_Sat_Obj.add(new Satellite("36830", "NILESAT 201", "Communication", "Aug-4-2010", R.mipmap.ic_egypt_foreground));
         EGYPT_Sat_Obj.add(new Satellite("31117", "EGYPTSAT 1", "Earth Observation", "Apr-17-2007", R.mipmap.ic_egypt_foreground));
@@ -881,14 +795,14 @@ public class MainActivity extends AppCompatActivity implements CountryAdapter.IC
         return EGYPT_Sat_Obj;
     }
 
-    public List<Satellite> ESTONIA_Satellite_List() {
-        ESTONIA_Sat_Obj = new ArrayList<>();
+    private List<Satellite> ESTONIA_Satellite_List() {
+        List<Satellite> ESTONIA_Sat_Obj = new ArrayList<>();
         ESTONIA_Sat_Obj.add(new Satellite("39161", "ESTCUBE 1", "Technology,EO", "May-7-2013", R.mipmap.ic_estonia_foreground));
         return ESTONIA_Sat_Obj;
     }
 
-    public List<Satellite> FRANCE_Satellite_List() {
-        FRANCE_Sat_Obj = new ArrayList<>();
+    private List<Satellite> FRANCE_Satellite_List() {
+        List<Satellite> FRANCE_Sat_Obj = new ArrayList<>();
         FRANCE_Sat_Obj.add(new Satellite("43272", "HYLAS 4", "Communication", "Apr-5-2018", R.mipmap.ic_france_foreground));
         FRANCE_Sat_Obj.add(new Satellite("43271", "SUPERBIRD 8", "Communication", "Apr-5-2018", R.mipmap.ic_france_foreground));
         FRANCE_Sat_Obj.add(new Satellite("43132", "PICSAT", "Astronomy", "Jan-12-2018", R.mipmap.ic_france_foreground));
@@ -960,8 +874,8 @@ public class MainActivity extends AppCompatActivity implements CountryAdapter.IC
         return FRANCE_Sat_Obj;
     }
 
-    public List<Satellite> GERMANY_Satellite_List() {
-        GERMANY_Sat_Obj = new ArrayList<>();
+    private List<Satellite> GERMANY_Satellite_List() {
+        List<Satellite> GERMANY_Sat_Obj = new ArrayList<>();
         GERMANY_Sat_Obj.add(new Satellite("42831", "FLYING LAPTOP", "Technology", "Jul-14-2017", R.mipmap.ic_germany_foreground));
         GERMANY_Sat_Obj.add(new Satellite("42829", "TECHNOSAT", "Technology", "Jul-14-2017", R.mipmap.ic_germany_foreground));
         GERMANY_Sat_Obj.add(new Satellite("42777", "COMPASS 2", "Technology", "Jun-23-2017", R.mipmap.ic_germany_foreground));
@@ -1019,8 +933,8 @@ public class MainActivity extends AppCompatActivity implements CountryAdapter.IC
         return GERMANY_Sat_Obj;
     }
 
-    public List<Satellite> GREECE_Satellite_List() {
-        GREECE_Sat_Obj = new ArrayList<>();
+    private List<Satellite> GREECE_Satellite_List() {
+        List<Satellite> GREECE_Sat_Obj = new ArrayList<>();
         GREECE_Sat_Obj.add(new Satellite("42724", "DUTHSAT", "Technology", "Nov-20-1998", R.mipmap.ic_greece_foreground));
         GREECE_Sat_Obj.add(new Satellite("42716", "UPSAT", "Technology", "Nov-20-1998", R.mipmap.ic_greece_foreground));
         GREECE_Sat_Obj.add(new Satellite("27811", "HELLAS-SAT 2", "Communication", "May-13-2003", R.mipmap.ic_greece_foreground));
@@ -1028,8 +942,8 @@ public class MainActivity extends AppCompatActivity implements CountryAdapter.IC
         return GREECE_Sat_Obj;
     }
 
-    public List<Satellite> INDIA_Satellite_List() {
-        INDIA_Sat_Obj = new ArrayList<>();
+    private List<Satellite> INDIA_Satellite_List() {
+        List<Satellite> INDIA_Sat_Obj = new ArrayList<>();
         INDIA_Sat_Obj.add(new Satellite("43286", "IRNSS 1I", "Navigation", "Apr-11-2018", R.mipmap.ic_india_foreground));
         INDIA_Sat_Obj.add(new Satellite("43241", "GSAT 6A", "Communication", "Mar-29-2018", R.mipmap.ic_india_foreground));
         INDIA_Sat_Obj.add(new Satellite("43128", "MICROSAT-TD", "EO,Technology", "Jan-12-2018", R.mipmap.ic_india_foreground));
@@ -1121,8 +1035,8 @@ public class MainActivity extends AppCompatActivity implements CountryAdapter.IC
         return INDIA_Sat_Obj;
     }
 
-    public List<Satellite> INDONESIA_Satellite_List() {
-        INDONESIA_Sat_Obj = new ArrayList<>();
+    private List<Satellite> INDONESIA_Satellite_List() {
+        List<Satellite> INDONESIA_Sat_Obj = new ArrayList<>();
         INDONESIA_Sat_Obj.add(new Satellite("41944", "TELKOM 3S", "Communication", "Feb-14-2017", R.mipmap.ic_indonesia_foreground));
         INDONESIA_Sat_Obj.add(new Satellite("41603", "LAPAN A3", "EO,Comm:,Traffic Monitoring", "Jun-22-2016", R.mipmap.ic_indonesia_foreground));
         INDONESIA_Sat_Obj.add(new Satellite("41591", "BRISAT", "Communication", "Jun-18-2016", R.mipmap.ic_indonesia_foreground));
@@ -1142,20 +1056,20 @@ public class MainActivity extends AppCompatActivity implements CountryAdapter.IC
         return INDONESIA_Sat_Obj;
     }
 
-    public List<Satellite> IRAQ_Satellite_List() {
-        IRAQ_Sat_Obj = new ArrayList<>();
+    private List<Satellite> IRAQ_Satellite_List() {
+        List<Satellite> IRAQ_Sat_Obj = new ArrayList<>();
         IRAQ_Sat_Obj.add(new Satellite("40043", "TIGRISAT", "Earth observation", "Jun-19-2014", R.mipmap.ic_iraq_foreground));
         return IRAQ_Sat_Obj;
     }
 
-    public List<Satellite> IRAN_Satellite_List() {
-        IRAN_Sat_Obj = new ArrayList<>();
+    private List<Satellite> IRAN_Satellite_List() {
+        List<Satellite> IRAN_Sat_Obj = new ArrayList<>();
         IRAN_Sat_Obj.add(new Satellite("28893", "SINAH 1", "Technology", "Oct-27-2005", R.mipmap.ic_iran_foreground));
         return IRAN_Sat_Obj;
     }
 
-    public List<Satellite> ISRAEL_Satellite_List() {
-        ISRAEL_Sat_Obj = new ArrayList<>();
+    private List<Satellite> ISRAEL_Satellite_List() {
+        List<Satellite> ISRAEL_Sat_Obj = new ArrayList<>();
         ISRAEL_Sat_Obj.add(new Satellite("42901", "VENUS", "Earth Observation", "Aug-2-2017", R.mipmap.ic_israel_foreground));
         ISRAEL_Sat_Obj.add(new Satellite("42000", "DIDO 2", "Micro-Gravity Research", "Feb-15-2017", R.mipmap.ic_israel_foreground));
         ISRAEL_Sat_Obj.add(new Satellite("41999", "BGUSAT", "Technology", "Feb-15-2017", R.mipmap.ic_israel_foreground));
@@ -1176,8 +1090,8 @@ public class MainActivity extends AppCompatActivity implements CountryAdapter.IC
         return ISRAEL_Sat_Obj;
     }
 
-    public List<Satellite> ITALY_Satellite_List() {
-        ITALY_Sat_Obj = new ArrayList<>();
+    private List<Satellite> ITALY_Satellite_List() {
+        List<Satellite> ITALY_Sat_Obj = new ArrayList<>();
         ITALY_Sat_Obj.add(new Satellite("42900", "OPTSAT 3000", "Reconnaissance,Optical", "Aug-2-2017", R.mipmap.ic_italy_foreground));
         ITALY_Sat_Obj.add(new Satellite("42794", "DSAT", "Technology", "Jun-23-2017", R.mipmap.ic_italy_foreground));
         ITALY_Sat_Obj.add(new Satellite("42778", "MAX VALIER SAT", "Astronomy,X-Ray,Tech", "Jun-23-2017", R.mipmap.ic_italy_foreground));
@@ -1208,8 +1122,8 @@ public class MainActivity extends AppCompatActivity implements CountryAdapter.IC
         return ITALY_Sat_Obj;
     }
 
-    public List<Satellite> JAPAN_Satellite_List() {
-        JAPAN_Sat_Obj = new ArrayList<>();
+    private List<Satellite> JAPAN_Satellite_List() {
+        List<Satellite> JAPAN_Sat_Obj = new ArrayList<>();
         JAPAN_Sat_Obj.add(new Satellite("43495", "IGS R-6", "Reconnaissance,Optical", "Jun-12-2018", R.mipmap.ic_japan_foreground));
         JAPAN_Sat_Obj.add(new Satellite("43223", "IGS O-6", "Reconnaissance,Optical", "Feb-27-2018", R.mipmap.ic_japan_foreground));
         JAPAN_Sat_Obj.add(new Satellite("43201", "TRICOM-1R(TASUKI)", "Technology", "Feb-3-2018", R.mipmap.ic_japan_foreground));
@@ -1386,8 +1300,8 @@ public class MainActivity extends AppCompatActivity implements CountryAdapter.IC
         return JAPAN_Sat_Obj;
     }
 
-    public List<Satellite> KAZAKHSTAN_Satellite_List() {
-        KAZAKHSTAN_Sat_Obj = new ArrayList<>();
+    private List<Satellite> KAZAKHSTAN_Satellite_List() {
+        List<Satellite> KAZAKHSTAN_Sat_Obj = new ArrayList<>();
         KAZAKHSTAN_Sat_Obj.add(new Satellite("42016", "AL-FARABI 1", "Education,Tech", "Feb-15-2017", R.mipmap.ic_kazakhstan_foreground));
         KAZAKHSTAN_Sat_Obj.add(new Satellite("40010", "KAZEOSAT 2", "Earth Observation", "Jun-19-2014", R.mipmap.ic_kazakhstan_foreground));
         KAZAKHSTAN_Sat_Obj.add(new Satellite("39731", "KAZEOSAT 1", "Earth Observation", "Apr-30-2014", R.mipmap.ic_kazakhstan_foreground));
@@ -1397,32 +1311,32 @@ public class MainActivity extends AppCompatActivity implements CountryAdapter.IC
         return KAZAKHSTAN_Sat_Obj;
     }
 
-    public List<Satellite> KENIA_Satellite_List() {
-        KENIA_Sat_Obj = new ArrayList<>();
+    private List<Satellite> KENIA_Satellite_List() {
+        List<Satellite> KENIA_Sat_Obj = new ArrayList<>();
         KENIA_Sat_Obj.add(new Satellite("43467", "1KUNS-PE", "Technology", "Nov-30-1998", R.mipmap.ic_kenya_foreground));
         return KENIA_Sat_Obj;
     }
 
-    public List<Satellite> LAOS_Satellite_List() {
-        LAOS_Sat_Obj = new ArrayList<>();
+    private List<Satellite> LAOS_Satellite_List() {
+        List<Satellite> LAOS_Sat_Obj = new ArrayList<>();
         LAOS_Sat_Obj.add(new Satellite("41034", "LAOSAT 1", "Communication", "Nov-20-2015", R.mipmap.ic_laos_foreground));
         return LAOS_Sat_Obj;
     }
 
-    public List<Satellite> LATVIA_Satellite_List() {
-        LATVIA_Sat_Obj = new ArrayList<>();
+    private List<Satellite> LATVIA_Satellite_List() {
+        List<Satellite> LATVIA_Sat_Obj = new ArrayList<>();
         LATVIA_Sat_Obj.add(new Satellite("42791", "VENTA 1", "Technology", "June-23-2017", R.mipmap.ic_latvia_foreground));
         return LATVIA_Sat_Obj;
     }
 
-    public List<Satellite> LITHUANIA_Satellite_List() {
-        LITHUANIA_Sat_Obj = new ArrayList<>();
+    private List<Satellite> LITHUANIA_Satellite_List() {
+        List<Satellite> LITHUANIA_Sat_Obj = new ArrayList<>();
         LITHUANIA_Sat_Obj.add(new Satellite("42768", "LITUANICASAT 2", "Technology,Education", "Jun-23-2017", R.mipmap.ic_lithuania_foreground));
         return LITHUANIA_Sat_Obj;
     }
 
-    public List<Satellite> LUXEMBOURG_Satellite_List() {
-        LUXEMBOURG_Sat_Obj = new ArrayList<>();
+    private List<Satellite> LUXEMBOURG_Satellite_List() {
+        List<Satellite> LUXEMBOURG_Sat_Obj = new ArrayList<>();
         LUXEMBOURG_Sat_Obj.add(new Satellite("37840", "VESSELSAT 1", "Traffic Monitoring", "Oct-12-2011", R.mipmap.ic_luxembourg_foreground));
         LUXEMBOURG_Sat_Obj.add(new Satellite("23331", "ASTRA 1D", "Communication(DB)", "Nov-1-1994", R.mipmap.ic_luxembourg_foreground));
         LUXEMBOURG_Sat_Obj.add(new Satellite("21139", "ASTRA 1B", "Communication(DB)", "Mar-2-1991", R.mipmap.ic_luxembourg_foreground));
@@ -1430,8 +1344,8 @@ public class MainActivity extends AppCompatActivity implements CountryAdapter.IC
         return LUXEMBOURG_Sat_Obj;
     }
 
-    public List<Satellite> MALAYSIA_Satellite_List() {
-        MALAYSIA_Sat_Obj = new ArrayList<>();
+    private List<Satellite> MALAYSIA_Satellite_List() {
+        List<Satellite> MALAYSIA_Sat_Obj = new ArrayList<>();
         MALAYSIA_Sat_Obj.add(new Satellite("40147", "MEASAT 3B", "Communication", "Sep-11-2014", R.mipmap.ic_malaysia_foreground));
         MALAYSIA_Sat_Obj.add(new Satellite("35578", "RAZAKSAT", "Earth Observation", "Jul-14-2009", R.mipmap.ic_malaysia_foreground));
         MALAYSIA_Sat_Obj.add(new Satellite("35362", "MEASAT 3A", "Communication", "Jun-21-2009", R.mipmap.ic_malaysia_foreground));
@@ -1442,8 +1356,8 @@ public class MainActivity extends AppCompatActivity implements CountryAdapter.IC
         return MALAYSIA_Sat_Obj;
     }
 
-    public List<Satellite> MEXICO_Satellite_List() {
-        MEXICO_Sat_Obj = new ArrayList<>();
+    private List<Satellite> MEXICO_Satellite_List() {
+        List<Satellite> MEXICO_Sat_Obj = new ArrayList<>();
         MEXICO_Sat_Obj.add(new Satellite("40946", "MORELOS 3", "Communication", "Oct-2-2015", R.mipmap.ic_mexico_foreground));
         MEXICO_Sat_Obj.add(new Satellite("40664", "SKY MEXICO-1", "Communication", "May-27-2015", R.mipmap.ic_mexico_foreground));
         MEXICO_Sat_Obj.add(new Satellite("39122", "SATMEX 8", "Communication", "Mar-26-2013", R.mipmap.ic_mexico_foreground));
@@ -1459,14 +1373,14 @@ public class MainActivity extends AppCompatActivity implements CountryAdapter.IC
         return MEXICO_Sat_Obj;
     }
 
-    public List<Satellite> MOROCCO_Satellite_List() {
-        MOROCCO_Sat_Obj = new ArrayList<>();
+    private List<Satellite> MOROCCO_Satellite_List() {
+        List<Satellite> MOROCCO_Sat_Obj = new ArrayList<>();
         MOROCCO_Sat_Obj.add(new Satellite("43005", "MOHAMMED VI-A", "Reconnaissance,Optical", "Nov-8-2017", R.mipmap.ic_morocco_foreground));
         return MOROCCO_Sat_Obj;
     }
 
-    public List<Satellite> NETHERLANDS_Satellite_List() {
-        NETHERLANDS_Sat_Obj = new ArrayList<>();
+    private List<Satellite> NETHERLANDS_Satellite_List() {
+        List<Satellite> NETHERLANDS_Sat_Obj = new ArrayList<>();
         NETHERLANDS_Sat_Obj.add(new Satellite("42015", "PEASSS", "Technology", "Feb-15-2017", R.mipmap.ic_netherlands_foreground));
         NETHERLANDS_Sat_Obj.add(new Satellite("39428", "DELFI-N3XT", "Technology", "Nov-21-2013", R.mipmap.ic_netherlands_foreground));
         NETHERLANDS_Sat_Obj.add(new Satellite("32789", "DELFI C3", "Technology", "Apr-28-2008", R.mipmap.ic_netherlands_foreground));
@@ -1476,8 +1390,8 @@ public class MainActivity extends AppCompatActivity implements CountryAdapter.IC
         return NETHERLANDS_Sat_Obj;
     }
 
-    public List<Satellite> NIGERIA_Satellite_List() {
-        NIGERIA_Sat_Obj = new ArrayList<>();
+    private List<Satellite> NIGERIA_Satellite_List() {
+        List<Satellite> NIGERIA_Sat_Obj = new ArrayList<>();
         NIGERIA_Sat_Obj.add(new Satellite("42824", "BIRD NN", "Technology", "Nov-20-1998", R.mipmap.ic_nigeria_foreground));
         NIGERIA_Sat_Obj.add(new Satellite("38014", "NIGCOMSAT 1R", "Communication", "Dec-19-2011", R.mipmap.ic_nigeria_foreground));
         NIGERIA_Sat_Obj.add(new Satellite("37790", "NIGERIASAT X", "Training,EO", "Aug-17-2011", R.mipmap.ic_nigeria_foreground));
@@ -1487,15 +1401,15 @@ public class MainActivity extends AppCompatActivity implements CountryAdapter.IC
         return NIGERIA_Sat_Obj;
     }
 
-    public List<Satellite> NORTH_KOREA_Satellite_List() {
-        NORTH_KOREA_Sat_Obj = new ArrayList<>();
+    private List<Satellite> NORTH_KOREA_Satellite_List() {
+        List<Satellite> NORTH_KOREA_Sat_Obj = new ArrayList<>();
         NORTH_KOREA_Sat_Obj.add(new Satellite("41332", "KMS-4", "Earth Observation", "Feb-7-2016", R.mipmap.ic_north_korea_foreground));
         NORTH_KOREA_Sat_Obj.add(new Satellite("39026", "KMS 3-2", "EO,Technology", "Dec-12-2012", R.mipmap.ic_north_korea_foreground));
         return NORTH_KOREA_Sat_Obj;
     }
 
-    public List<Satellite> NORWAY_Satellite_List() {
-        NORWAY_Sat_Obj = new ArrayList<>();
+    private List<Satellite> NORWAY_Satellite_List() {
+        List<Satellite> NORWAY_Sat_Obj = new ArrayList<>();
         NORWAY_Sat_Obj.add(new Satellite("40613", "THOR 7", "Communication", "Apr-26-2015", R.mipmap.ic_norway_foreground));
         NORWAY_Sat_Obj.add(new Satellite("40075", "AISSAT 2", "Traffic Monitoring", "Jul-8-2014", R.mipmap.ic_norway_foreground));
         NORWAY_Sat_Obj.add(new Satellite("39445", "HINCUBE", "Technology", "Nov-21-2013", R.mipmap.ic_norway_foreground));
@@ -1508,8 +1422,8 @@ public class MainActivity extends AppCompatActivity implements CountryAdapter.IC
         return NORWAY_Sat_Obj;
     }
 
-    public List<Satellite> PAKISTAN_Satellite_List() {
-        PAKISTAN_Sat_Obj = new ArrayList<>();
+    private List<Satellite> PAKISTAN_Satellite_List() {
+        List<Satellite> PAKISTAN_Sat_Obj = new ArrayList<>();
         PAKISTAN_Sat_Obj.add(new Satellite("39432", "ICUBE 1", "Technology", "Nov-21-2013", R.mipmap.ic_pakistan_foreground));
         PAKISTAN_Sat_Obj.add(new Satellite("37779", "PAKSAT 1R", "Communication", "Aug-11-2011", R.mipmap.ic_pakistan_foreground));
         PAKISTAN_Sat_Obj.add(new Satellite("27003", "BADR B", "Technology", "Dec-10-2001", R.mipmap.ic_pakistan_foreground));
@@ -1517,37 +1431,37 @@ public class MainActivity extends AppCompatActivity implements CountryAdapter.IC
         return PAKISTAN_Sat_Obj;
     }
 
-    public List<Satellite> PERU_Satellite_List() {
-        PERU_Sat_Obj = new ArrayList<>();
+    private List<Satellite> PERU_Satellite_List() {
+        List<Satellite> PERU_Sat_Obj = new ArrayList<>();
         PERU_Sat_Obj.add(new Satellite("41770", "PERUSAT 1", "Earth Observation", "Sep-16-2016", R.mipmap.ic_peru_foreground));
         PERU_Sat_Obj.add(new Satellite("39442", "PUCP-SAT 1", "Technology", "Nov-21-2013", R.mipmap.ic_peru_foreground));
         return PERU_Sat_Obj;
     }
 
-    public List<Satellite> PHILIPPINES_Satellite_List() {
-        PHILIPPINES_Sat_Obj = new ArrayList<>();
+    private List<Satellite> PHILIPPINES_Satellite_List() {
+        List<Satellite> PHILIPPINES_Sat_Obj = new ArrayList<>();
         PHILIPPINES_Sat_Obj.add(new Satellite("41463", "DIWATA-1", "Earth Observation", "Nov-20-1998", R.mipmap.ic_philippines_foreground));
         PHILIPPINES_Sat_Obj.add(new Satellite("17706", "AGILA 1(PALAPA B2P)", "Communication", "Mar-20-1987", R.mipmap.ic_philippines_foreground));
         return PHILIPPINES_Sat_Obj;
     }
 
-    public List<Satellite> POLAND_Satellite_List() {
-        POLAND_Sat_Obj = new ArrayList<>();
+    private List<Satellite> POLAND_Satellite_List() {
+        List<Satellite> POLAND_Sat_Obj = new ArrayList<>();
         POLAND_Sat_Obj.add(new Satellite("40119", "BRITE-PL 2", "Astronomy", "Aug-19-2014", R.mipmap.ic_poland_foreground));
         POLAND_Sat_Obj.add(new Satellite("39431", "BRITE-PL", "", "Nov-21-2013", R.mipmap.ic_poland_foreground));
         return POLAND_Sat_Obj;
     }
 
-    public List<Satellite> PORTUGAL_Satellite_List() {
-        PORTUGAL_Sat_Obj = new ArrayList<>();
+    private List<Satellite> PORTUGAL_Satellite_List() {
+        List<Satellite> PORTUGAL_Sat_Obj = new ArrayList<>();
         PORTUGAL_Sat_Obj.add(new Satellite("22829", "POSAT 1", "GPS", "Sep-26-1993", R.mipmap.ic_portugal_foreground));
         PORTUGAL_Sat_Obj.add(new Satellite("22826", "ITAMSAT", "Radio", "Sep-26-1993", R.mipmap.ic_portugal_foreground));
         return PORTUGAL_Sat_Obj;
     }
 
     ///RUSSIA Not Complete///
-    public List<Satellite> RUSSIA_Satellite_List() {
-        RUSSIA_Sat_Obj = new ArrayList<>();
+    private List<Satellite> RUSSIA_Satellite_List() {
+        List<Satellite> RUSSIA_Sat_Obj = new ArrayList<>();
         RUSSIA_Sat_Obj.add(new Satellite("43537", "PROGRESS MS-09", "", "Jul-9-2018", R.mipmap.ic_russia_foreground));
         RUSSIA_Sat_Obj.add(new Satellite("43508", "COSMOS 2527(GLONASS)", "Navigation", "Jun-16-2018", R.mipmap.ic_russia_foreground));
         RUSSIA_Sat_Obj.add(new Satellite("43493", "SOYUZ MS-09", "", "Jun-6-2018", R.mipmap.ic_russia_foreground));
@@ -3056,8 +2970,8 @@ public class MainActivity extends AppCompatActivity implements CountryAdapter.IC
         return RUSSIA_Sat_Obj;
     }
 
-    public List<Satellite> SAUDI_ARABIA_Satellite_List() {
-        SAUDI_ARABIA_Sat_Obj = new ArrayList<>();
+    private List<Satellite> SAUDI_ARABIA_Satellite_List() {
+        List<Satellite> SAUDI_ARABIA_Sat_Obj = new ArrayList<>();
         SAUDI_ARABIA_Sat_Obj.add(new Satellite("40016", "SAUDISAT 4", "Technology", "Jun-19-2014", R.mipmap.ic_saudi_arabia_foreground));
         SAUDI_ARABIA_Sat_Obj.add(new Satellite("31127", "SAUDICOMSAT 4", "Technology", "Apr-17-2007", R.mipmap.ic_saudi_arabia_foreground));
         SAUDI_ARABIA_Sat_Obj.add(new Satellite("31125", "SAUDICOMSAT 3", "Technology", "Apr-17-2007", R.mipmap.ic_saudi_arabia_foreground));
@@ -3074,8 +2988,8 @@ public class MainActivity extends AppCompatActivity implements CountryAdapter.IC
         return SAUDI_ARABIA_Sat_Obj;
     }
 
-    public List<Satellite> SINGAPORE_Satellite_List() {
-        SINGAPORE_Sat_Obj = new ArrayList<>();
+    private List<Satellite> SINGAPORE_Satellite_List() {
+        List<Satellite> SINGAPORE_Sat_Obj = new ArrayList<>();
         SINGAPORE_Sat_Obj.add(new Satellite("41171", "VELOX 2", "Technology", "Dec-16-2015", R.mipmap.ic_singapore_foreground));
         SINGAPORE_Sat_Obj.add(new Satellite("41170", "GALASSIA", "Technology", "Dec-16-2015", R.mipmap.ic_singapore_foreground));
         SINGAPORE_Sat_Obj.add(new Satellite("41169", "TELEOS 1", "Earth Observation", "Dec-16-2015", R.mipmap.ic_singapore_foreground));
@@ -3089,14 +3003,14 @@ public class MainActivity extends AppCompatActivity implements CountryAdapter.IC
         return SINGAPORE_Sat_Obj;
     }
 
-    public List<Satellite> SLOVAKIA_Satellite_List() {
-        SLOVAKIA_Sat_Obj = new ArrayList<>();
+    private List<Satellite> SLOVAKIA_Satellite_List() {
+        List<Satellite> SLOVAKIA_Sat_Obj = new ArrayList<>();
         SLOVAKIA_Sat_Obj.add(new Satellite("42789", "SKCUBE", "Education,Technology", "Jun-23-2017", R.mipmap.ic_slovakia_foreground));
         return SLOVAKIA_Sat_Obj;
     }
 
-    public List<Satellite> SOUTH_AFRICA_Satellite_List() {
-        SOUTH_AFRICA_Sat_Obj = new ArrayList<>();
+    private List<Satellite> SOUTH_AFRICA_Satellite_List() {
+        List<Satellite> SOUTH_AFRICA_Sat_Obj = new ArrayList<>();
         SOUTH_AFRICA_Sat_Obj.add(new Satellite("42726", "NSIGHT-1", "Technology,Atmosphere,EO", "Nov-20-1998", R.mipmap.ic_south_africa_foreground));
         SOUTH_AFRICA_Sat_Obj.add(new Satellite("42713", "ZA-AEROSAT", "Technology,Atmosphere", "Nov-20-1998", R.mipmap.ic_south_africa_foreground));
         SOUTH_AFRICA_Sat_Obj.add(new Satellite("40353", "KONDOR E", "Earth observation,Radar", "Dec-19-2014", R.mipmap.ic_south_africa_foreground));
@@ -3106,9 +3020,9 @@ public class MainActivity extends AppCompatActivity implements CountryAdapter.IC
         return SOUTH_AFRICA_Sat_Obj;
     }
 
-    public List<Satellite> SOUTH_KOREA_Satellite_List() {
+    private List<Satellite> SOUTH_KOREA_Satellite_List() {
         String Name = "SOUTH KOREA";
-        SOUTH_KOREA_Sat_Obj = new ArrayList<>();
+        List<Satellite> SOUTH_KOREA_Sat_Obj = new ArrayList<>();
         SOUTH_KOREA_Sat_Obj.add(new Satellite("43138", "STEP CUBE LAB", "Technology", "Jan-12-2018", R.mipmap.ic_south_korea_foreground));
         SOUTH_KOREA_Sat_Obj.add(new Satellite("42984", "KOREASAT-5A", "Communication", "Oct-30-2017", R.mipmap.ic_south_korea_foreground));
         SOUTH_KOREA_Sat_Obj.add(new Satellite("42733", "SNUSAT-1B", "Tech,Research", "Nov-20-1998", R.mipmap.ic_south_korea_foreground));
@@ -3136,8 +3050,8 @@ public class MainActivity extends AppCompatActivity implements CountryAdapter.IC
         return SOUTH_KOREA_Sat_Obj;
     }
 
-    public List<Satellite> SPAIN_Satellite_List() {
-        SPAIN_Sat_Obj = new ArrayList<>();
+    private List<Satellite> SPAIN_Satellite_List() {
+        List<Satellite> SPAIN_Sat_Obj = new ArrayList<>();
         SPAIN_Sat_Obj.add(new Satellite("43228", "HISPASAT 30W-6", "Communication", "Mar-6-2018", R.mipmap.ic_spain_foreground));
         SPAIN_Sat_Obj.add(new Satellite("43215", "PAZ", "SAR", "Feb-22-2018", R.mipmap.ic_spain_foreground));
         SPAIN_Sat_Obj.add(new Satellite("42934", "AMAZONAS 5", "Communication", "Sep-11-2017", R.mipmap.ic_spain_foreground));
@@ -3165,8 +3079,8 @@ public class MainActivity extends AppCompatActivity implements CountryAdapter.IC
         return SPAIN_Sat_Obj;
     }
 
-    public List<Satellite> SWEDEN_Satellite_List() {
-        SWEDEN_Sat_Obj = new ArrayList<>();
+    private List<Satellite> SWEDEN_Satellite_List() {
+        List<Satellite> SWEDEN_Sat_Obj = new ArrayList<>();
         SWEDEN_Sat_Obj.add(new Satellite("42708", "QBEE50-LTU-OC", "Tech:,Thermospheric Research", "Nov-20-1998", R.mipmap.ic_sweden_foreground));
         SWEDEN_Sat_Obj.add(new Satellite("36827", "PRISMA(TANGO)", "Technology", "Jun-15-2010", R.mipmap.ic_sweden_foreground));
         SWEDEN_Sat_Obj.add(new Satellite("36599", "PRISMA(MANGO)", "Technology", "Jun-15-2010", R.mipmap.ic_sweden_foreground));
@@ -3182,8 +3096,8 @@ public class MainActivity extends AppCompatActivity implements CountryAdapter.IC
         return SWEDEN_Sat_Obj;
     }
 
-    public List<Satellite> TAIWAN_Satellite_List() {
-        TAIWAN_Sat_Obj = new ArrayList<>();
+    private List<Satellite> TAIWAN_Satellite_List() {
+        List<Satellite> TAIWAN_Sat_Obj = new ArrayList<>();
         TAIWAN_Sat_Obj.add(new Satellite("42920", "FORMOSAT-5", "Earth Observing", "Aug-24-2017", R.mipmap.ic_taiwan_foreground));
         TAIWAN_Sat_Obj.add(new Satellite("40022", "PACE", "Technology", "Jun-19-2014", R.mipmap.ic_taiwan_foreground));
         TAIWAN_Sat_Obj.add(new Satellite("29052", "FORMOSAT 3F", "Earth Observing", "Apr-15-2006", R.mipmap.ic_taiwan_foreground));
@@ -3197,8 +3111,8 @@ public class MainActivity extends AppCompatActivity implements CountryAdapter.IC
         return TAIWAN_Sat_Obj;
     }
 
-    public List<Satellite> THAILAND_Satellite_List() {
-        THAILAND_Sat_Obj = new ArrayList<>();
+    private List<Satellite> THAILAND_Satellite_List() {
+        List<Satellite> THAILAND_Sat_Obj = new ArrayList<>();
         THAILAND_Sat_Obj.add(new Satellite("41552", "THAICOM 8", "Communication", "May-27-2016", R.mipmap.ic_thailand_foreground));
         THAILAND_Sat_Obj.add(new Satellite("39500", "THAICOM 6", "Communication", "Jan-6-2014", R.mipmap.ic_thailand_foreground));
         THAILAND_Sat_Obj.add(new Satellite("33396", "THEOS", "Earth Observing", "Oct-1-2008", R.mipmap.ic_thailand_foreground));
@@ -3211,8 +3125,8 @@ public class MainActivity extends AppCompatActivity implements CountryAdapter.IC
         return THAILAND_Sat_Obj;
     }
 
-    public List<Satellite> TURKEY_Satellite_List() {
-        TURKEY_Sat_Obj = new ArrayList<>();
+    private List<Satellite> TURKEY_Satellite_List() {
+        List<Satellite> TURKEY_Sat_Obj = new ArrayList<>();
         TURKEY_Sat_Obj.add(new Satellite("43466", "UBAKUSAT", "Technology,Comm:", "Nov-30-1998", R.mipmap.ic_turkey_foreground));
         TURKEY_Sat_Obj.add(new Satellite("42736", "BEEAGLESAT", "Tech:,Atmospheric Science", "Nov-20-1998", R.mipmap.ic_turkey_foreground));
         TURKEY_Sat_Obj.add(new Satellite("42700", "HAVELSAT", "Tech:,Atmospheric Science", "Nov-20-1998", R.mipmap.ic_turkey_foreground));
@@ -3231,8 +3145,8 @@ public class MainActivity extends AppCompatActivity implements CountryAdapter.IC
         return TURKEY_Sat_Obj;
     }
 
-    public List<Satellite> UNITED_ARAB_EMIRATES_Satellite_List() {
-        UNITED_ARAB_EMIRATES_Sat_Obj = new ArrayList<>();
+    private List<Satellite> UNITED_ARAB_EMIRATES_Satellite_List() {
+        List<Satellite> UNITED_ARAB_EMIRATES_Sat_Obj = new ArrayList<>();
         UNITED_ARAB_EMIRATES_Sat_Obj.add(new Satellite("43174", "AL YAH 3", "Communication", "Jan-25-2018", R.mipmap.ic_united_arab_emirates_foreground));
         UNITED_ARAB_EMIRATES_Sat_Obj.add(new Satellite("42017", "NAYIF (EO-88)", "Technology,Education", "Feb-15-2017", R.mipmap.ic_united_arab_emirates_foreground));
         UNITED_ARAB_EMIRATES_Sat_Obj.add(new Satellite("39419", "DUBSAISAT 2", "Earth Observation,Tech:", "Nov-21-2013", R.mipmap.ic_united_arab_emirates_foreground));
@@ -3245,8 +3159,8 @@ public class MainActivity extends AppCompatActivity implements CountryAdapter.IC
         return UNITED_ARAB_EMIRATES_Sat_Obj;
     }
 
-    public List<Satellite> UNITED_KINGDOM_Satellite_List() {
-        UNITED_KINGDOM_Sat_Obj = new ArrayList<>();
+    private List<Satellite> UNITED_KINGDOM_Satellite_List() {
+        List<Satellite> UNITED_KINGDOM_Sat_Obj = new ArrayList<>();
         UNITED_KINGDOM_Sat_Obj.add(new Satellite("43510", "REMOVEDEBRIS", "Technology", "Nov-20-1998", R.mipmap.ic_united_kingdom_foreground));
         UNITED_KINGDOM_Sat_Obj.add(new Satellite("43115", "CARBONITE 2", "Technology,EO", "Jan-12-2018", R.mipmap.ic_united_kingdom_foreground));
         UNITED_KINGDOM_Sat_Obj.add(new Satellite("42765", "UCLSAT", "Technology,Atmosphere", "Jun-23-2017", R.mipmap.ic_united_kingdom_foreground));
@@ -3294,8 +3208,8 @@ public class MainActivity extends AppCompatActivity implements CountryAdapter.IC
     }
 
     ////USA Not Complete////
-    public List<Satellite> USA_Satellite_List() {
-        USA_Sat_Obj = new ArrayList<>();
+    private List<Satellite> USA_Satellite_List() {
+        List<Satellite> USA_Sat_Obj = new ArrayList<>();
         USA_Sat_Obj.add(new Satellite("43522", "DRAGON CRS-15", "ISS Resupply", "June 29, 2018", R.mipmap.ic_united_states_of_america_foreground));
         USA_Sat_Obj.add(new Satellite("43482", "IRIDIUM 162", "Comm: Traffic Monitoring", "May-22-2018", R.mipmap.ic_united_states_of_america_foreground));
         USA_Sat_Obj.add(new Satellite("43481", "IRIDIUM 110", "Comm: Traffic Monitoring", "May-22-2018", R.mipmap.ic_united_states_of_america_foreground));
@@ -4920,78 +4834,78 @@ public class MainActivity extends AppCompatActivity implements CountryAdapter.IC
         return USA_Sat_Obj;
     }
 
-    public List<Satellite> URUGUAY_Satellite_List() {
-        URUGUAY_Sat_Obj = new ArrayList<>();
+    private List<Satellite> URUGUAY_Satellite_List() {
+        List<Satellite> URUGUAY_Sat_Obj = new ArrayList<>();
         URUGUAY_Sat_Obj.add(new Satellite("40034", "ANTELSAT", "Technology", "Jun-19-2014", R.mipmap.ic_uruguay_foreground));
         return URUGUAY_Sat_Obj;
     }
 
-    public List<Satellite> VENEZUELA_Satellite_List() {
-        VENEZUELA_Sat_Obj = new ArrayList<>();
+    private List<Satellite> VENEZUELA_Satellite_List() {
+        List<Satellite> VENEZUELA_Sat_Obj = new ArrayList<>();
         VENEZUELA_Sat_Obj.add(new Satellite("42954", "VRSS-2", "Observation", "Oct-9-2017", R.mipmap.ic_venezuela_foreground));
         VENEZUELA_Sat_Obj.add(new Satellite("38782", "VRSS-1", "Observation", "Sep-29-2012", R.mipmap.ic_venezuela_foreground));
         VENEZUELA_Sat_Obj.add(new Satellite("33414", "VENESAT-1", "Communication", "Oct-29-2008", R.mipmap.ic_venezuela_foreground));
         return VENEZUELA_Sat_Obj;
     }
 
-    public List<Satellite> VIETNAM_Satellite_List() {
-        VIETNAM_Sat_Obj = new ArrayList<>();
+    private List<Satellite> VIETNAM_Satellite_List() {
+        List<Satellite> VIETNAM_Sat_Obj = new ArrayList<>();
         VIETNAM_Sat_Obj.add(new Satellite("39160", "VNREDSAT 1", "Observation", "May-7-2013", R.mipmap.ic_vietnam_foreground));
         VIETNAM_Sat_Obj.add(new Satellite("38332", "VINASAT 2", "Communications", "May-15-2012-", R.mipmap.ic_vietnam_foreground));
         VIETNAM_Sat_Obj.add(new Satellite("32767", "VINASAT 1", "Communications", "Apr-18-2008", R.mipmap.ic_vietnam_foreground));
         return VIETNAM_Sat_Obj;
     }
 
-    public List<Satellite> FORMER_CZECHOSLOVAKIA_List() {
-        FORMER_CZECHOSLOVAKIA_Sat_Obj = new ArrayList<>();
+    private List<Satellite> FORMER_CZECHOSLOVAKIA_List() {
+        List<Satellite> FORMER_CZECHOSLOVAKIA_Sat_Obj = new ArrayList<>();
         FORMER_CZECHOSLOVAKIA_Sat_Obj.add(new Satellite("21835", "MAGION 3", "Science,Magnetosphere", "Dec-18-1991", R.mipmap.ic_czechia_foreground));
         FORMER_CZECHOSLOVAKIA_Sat_Obj.add(new Satellite("20281", "MAGION 2", "Science,Magnetosphere", "Sep-28-1989", R.mipmap.ic_czechia_foreground));
         return FORMER_CZECHOSLOVAKIA_Sat_Obj;
     }
 
-    public List<Satellite> CHINA_BRAZIL_List() {
-        CHINA_BRAZIL_Sat_Obj = new ArrayList<>();
+    private List<Satellite> CHINA_BRAZIL_List() {
+        List<Satellite> CHINA_BRAZIL_Sat_Obj = new ArrayList<>();
         CHINA_BRAZIL_Sat_Obj.add(new Satellite("32062", "CBERS 2B", "Earth Observation", "Sep-19-2007", R.mipmap.ic_china_brazil_foreground));
         CHINA_BRAZIL_Sat_Obj.add(new Satellite("28057", "CBERS 2", "Earth Observation", "Oct-21-2003", R.mipmap.ic_china_brazil_foreground));
         CHINA_BRAZIL_Sat_Obj.add(new Satellite("25940", "CBERS 1", "Earth Observation", "Oct-14-1999", R.mipmap.ic_china_brazil_foreground));
         return CHINA_BRAZIL_Sat_Obj;
     }
 
-    public List<Satellite> FRANCE_GERMANY_List() {
-        FRANCE_GERMANY_Sat_Obj = new ArrayList<>();
+    private List<Satellite> FRANCE_GERMANY_List() {
+        List<Satellite> FRANCE_GERMANY_Sat_Obj = new ArrayList<>();
         FRANCE_GERMANY_Sat_Obj.add(new Satellite("8132", "SYMPHONIE 2", "Communication", "Aug-27-1975", R.mipmap.ic_france_germany_foreground));
         FRANCE_GERMANY_Sat_Obj.add(new Satellite("7578", "SYMPHONIE 1", "Communication", "Dec-19-1974", R.mipmap.ic_france_germany_foreground));
         return FRANCE_GERMANY_Sat_Obj;
     }
 
-    public List<Satellite> FRANCE_ITALY_List() {
-        FRANCE_ITALY_Sat_Obj = new ArrayList<>();
+    private List<Satellite> FRANCE_ITALY_List() {
+        List<Satellite> FRANCE_ITALY_Sat_Obj = new ArrayList<>();
         FRANCE_ITALY_Sat_Obj.add(new Satellite("40614", "SICRAL 2", "Military Communication", "Apr-26-2015", R.mipmap.ic_franc_italy_foreground));
         FRANCE_ITALY_Sat_Obj.add(new Satellite("39509", "ATHENA-FIDUS", "Military Communication", "Feb-6-2014", R.mipmap.ic_franc_italy_foreground));
         return FRANCE_ITALY_Sat_Obj;
     }
 
-    public List<Satellite> SINGAPORE_TAIWAN_List() {
-        SINGAPORE_TAIWAN_Sat_Obj = new ArrayList<>();
+    private List<Satellite> SINGAPORE_TAIWAN_List() {
+        List<Satellite> SINGAPORE_TAIWAN_Sat_Obj = new ArrayList<>();
         SINGAPORE_TAIWAN_Sat_Obj.add(new Satellite("37606", "ST 2", "Communication", "May-20-2011", R.mipmap.ic_singapore_taiwan_foreground));
         SINGAPORE_TAIWAN_Sat_Obj.add(new Satellite("25460", "ST 1", "Communication", "Aug-25-1998", R.mipmap.ic_singapore_taiwan_foreground));
         return SINGAPORE_TAIWAN_Sat_Obj;
     }
 
-    public List<Satellite> TURKMENISTAN_MONACO_List() {
-        TURKMENISTAN_MONACO = new ArrayList<>();
+    private List<Satellite> TURKMENISTAN_MONACO_List() {
+        List<Satellite> TURKMENISTAN_MONACO = new ArrayList<>();
         TURKMENISTAN_MONACO.add(new Satellite("40617", "TURKMENALEM52E/MONACOSAT", "Communication", "Apr-27-2015", R.mipmap.ic_turkmenistan_monaco_foreground));
         return TURKMENISTAN_MONACO;
     }
 
-    public List<Satellite> UNITED_STATES_BRAZIL_List() {
-        UNITED_STATES_BRAZIL_Sat_Obj = new ArrayList<>();
+    private List<Satellite> UNITED_STATES_BRAZIL_List() {
+        List<Satellite> UNITED_STATES_BRAZIL_Sat_Obj = new ArrayList<>();
         UNITED_STATES_BRAZIL_Sat_Obj.add(new Satellite("28137", "ESTRELA DU SOL-TELSTAR14", "Communication", "Jan-11-2004", R.mipmap.ic_usa_brazil_foreground));
         return UNITED_STATES_BRAZIL_Sat_Obj;
     }
 
-    public List<Satellite> ARAB_SATELLITE_COMMUNICATIONS_ORGANIZATION_ARABSAT_List() {
-        ARAB_SAT_COMM_ORG_Sat_Obj = new ArrayList<>();
+    private List<Satellite> ARAB_SATELLITE_COMMUNICATIONS_ORGANIZATION_ARABSAT_List() {
+        List<Satellite> ARAB_SAT_COMM_ORG_Sat_Obj = new ArrayList<>();
         ARAB_SAT_COMM_ORG_Sat_Obj.add(new Satellite("41029", "BADR 7(ARABSAT-6B)", "Communication", "Nov-10-2015", R.mipmap.ic_arabsat_foreground));
         ARAB_SAT_COMM_ORG_Sat_Obj.add(new Satellite("37810", "ARABSAT 5C", "Communication", "Sep-21-2011", R.mipmap.ic_arabsat_foreground));
         ARAB_SAT_COMM_ORG_Sat_Obj.add(new Satellite("36745", "ARABSAT 5A", "Communication", "Jun-26-2010", R.mipmap.ic_arabsat_foreground));
@@ -5008,8 +4922,8 @@ public class MainActivity extends AppCompatActivity implements CountryAdapter.IC
         return ARAB_SAT_COMM_ORG_Sat_Obj;
     }
 
-    public List<Satellite> ASIA_SATELLITE_TELECOMMUNICATIONS_COMPANY_ASIASAT_List() {
-        ASIASAT_Sat_Obj = new ArrayList<>();
+    private List<Satellite> ASIA_SATELLITE_TELECOMMUNICATIONS_COMPANY_ASIASAT_List() {
+        List<Satellite> ASIASAT_Sat_Obj = new ArrayList<>();
         ASIASAT_Sat_Obj.add(new Satellite("42942", "ASIASAT 9", "Communication", "Sep-28-2017", R.mipmap.ic_asiasat_foreground));
         ASIASAT_Sat_Obj.add(new Satellite("40141", "ASIASAT 6", "Communication", "Sep-7-2014", R.mipmap.ic_asiasat_foreground));
         ASIASAT_Sat_Obj.add(new Satellite("40107", "ASIASAT 8", "Communication", "Aug-5-2014", R.mipmap.ic_asiasat_foreground));
@@ -5021,8 +4935,8 @@ public class MainActivity extends AppCompatActivity implements CountryAdapter.IC
         return ASIASAT_Sat_Obj;
     }
 
-    public List<Satellite> EUROPEAN_ORGANISATION_FOR_THE_EXPLOITATION_EUMETSAT_List() {
-        EUMETSAT_Sat_Obj = new ArrayList<>();
+    private List<Satellite> EUROPEAN_ORGANISATION_FOR_THE_EXPLOITATION_EUMETSAT_List() {
+        List<Satellite> EUMETSAT_Sat_Obj = new ArrayList<>();
         EUMETSAT_Sat_Obj.add(new Satellite("40732", "MSG 4", "Meteorology", "Jul-15-2015", R.mipmap.ic_eumetsat_foreground));
         EUMETSAT_Sat_Obj.add(new Satellite("38771", "METOP-B", "Meteorology", "Sep-17-2012", R.mipmap.ic_eumetsat_foreground));
         EUMETSAT_Sat_Obj.add(new Satellite("38552", "METEOSAT 10(MSG 3)", "Meteorology", "Jul-5-2012", R.mipmap.ic_eumetsat_foreground));
@@ -5034,8 +4948,8 @@ public class MainActivity extends AppCompatActivity implements CountryAdapter.IC
         return EUMETSAT_Sat_Obj;
     }
 
-    public List<Satellite> EUROPEAN_SPACE_AGENCY_ESA_List() {
-        EUROPEAN_SPACE_AGENCY_Sat_Obj = new ArrayList<>();
+    private List<Satellite> EUROPEAN_SPACE_AGENCY_ESA_List() {
+        List<Satellite> EUROPEAN_SPACE_AGENCY_Sat_Obj = new ArrayList<>();
         EUROPEAN_SPACE_AGENCY_Sat_Obj.add(new Satellite("43437", "SENTINEL 3B", "Earth Observing (Ocean)", "Apr-25-2018", R.mipmap.ic_esa_foreground));
         EUROPEAN_SPACE_AGENCY_Sat_Obj.add(new Satellite("43196", "GOMX4-B", "Technology", "Feb-2-2018", R.mipmap.ic_esa_foreground));
         EUROPEAN_SPACE_AGENCY_Sat_Obj.add(new Satellite("43058", "GALILEO 22 (2C8)", "Navigation", "Dec-12-2017", R.mipmap.ic_esa_foreground));
@@ -5122,8 +5036,8 @@ public class MainActivity extends AppCompatActivity implements CountryAdapter.IC
         return EUROPEAN_SPACE_AGENCY_Sat_Obj;
     }
 
-    public List<Satellite> EUROPEAN_TELECOMMUNICATIONS_SATELLITE_ORGANIZATION_EUTELSAT_List() {
-        EUTELSAT_Sat_Obj = new ArrayList<>();
+    private List<Satellite> EUROPEAN_TELECOMMUNICATIONS_SATELLITE_ORGANIZATION_EUTELSAT_List() {
+        List<Satellite> EUTELSAT_Sat_Obj = new ArrayList<>();
         EUTELSAT_Sat_Obj.add(new Satellite("42741", "EUTELSAT 172B", "Communication", "Jun-1-2017", R.mipmap.ic_eutelsat_foreground));
         EUTELSAT_Sat_Obj.add(new Satellite("41589", "EUTELSAT 117W B", "Communication", "Jun-15-2016", R.mipmap.ic_eutelsat_foreground));
         EUTELSAT_Sat_Obj.add(new Satellite("41382", "EUTE 65W", "Communication", "Mar-9-2016", R.mipmap.ic_eutelsat_foreground));
@@ -5178,8 +5092,8 @@ public class MainActivity extends AppCompatActivity implements CountryAdapter.IC
         return EUTELSAT_Sat_Obj;
     }
 
-    public List<Satellite> INTERNATIONAL_MOBILE_SATELLITE_ORGANIZATION_INMARSAT_List() {
-        INMARSAT_Sat_Obj = new ArrayList<>();
+    private List<Satellite> INTERNATIONAL_MOBILE_SATELLITE_ORGANIZATION_INMARSAT_List() {
+        List<Satellite> INMARSAT_Sat_Obj = new ArrayList<>();
         INMARSAT_Sat_Obj.add(new Satellite("42698", "INMARSAT 5-F4", "Communication", "May-15-2017", R.mipmap.ic_inmarsat_foreground));
         INMARSAT_Sat_Obj.add(new Satellite("40882", "INMARSAT 5-F3", "Communication", "Aug-28-2015", R.mipmap.ic_inmarsat_foreground));
         INMARSAT_Sat_Obj.add(new Satellite("40384", "INMARSAT 5-F2", "Communication", "Feb-1-2015", R.mipmap.ic_inmarsat_foreground));
@@ -5200,8 +5114,8 @@ public class MainActivity extends AppCompatActivity implements CountryAdapter.IC
         return INMARSAT_Sat_Obj;
     }
 
-    public List<Satellite> INTERNATIONAL_TELECOMMUNICATIONS_SATELLITE_ORGANIZATION_ITSO_List() {
-        ITSO_Sat_Obj = new ArrayList<>();
+    private List<Satellite> INTERNATIONAL_TELECOMMUNICATIONS_SATELLITE_ORGANIZATION_ITSO_List() {
+        List<Satellite> ITSO_Sat_Obj = new ArrayList<>();
         ITSO_Sat_Obj.add(new Satellite("42950", "INTELSAT-37E", "Communication", "Sep-29-2017", R.mipmap.ic_itso_foreground));
         ITSO_Sat_Obj.add(new Satellite("41945", "INTELSAT 32E (SKY BRASIL 1)", "Communication", "Feb-14-2017", R.mipmap.ic_itso_foreground));
         ITSO_Sat_Obj.add(new Satellite("41581", "INTELSAT 31", "Communication", "Jun-9-2016", R.mipmap.ic_itso_foreground));
@@ -5290,14 +5204,14 @@ public class MainActivity extends AppCompatActivity implements CountryAdapter.IC
         return ITSO_Sat_Obj;
     }
 
-    public List<Satellite> NEW_ICO_List() {
-        NEW_ICO_Sat_Obj = new ArrayList<>();
+    private List<Satellite> NEW_ICO_List() {
+        List<Satellite> NEW_ICO_Sat_Obj = new ArrayList<>();
         NEW_ICO_Sat_Obj.add(new Satellite("26857", "ICO F2", "Communication", "Jun-19-2001", R.mipmap.ic_new_ico_foreground));
         return NEW_ICO_Sat_Obj;
     }
 
-    public List<Satellite> GLOBALSTAR_List() {
-        GLOBALSTAR_Sat_Obj = new ArrayList<>();
+    private List<Satellite> GLOBALSTAR_List() {
+        List<Satellite> GLOBALSTAR_Sat_Obj = new ArrayList<>();
         GLOBALSTAR_Sat_Obj.add(new Satellite("39077", "GLOBALSTAR M095", "Communication", "Feb-6-2013", R.mipmap.ic_globalstar_foreground));
         GLOBALSTAR_Sat_Obj.add(new Satellite("39076", "GLOBALSTAR M078", "Communication", "Feb-6-2013", R.mipmap.ic_globalstar_foreground));
         GLOBALSTAR_Sat_Obj.add(new Satellite("39075", "GLOBALSTAR M096", "Communication", "Feb-6-2013", R.mipmap.ic_globalstar_foreground));
@@ -5385,8 +5299,8 @@ public class MainActivity extends AppCompatActivity implements CountryAdapter.IC
         return GLOBALSTAR_Sat_Obj;
     }
 
-    public List<Satellite> NORTH_ATLANTIC_TREATY_ORGANIZATION_NATO_List() {
-        NORTH_ATLANTIC_TREATY_ORGANIZATION_Sat_Obj = new ArrayList<>();
+    private List<Satellite> NORTH_ATLANTIC_TREATY_ORGANIZATION_NATO_List() {
+        List<Satellite> NORTH_ATLANTIC_TREATY_ORGANIZATION_Sat_Obj = new ArrayList<>();
         NORTH_ATLANTIC_TREATY_ORGANIZATION_Sat_Obj.add(new Satellite("22921", "NATO 4B", "Military Communication:", "Dec-8-1993", R.mipmap.ic_nato_foreground));
         NORTH_ATLANTIC_TREATY_ORGANIZATION_Sat_Obj.add(new Satellite("21047", "NATO 4A", "Military Communication:", "Jan-8-1991", R.mipmap.ic_nato_foreground));
         NORTH_ATLANTIC_TREATY_ORGANIZATION_Sat_Obj.add(new Satellite("15391", "NATO 3D", "Military Communication:", "Nov-14-1984", R.mipmap.ic_nato_foreground));
@@ -5398,29 +5312,29 @@ public class MainActivity extends AppCompatActivity implements CountryAdapter.IC
         return NORTH_ATLANTIC_TREATY_ORGANIZATION_Sat_Obj;
     }
 
-    public List<Satellite> O3B_NETWORKS_List() {
-        O3B_NETWORKS_Sat_Obj = new ArrayList<>();
-        O3B_NETWORKS_Sat_Obj.add(new Satellite("43234", "O3B FM13", "Communication", "Mar-9-2018", R.mipmap.ic_o_3_b_network_foreground));
-        O3B_NETWORKS_Sat_Obj.add(new Satellite("43233", "O3B FM14", "Communication", "Mar-9-2018", R.mipmap.ic_o_3_b_network_foreground));
-        O3B_NETWORKS_Sat_Obj.add(new Satellite("43232", "O3B FM16", "Communication", "Mar-9-2018", R.mipmap.ic_o_3_b_network_foreground));
-        O3B_NETWORKS_Sat_Obj.add(new Satellite("43231", "O3B FM15", "Communication", "Mar-9-2018", R.mipmap.ic_o_3_b_network_foreground));
-        O3B_NETWORKS_Sat_Obj.add(new Satellite("40351", "O3B FM9", "Communication", "Dec-18-2014", R.mipmap.ic_o_3_b_network_foreground));
-        O3B_NETWORKS_Sat_Obj.add(new Satellite("40350", "O3B FM12", "Communication", "Dec-18-2014", R.mipmap.ic_o_3_b_network_foreground));
-        O3B_NETWORKS_Sat_Obj.add(new Satellite("40349", "O3B FM11", "Communication", "Dec-18-2014", R.mipmap.ic_o_3_b_network_foreground));
-        O3B_NETWORKS_Sat_Obj.add(new Satellite("40348", "O3B FM10", "Communication", "Dec-18-2014", R.mipmap.ic_o_3_b_network_foreground));
-        O3B_NETWORKS_Sat_Obj.add(new Satellite("40082", "O3B FM3", "Communication", "Jul-10-2014", R.mipmap.ic_o_3_b_network_foreground));
-        O3B_NETWORKS_Sat_Obj.add(new Satellite("40081", "O3B FM7", "Communication", "Jul-10-2014", R.mipmap.ic_o_3_b_network_foreground));
-        O3B_NETWORKS_Sat_Obj.add(new Satellite("40080", "O3B FM6", "Communication", "Jul-10-2014", R.mipmap.ic_o_3_b_network_foreground));
-        O3B_NETWORKS_Sat_Obj.add(new Satellite("40079", "O3B FM8", "Communication", "Jul-10-2014", R.mipmap.ic_o_3_b_network_foreground));
-        O3B_NETWORKS_Sat_Obj.add(new Satellite("39191", "O3B FM1", "Communication", "Jun-25-2013", R.mipmap.ic_o_3_b_network_foreground));
-        O3B_NETWORKS_Sat_Obj.add(new Satellite("39190", "O3B FM2", "Communication", "Jun-25-2013", R.mipmap.ic_o_3_b_network_foreground));
-        O3B_NETWORKS_Sat_Obj.add(new Satellite("39189", "O3B FM4", "Communication", "Jun-25-2013", R.mipmap.ic_o_3_b_network_foreground));
-        O3B_NETWORKS_Sat_Obj.add(new Satellite("39188", "O3B FM5", "Communication", "Jun-25-2013", R.mipmap.ic_o_3_b_network_foreground));
-        return O3B_NETWORKS_Sat_Obj;
+    private List<Satellite> O3B_NETWORKS_List() {
+        List<Satellite> o3B_NETWORKS_Sat_Obj = new ArrayList<>();
+        o3B_NETWORKS_Sat_Obj.add(new Satellite("43234", "O3B FM13", "Communication", "Mar-9-2018", R.mipmap.ic_o_3_b_network_foreground));
+        o3B_NETWORKS_Sat_Obj.add(new Satellite("43233", "O3B FM14", "Communication", "Mar-9-2018", R.mipmap.ic_o_3_b_network_foreground));
+        o3B_NETWORKS_Sat_Obj.add(new Satellite("43232", "O3B FM16", "Communication", "Mar-9-2018", R.mipmap.ic_o_3_b_network_foreground));
+        o3B_NETWORKS_Sat_Obj.add(new Satellite("43231", "O3B FM15", "Communication", "Mar-9-2018", R.mipmap.ic_o_3_b_network_foreground));
+        o3B_NETWORKS_Sat_Obj.add(new Satellite("40351", "O3B FM9", "Communication", "Dec-18-2014", R.mipmap.ic_o_3_b_network_foreground));
+        o3B_NETWORKS_Sat_Obj.add(new Satellite("40350", "O3B FM12", "Communication", "Dec-18-2014", R.mipmap.ic_o_3_b_network_foreground));
+        o3B_NETWORKS_Sat_Obj.add(new Satellite("40349", "O3B FM11", "Communication", "Dec-18-2014", R.mipmap.ic_o_3_b_network_foreground));
+        o3B_NETWORKS_Sat_Obj.add(new Satellite("40348", "O3B FM10", "Communication", "Dec-18-2014", R.mipmap.ic_o_3_b_network_foreground));
+        o3B_NETWORKS_Sat_Obj.add(new Satellite("40082", "O3B FM3", "Communication", "Jul-10-2014", R.mipmap.ic_o_3_b_network_foreground));
+        o3B_NETWORKS_Sat_Obj.add(new Satellite("40081", "O3B FM7", "Communication", "Jul-10-2014", R.mipmap.ic_o_3_b_network_foreground));
+        o3B_NETWORKS_Sat_Obj.add(new Satellite("40080", "O3B FM6", "Communication", "Jul-10-2014", R.mipmap.ic_o_3_b_network_foreground));
+        o3B_NETWORKS_Sat_Obj.add(new Satellite("40079", "O3B FM8", "Communication", "Jul-10-2014", R.mipmap.ic_o_3_b_network_foreground));
+        o3B_NETWORKS_Sat_Obj.add(new Satellite("39191", "O3B FM1", "Communication", "Jun-25-2013", R.mipmap.ic_o_3_b_network_foreground));
+        o3B_NETWORKS_Sat_Obj.add(new Satellite("39190", "O3B FM2", "Communication", "Jun-25-2013", R.mipmap.ic_o_3_b_network_foreground));
+        o3B_NETWORKS_Sat_Obj.add(new Satellite("39189", "O3B FM4", "Communication", "Jun-25-2013", R.mipmap.ic_o_3_b_network_foreground));
+        o3B_NETWORKS_Sat_Obj.add(new Satellite("39188", "O3B FM5", "Communication", "Jun-25-2013", R.mipmap.ic_o_3_b_network_foreground));
+        return o3B_NETWORKS_Sat_Obj;
     }
 
-    public List<Satellite> ORBCOMM_List() {
-        ORBCOMM_Sat_Obj = new ArrayList<>();
+    private List<Satellite> ORBCOMM_List() {
+        List<Satellite> ORBCOMM_Sat_Obj = new ArrayList<>();
         ORBCOMM_Sat_Obj.add(new Satellite("33065", "ORBCOMM FM 40", "Comm:,Traffic Monitoring", "Jun-19-2008", R.mipmap.ic_orbcomm_foreground));
         ORBCOMM_Sat_Obj.add(new Satellite("33064", "ORBCOMM FM 37", "Comm:,Traffic Monitoring", "Jun-19-2008", R.mipmap.ic_orbcomm_foreground));
         ORBCOMM_Sat_Obj.add(new Satellite("33063", "ORBCOMM FM 39", "Comm:,Traffic Monitoring", "Jun-19-2008", R.mipmap.ic_orbcomm_foreground));
@@ -5465,21 +5379,21 @@ public class MainActivity extends AppCompatActivity implements CountryAdapter.IC
         return ORBCOMM_Sat_Obj;
     }
 
-    public List<Satellite> REGIONAL_AFRICAN_SATELLITE_COMMUNICATIONS_ORGANIZATION_RASCOM_List() {
-        RASCO_Sat_Obj = new ArrayList<>();
+    private List<Satellite> REGIONAL_AFRICAN_SATELLITE_COMMUNICATIONS_ORGANIZATION_RASCOM_List() {
+        List<Satellite> RASCO_Sat_Obj = new ArrayList<>();
         RASCO_Sat_Obj.add(new Satellite("36831", "RASCOM QAF 1R", "Communication", "Aug-4-2010", R.mipmap.ic_rascom_foreground));
         RASCO_Sat_Obj.add(new Satellite("32387", "RASCOM 1", "Communication", "Dec-21-2007", R.mipmap.ic_rascom_foreground));
         return RASCO_Sat_Obj;
     }
 
-    public List<Satellite> SEA_LAUNCH_List() {
-        SEA_LAUNCH_Sat_Obj = new ArrayList<>();
+    private List<Satellite> SEA_LAUNCH_List() {
+        List<Satellite> SEA_LAUNCH_Sat_Obj = new ArrayList<>();
         SEA_LAUNCH_Sat_Obj.add(new Satellite("25661", "SEA LAUNCH DEMO", "", "Mar-28-1999", R.mipmap.ic_sea_launch_foreground));
         return SEA_LAUNCH_Sat_Obj;
     }
 
-    public List<Satellite> SOCIETE_EUROPEENNE_DES_SATELLITES_SES_List() {
-        SOCIETE_EUROPEENNE_DES_SATELLITES_Sat_Obj = new ArrayList<>();
+    private List<Satellite> SOCIETE_EUROPEENNE_DES_SATELLITES_SES_List() {
+        List<Satellite> SOCIETE_EUROPEENNE_DES_SATELLITES_Sat_Obj = new ArrayList<>();
         SOCIETE_EUROPEENNE_DES_SATELLITES_Sat_Obj.add(new Satellite("43488", "SES-12", "Communication", "Jun-4-2018", R.mipmap.ic_ses_foreground));
         SOCIETE_EUROPEENNE_DES_SATELLITES_Sat_Obj.add(new Satellite("43178", "SES-16/GOVSAT-1", "Communication", "Jan-31-2018", R.mipmap.ic_ses_foreground));
         SOCIETE_EUROPEENNE_DES_SATELLITES_Sat_Obj.add(new Satellite("43175", "SES 14", "Communication,EO", "Jan-25-2018", R.mipmap.ic_ses_foreground));
