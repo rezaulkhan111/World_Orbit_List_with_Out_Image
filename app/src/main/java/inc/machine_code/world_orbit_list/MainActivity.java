@@ -175,8 +175,12 @@ public class MainActivity extends AppCompatActivity implements CountryAdapter.IC
     }
 
     public void onClick_Mail(View b) {
-        Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.gmail.com"));
-        startActivity(intent);
+        Intent Email = new Intent(Intent.ACTION_SEND);
+        Email.setType("text/email");
+        Email.putExtra(Intent.EXTRA_EMAIL, new String[] { "machinecode.inc@gmail.com" });
+        Email.putExtra(Intent.EXTRA_SUBJECT, "World Satellite Tracking Feedback:");
+        Email.putExtra(Intent.EXTRA_TEXT, "Hi");
+        startActivity(Intent.createChooser(Email, "Sending Feedback:"));
     }
 
     private void initRecyclerViewList() {

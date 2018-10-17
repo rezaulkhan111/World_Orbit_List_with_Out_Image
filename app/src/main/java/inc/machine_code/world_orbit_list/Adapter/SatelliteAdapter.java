@@ -40,7 +40,7 @@ public class SatelliteAdapter extends RecyclerView.Adapter<SatelliteAdapter.View
     }
 
     @NonNull
-    public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+    public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         return new ViewHolder(LayoutInflater.from(parent.getContext()).inflate(R.layout.satellite_photo_fragment, parent, false));
 
     }
