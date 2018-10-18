@@ -6,14 +6,14 @@
     <item
         android:id="@+id/menu_search_bar_country"
         android:icon="@drawable/ic_search_item_icon"
-        android:title="search"
+        android:title="@string/search_text"
         app:actionViewClass="android.support.v7.widget.SearchView"
         app:showAsAction="always"
-        tools:ignore="AppCompatResource" />
+        tools:ignore="AlwaysShowAction,AppCompatResource" />
     <item
         android:id="@+id/menu_about"
         android:icon="@drawable/ic_about_item_icon"
-        android:title="About"
+        android:title="@string/about_text"
         app:showAsAction="always"
         tools:ignore="AppCompatResource" />
 </menu>

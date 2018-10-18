@@ -6,7 +6,8 @@
     android:background="#3c3f41"
     android:orientation="horizontal"
     android:layout_margin="2dp"
-    android:weightSum="5">
+    android:weightSum="5"
+    android:baselineAligned="false">
 
     <LinearLayout
         android:layout_width="0dp"

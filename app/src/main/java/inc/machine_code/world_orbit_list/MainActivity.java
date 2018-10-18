@@ -1,5 +1,6 @@
 package inc.machine_code.world_orbit_list;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.graphics.Color;
 import android.net.Uri;
@@ -90,7 +91,7 @@ public class MainActivity extends AppCompatActivity implements CountryAdapter.IC
     }
 
     private void showBottomSheetDialog() {
-        View view = getLayoutInflater().inflate(R.layout.bottom_sheet, null);
+        @SuppressLint("InflateParams") View view = getLayoutInflater().inflate(R.layout.bottom_sheet, null);
         ImageView _iv_facebook, _iv_twitter, _iv_mail;
         TextView _tv_bottom_sheet;
         String text = "Amateur radio\n" +
