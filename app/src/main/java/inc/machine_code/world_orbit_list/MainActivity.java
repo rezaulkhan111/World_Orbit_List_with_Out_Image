@@ -180,7 +180,7 @@ public class MainActivity extends AppCompatActivity implements CountryAdapter.IC
         Email.putExtra(Intent.EXTRA_EMAIL, new String[] { "machinecode.inc@gmail.com" });
         Email.putExtra(Intent.EXTRA_SUBJECT, "World Satellite Tracking Feedback:");
         Email.putExtra(Intent.EXTRA_TEXT, "Hi");
-        startActivity(Intent.createChooser(Email, "Sending Feedback:"));
+        startActivity(Intent.createChooser(Email, "Sending Feedback"));
     }
 
     private void initRecyclerViewList() {
