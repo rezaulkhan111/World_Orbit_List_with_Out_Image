@@ -80,8 +80,8 @@ public class SatelliteAdapter extends RecyclerView.Adapter<SatelliteAdapter.View
         final ImageView satellite_photo;
 
         final TextView satellite_name;
-        TextView launch_date;
-        TextView satellite_type;
+        final TextView launch_date;
+        final TextView satellite_type;
 
         ViewHolder(View v) {
             super(v);

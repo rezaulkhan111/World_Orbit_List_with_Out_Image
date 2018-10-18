@@ -37,7 +37,7 @@ public class CountryAdapter extends RecyclerView.Adapter<CountryAdapter.ViewHold
     }
 
     @NonNull
-    public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+    public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         return new ViewHolder(LayoutInflater.from(parent.getContext()).inflate(R.layout.country_item_fragment, parent, false));
 
     }
