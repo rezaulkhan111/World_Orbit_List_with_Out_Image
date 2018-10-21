@@ -30,7 +30,7 @@ import inc.machine_code.world_orbit_list.List.SatelliteListActivity;
 
 public class MainActivity extends AppCompatActivity implements CountryAdapter.ICallback, Serializable {
 
-   private CountryAdapter adapter;
+    private CountryAdapter adapter;
     private final ArrayList<Country> countryList = new ArrayList<>();
 
     @Override
@@ -112,37 +112,37 @@ public class MainActivity extends AppCompatActivity implements CountryAdapter.IC
                 "Global Positioning System (GPS) Constellation\n" +
                 "Global Positioning System (GPS) Operational\n" +
                 "Globalstar\n" +
-                "Glonass Operational\n"+
-                "Gonets\n"+
-                "Gorizont\n"+
-                "IRNSS\n"+
-                "Intelsat\n"+
-                "Iridium\n"+
-                "Lemur\n"+
-                "Military\n"+
-                "Molniya\n"+
-                "NOAA\n"+
-                "Navy Navigation Satellite System\n"+
-                "O3B Networks\n"+
-                "Orbcomm\n"+
-                "Parus\n"+
-                "QZSS\n"+
-                "Radar Calibration\n"+
-                "Raduga\n"+
-                "Russian LEO Navigation\n"+
-                "Satellite Based Augmentation System\n"+
-                "Search & Rescue\n"+
-                "Space & Earth Science\n"+
-                "Strela\n"+
-                "TV(Direct Broadcast)\n"+
-                "Tracking and Data Relay Satellite System\n"+
-                "Tselina\n"+
-                "Tsikada\n"+
-                "Tsiklon\n"+
-                "Weather\n"+
-                "Westford Needles\n"+
-                "XM & Sirius\n"+
-                "Yaogan\n"+
+                "Glonass Operational\n" +
+                "Gonets\n" +
+                "Gorizont\n" +
+                "IRNSS\n" +
+                "Intelsat\n" +
+                "Iridium\n" +
+                "Lemur\n" +
+                "Military\n" +
+                "Molniya\n" +
+                "NOAA\n" +
+                "Navy Navigation Satellite System\n" +
+                "O3B Networks\n" +
+                "Orbcomm\n" +
+                "Parus\n" +
+                "QZSS\n" +
+                "Radar Calibration\n" +
+                "Raduga\n" +
+                "Russian LEO Navigation\n" +
+                "Satellite Based Augmentation System\n" +
+                "Search & Rescue\n" +
+                "Space & Earth Science\n" +
+                "Strela\n" +
+                "TV(Direct Broadcast)\n" +
+                "Tracking and Data Relay Satellite System\n" +
+                "Tselina\n" +
+                "Tsikada\n" +
+                "Tsiklon\n" +
+                "Weather\n" +
+                "Westford Needles\n" +
+                "XM & Sirius\n" +
+                "Yaogan\n" +
                 "\nIf you need more about satellite category. Satellite type short meaning Search Google";
 
         _tv_bottom_sheet = view.findViewById(R.id.tv_more_info);
@@ -178,7 +178,7 @@ public class MainActivity extends AppCompatActivity implements CountryAdapter.IC
     public void onClick_Mail(View b) {
         Intent Email = new Intent(Intent.ACTION_SEND);
         Email.setType("text/email");
-        Email.putExtra(Intent.EXTRA_EMAIL, new String[] { "machinecode.inc@gmail.com" });
+        Email.putExtra(Intent.EXTRA_EMAIL, new String[]{"machinecode.inc@gmail.com"});
         Email.putExtra(Intent.EXTRA_SUBJECT, "World Satellite Tracking Feedback:");
         Email.putExtra(Intent.EXTRA_TEXT, "Hi");
         startActivity(Intent.createChooser(Email, "Sending Feedback"));
@@ -3026,7 +3026,6 @@ public class MainActivity extends AppCompatActivity implements CountryAdapter.IC
     }
 
     private List<Satellite> SOUTH_KOREA_Satellite_List() {
-        String Name = "SOUTH KOREA";
         List<Satellite> SOUTH_KOREA_Sat_Obj = new ArrayList<>();
         SOUTH_KOREA_Sat_Obj.add(new Satellite("43138", "STEP CUBE LAB", "Technology", "Jan-12-2018", R.mipmap.ic_south_korea_foreground));
         SOUTH_KOREA_Sat_Obj.add(new Satellite("42984", "KOREASAT-5A", "Communication", "Oct-30-2017", R.mipmap.ic_south_korea_foreground));
@@ -5459,9 +5458,7 @@ public class MainActivity extends AppCompatActivity implements CountryAdapter.IC
     }
 
     public void inClickEvent(Country country) {
-
         Intent intent = new Intent(getApplicationContext(), SatelliteListActivity.class);
-
         switch (country.getCountryName()) {
             case "ALGERIA":
                 intent.putExtra("savedUser", (Serializable) ALGERIA_Satellite_List());
@@ -5883,7 +5880,6 @@ public class MainActivity extends AppCompatActivity implements CountryAdapter.IC
                 intent.putExtra("LIST_NAME_ID", "EUTELSAT");
                 startActivity(intent);
                 break;
-
         }
     }
 
