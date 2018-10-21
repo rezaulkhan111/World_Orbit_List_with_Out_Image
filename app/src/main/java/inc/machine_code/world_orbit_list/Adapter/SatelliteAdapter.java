@@ -23,26 +23,22 @@ public class SatelliteAdapter extends RecyclerView.Adapter<SatelliteAdapter.View
     private final InterfaceCallback callback;
     private SatelliteFilter satelliteFilter;
     public ArrayList<Satellite> SatelliteList;
-    private ArrayList<Satellite> satellitefilterList;
-
+    private ArrayList<Satellite> Satellite_Filter_List;
 
 
     public SatelliteAdapter(InterfaceCallback callback, ArrayList<Satellite> satelliteList) {
         this.callback = callback;
         this.SatelliteList = satelliteList;
-        this.satellitefilterList = satelliteList;
-
+        this.Satellite_Filter_List = satelliteList;
     }
 
     public interface InterfaceCallback {
         void inClickEvent(Satellite satellite, String Sat_Code_No);
-
     }
 
     @NonNull
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         return new ViewHolder(LayoutInflater.from(parent.getContext()).inflate(R.layout.satellite_photo_fragment, parent, false));
-
     }
 
     @Override
@@ -64,21 +60,19 @@ public class SatelliteAdapter extends RecyclerView.Adapter<SatelliteAdapter.View
 
     @Override
     public int getItemCount() {
-
         return SatelliteList.size();
     }
 
     @Override
     public Filter getFilter() {
         if (satelliteFilter == null) {
-            satelliteFilter = new SatelliteFilter(satellitefilterList, this);
+            satelliteFilter = new SatelliteFilter(Satellite_Filter_List, this);
         }
         return satelliteFilter;
     }
 
     public class ViewHolder extends SatelliteViewHolder {
         final ImageView satellite_photo;
-
         final TextView satellite_name;
         final TextView launch_date;
         final TextView satellite_type;
@@ -89,22 +83,18 @@ public class SatelliteAdapter extends RecyclerView.Adapter<SatelliteAdapter.View
             satellite_name = v.findViewById(R.id.tv_satellite_name);
             launch_date = v.findViewById(R.id.tv_launch_date);
             satellite_type = v.findViewById(R.id.tv_satellite_type);
-
         }
 
         public void onBind(int position) {
-
             try {
                 Satellite satellite = SatelliteList.get(position);
                 satellite_photo.setImageResource(SatelliteList.get(position).getImage());
                 satellite_name.setText(String.valueOf(satellite.getName()));
                 launch_date.setText(String.valueOf(satellite.getDate()));
                 satellite_type.setText(String.valueOf(satellite.getSatellite_Type()));
-
             } catch (Exception e) {
                 e.printStackTrace();
             }
-
         }
 
     }

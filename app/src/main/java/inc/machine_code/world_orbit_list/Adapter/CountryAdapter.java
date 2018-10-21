@@ -74,7 +74,7 @@ public class CountryAdapter extends RecyclerView.Adapter<CountryAdapter.ViewHold
 
         final TextView tv_countryName;
         final TextView tv_countryCount;
-        ImageView imageView;
+        final ImageView imageView;
 
 
         ViewHolder(View v) {
